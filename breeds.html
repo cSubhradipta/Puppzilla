@@ -1,0 +1,2451 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Puppzilla</title>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Capriola' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+	<nav class="navbar navbar-default" style="border-style: none; background-color: #98cbe1;  overflow: hidden; position: fixed; top: 0; width: 100%; z-index: 10;">
+  		
+  		<div class="container-fluid" id="container-fluid">
+    		
+    		<div class="navbar-header">
+
+      			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="margin-top: 15px; border-style: none; background-color: #001a33;">
+        				<span class="fa fa-bars" style="color: #fff; font-size: 20px; " onMouseOver="this.style.color='lightblue'"
+       					onMouseOut="this.style.color='#fff'"></span>                      
+      			</button>
+
+      			<a class="navbar-brand" href="#"><img src="images/navbrand.png" class="navbrand"></a>
+
+    		</div>
+
+		    <div class="collapse navbar-collapse" id="myNavbar" style="border-style: none;">
+		    	<center>
+			      	<ul class="nav navbar-nav navbar-right">
+			        	<li class="nav-item">
+							<a href="index.html" style="color: #001a33;" onMouseOver="this.style.color='#006bb3'"
+	       					onMouseOut="this.style.color='#001a33'">HOME</a>
+						</li>
+						<li class="nav-item">
+							<a href="food.html" style="color: #001a33;" onMouseOver="this.style.color='#006bb3'"
+	       					onMouseOut="this.style.color='#001a33'">FOOD</a>
+						</li>
+						<li class="nav-item">
+							<a href="health.html" style="color: #001a33;" onMouseOver="this.style.color='#006bb3'"
+	       					onMouseOut="this.style.color='#001a33'">HEALTH</a>
+						</li>
+						<li class="nav-item">
+							<a href="training.html" style="color: #001a33;" onMouseOver="this.style.color='#006bb3'"
+	       					onMouseOut="this.style.color='#001a33'">TRAINING</a>
+						</li>
+						<li class="nav-item" style="background-color: #fff; border-radius: 4px;">
+							<a href="breeds.html" style="color: #001a33;" onMouseOver="this.style.color='#006bb3'"
+	       					onMouseOut="this.style.color='#001a33'">BREEDS</a>
+						</li>
+						<li class="nav-item">
+							<a href="contact.html" style="color: #001a33;" onMouseOver="this.style.color='#006bb3'"
+	       					onMouseOut="this.style.color='#001a33'">CONTACT</a>
+						</li>
+	      			</ul>
+      			</center>
+    		</div>
+  		</div>
+	</nav>
+
+
+
+
+
+	<div>
+		
+		<div class="sidebar" id="sidebar">
+			<center><div class="sidebar-close" onclick="close_side()"><i class="fa fa-arrow-left" style="float: left;"></i></div></center>
+			<h2 class="sidebar-heading"></"><center>BREEDS</center></h2>
+			<form class="navbar-form navbar-left" action="" style="border-style: none;">
+      			<div class="input-group">
+        			<input type="search" class="form-control" placeholder="Search" name="search" style="">
+        			<div class="input-group-btn">
+         				<button class="btn btn-default" type="submit" style="outline-style: none;">
+            				<i class="glyphicon glyphicon-search"></i>
+          				</button>
+        			</div>
+      			</div>
+    		</form>
+
+  			<br><br>
+
+  			<a onclick="on1()">BullDog</a><br>
+			<a onclick="on2()">ChiPoo</a><br>
+			<a onclick="on3()">Collie</a><br>
+		  	<a onclick="on4()">Doberman Pinscher</a><br>
+		  	<a onclick="on5()">Fox Terrier</a><br>
+		  	<a onclick="on6()">French Spaniel</a><br>
+		    <a onclick="on7()">German Shepherd</a><br>
+		    <a onclick="on8()">Golden Retriever</a><br>
+			<a onclick="on9()">Labrador Retriever</a><br>
+			<a onclick="on10()">Pomeranian</a><br>
+		  	<a onclick="on11()">Pug</a><br>
+		  	<a onclick="on12()">Poodle</a><br>
+		  	<a onclick="on13()">Shih-Tzu</a><br>
+		    <a onclick="on14()">Shollie</a><br>
+		    <a onclick="on15()">WestiePoo</a><br>
+		    <a onclick="on16()">Yorkshire Terrier</a><br>
+			
+  
+		</div>
+
+
+		<script>
+			function open_side() 
+			{
+				document.getElementById("sidebar").style.width = "300px";
+			}
+
+			function close_side()
+			{
+	  			document.getElementById("sidebar").style.width = "0";
+	  		}
+
+		</script>
+
+		
+		<div class="sidebar-open" onclick="open_side()"><i class="fa fa-arrow-right" style="float: right; z-index: 10;"></i></div>
+
+		<div class="blog" style="margin-top: 100px;">
+		<div class="breed-page">
+		<center>
+		<div class="container-fluid">
+			<div class="row" style="margin-top: 100px;">
+				<div class="col-sm-4">
+					<div class="card" onclick="on1()">
+						<img src="images/br_imgs/bdg.jpg" class="card_img">
+						<p>Bull Dog</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="card" onclick="on2()">
+						<img src="images/br_imgs/chp.jpg" class="card_img">
+						<p>Chi-Poo</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="card" onclick="on3()">
+						<img src="images/br_imgs/cle.jpg" class="card_img">
+						<p>Collie</p>
+					</div>
+				</div>
+				
+			</div>
+
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="card" onclick="on4()">
+						<img src="images/br_imgs/dbr.jpg" class="card_img">
+						<p>Doberman Pinscher</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="card" onclick="on5()">
+						<img src="images/br_imgs/fxtr.jpg" class="card_img">
+						<p>Fox Terrier</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="card" onclick="on6()">
+						<img src="images/br_imgs/frsp.jpg" class="card_img">
+						<p>French Spaniel</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="card" onclick="on7()">
+						<img src="images/br_imgs/gmsp.png" class="card_img">
+						<p>German Shepherd</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="card" onclick="on8()">
+						<img src="images/br_imgs/gdre.jpg" class="card_img">
+						<p>Golden Retriever</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="card" onclick="on9()">
+						<img src="images/br_imgs/lbre.jpg" class="card_img">
+						<p>Labrador Retriever</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="card" onclick="on10()">
+						<img src="images/br_imgs/pom.jpg" class="card_img">
+						<p>Pomeranian</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="card" onclick="on11()">
+						<img src="images/br_imgs/pug.jpg" class="card_img">
+						<p>Pug</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="card" onclick="on12()">
+						<img src="images/br_imgs/pdl.jpg" class="card_img">
+						<p>Poodle</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="card" onclick="on13()">
+						<img src="images/br_imgs/shtz.png" class="card_img">
+						<p>Shih-Tzu</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="card" onclick="on14()">
+						<img src="images/br_imgs/shl.jpg" class="card_img">
+						<p>Shollie</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="card" onclick="on15()">
+						<img src="images/br_imgs/wstp.jpg" class="card_img">
+						<p>WestiePoo</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="card" onclick="on16()">
+						<img src="images/br_imgs/ystr.jpg" class="card_img">
+						<p>Yorkshire Terrier</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		</center>
+
+		<center>
+			<div class="container-fluid" id="overlay1">
+				<div class="description" id="breed">
+					<div>
+						<i class="fa fa-close" id="back" onclick="off1()"></i>
+						<div class="row">
+							<div class="col-lg-8">
+								<h1 class="breed-name">Bull-Dog</h1>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4">
+								<img src="images/br_imgs/bdg.jpg" class="desc_img">
+							</div>
+							<div class="col-sm-4">
+								<h1 class="heading">Vital Stats</h1>
+								<h4><table>
+									<tr>
+										<td class="sub-heading">Breed Group :&nbsp;</td>
+										<td>
+											Companion Dogs
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Life Span :&nbsp;</td>
+										<td>
+											8 to 12 years
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Height :&nbsp;</td>
+										<td>
+											12 to 18 inches
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Weight :&nbsp;</td>
+										<td>
+											18 to 23 kilograms
+										</td>
+									</tr>
+								</table></h4>
+							</div>
+							<div class="col-sm-4">
+								<h1 class="heading">Characteristics</h1>
+								<h4><table>
+									<tr>
+										<td class="sub-heading">Adaptability :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Friendliness :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Grooming Needs :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Trainability :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+								</table></h4>
+							</div>
+						</div>
+
+						<div class="row" id="details">
+							<br><h1 class="heading">About This Breed</h1><br>
+							<p>The dog known for its tough, tenacious and energetic character. And yes, it's the Bulldog, of course!</p>
+
+							<p>Sometimes called the English Bulldog or the British Bulldog, the breed originated in England and has a bloody past. It descended from fighting mastiffs that were brought to the British Isles by the Romans and was used in a bloody sport called bullbaiting. Today, however, the Bulldog only slightly resembles his ancestors in appearance. And all of the ferociousness that he exhibited in the bullbaiting pens? Gone for good. Despite his still ferocious appearance, you'd be hard-pressed to find a dog with a sweeter, more loving disposition.</p>
+
+							<p>Bulldogs are never mistaken for other breeds of dogs. They are a medium-size dog with a thick-set, low-slung body. Their short-muzzled head is massive and square. They have broad shoulders and chests, with thick, sturdy limbs.</p>
+
+							<p>Although Bulldogs are low to the ground, they are wide and muscular. Their broad heads have cheeks that extend to the sides of their eyes, and the skin on their foreheads should have dense wrinkles. A Bulldog has a droopy upper lip and his lower jaw is undershot, meaning that his lower teeth stick out farther than his top teeth. The Bulldog's jaws are massive and strong, intended for latching on to his opponent and holding on.</p>
+
+							<p>Bulldogs have round, dark eyes. Their ears are small and thin, folded back like a rose. Their short tails are carried low on their rumps.</p>
+
+							<p>The Bulldog's muscular body leads him to have a distinctive gait. Because his stocky legs are set at each corner of his body, he moves with more of a waddle than a walk. It resembles sort of a loose-jointed, shuffling, sideways roll. Because their shoulders are much wider than their rear ends and they have such large heads, it's difficult for the females to whelp puppies without assistance. Most have to have caesarean sections to deliver their puppies, so breeding a Bulldog is an expensive proposition.</p>
+
+							<p>Despite cartoon depictions of them as ferocious dogs, today's Bulldogs are bred to be affectionate and kind. They are, indeed, resolute and courageous, but they aren't out to pick a fight. They often have a calm dignity about them when they are mature, and while they are friendly and playful, they can be a bit stubborn and protective of their families. Bulldogs love people. They seek people out for attention and enjoy nothing more than languishing next to their masters, and perhaps snoring while sleeping with their heads in their laps.</p>
+
+							<p>Unfortunately, the Bulldog's unique body and head structure makes him prone to health problems, especially respiratory and joint difficulties. They can quickly become overweight if they don't get enough exercise. Too much weight stresses their bodies and may aggravate existing health problems.</p>
+
+							<p>The Bulldog is popular dog in the U.S., but he's not for everyone. He's surprisingly heavy for his size, and if you need to pick him up, say to take him to the vet, it can be a challenge. Inside the house, Bulldogs tend to be inactive, preferring to sleep until it's time to eat again. They love children, but don't expect them to spend hours chasing a ball or running with the kids in the backyard. Your Bulldog may engage in such play for a while, but then you'll find him back at your side, content to watch the world go by and look up at you happily with that face that only a mother - or a devoted Bulldog fan - could love.</p><br>
+
+							<h1 class="heading">Highlights</h1><br>
+
+							<p>
+								<ul>
+									<li>Bulldogs can be stubborn and lazy. Your mature Bulldog may not be very enthusiastic about going to a walk, but it's important that he is exercised every day to keep him fit.</li><br>
+									 
+									<li>Bulldogs can't tolerate heat and humidity. When your Bulldog is outdoors, watch him carefully for signs of overheating and take him inside immediately if he starts to show distress. Some people put kiddy play pools filled with water in a shaded spot for their Bulldogs to lie in when the weather is warm and everyone is outside. They definitely are housedogs and should not live outdoors all of the time.</li><br>
+									
+									<li>Bulldogs are sensitive to cold weather.</li><br>
+									
+									<li>Bulldogs wheeze, snort, and snore. They also are prone to sleep apnea.</li><br>
+									
+									<li>Bulldogs are well-known for having flatulence. If this problem seems excessive with yours, talk to your vet.</li><br>
+									
+									<li>Bulldogs' short noses make them prone to a number of respiratory ailments.</li><br>
+									
+									<li>Bulldogs can have pinched nostrils that make it difficult for them to breathe and may require surgery to correct.</li><br>
+									
+									<li>Bulldogs are greedy eaters and will overeat if given the chance. Since they gain weight easily, they can quickly become obese if you don't monitor their food intake.</li><br>
+									
+									<li>Because of the size of their heads and fronts, Bulldogs have difficulty giving birth. Most require caesareans to deliver their puppies. It isn't advised for inexperienced breeders to try to breed them.</li><br>
+									
+									<li>As a short-nosed breed, Bulldogs are sensitive to anesthesia. Be sure to talk with your vet about this before any surgeries are done.</li><br>
+									
+									<li>To get a healthy pet, never buy a puppy from a backyard breeder, puppy mill, or pet store. Find a reputable breeder who tests her breeding dogs for genetic health conditions and good temperaments.</li><br>
+								</ul>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid" id="overlay2">
+				<div class="description" id="breed">
+					<div>
+						<i class="fa fa-close" id="back" onclick="off2()"></i>
+						<div class="row">
+							<div class="col-lg-8">
+								<h1 class="breed-name">Chi-Poo</h1>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4">
+								<img src="images/br_imgs/chp.jpg" class="desc_img">
+							</div>
+							<div class="col-sm-4">
+								<h1 class="heading">Vital Stats</h1>
+								<h4><table>
+									<tr>
+										<td class="sub-heading">Breed Group :&nbsp;</td>
+										<td>
+											Mixed Breed Dogs
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Life Span :&nbsp;</td>
+										<td>
+											12 to 15 years
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Height :&nbsp;</td>
+										<td>
+											5 to 15 inches
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Weight :&nbsp;</td>
+										<td>
+											4 to 8 kilograms
+										</td>
+									</tr>
+								</table></h4>
+							</div>
+							<div class="col-sm-4">
+								<h1 class="heading">Characteristics</h1>
+								<h4><table>
+									<tr>
+										<td class="sub-heading">Adaptability :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Friendliness :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Grooming Needs :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Trainability :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+								</table></h4>
+							</div>
+						</div>
+
+						<div class="row" id="details">
+							<br><h1 class="heading">About This Breed</h1><br>
+							<p> The Chi-Poo is a mixed breed dog–a cross between the Chihuahua and Toy or Teacup Poodle dog breeds. Compact, energetic, and great with kids, these pups inherited some of the best qualities from both of their parents.</p>
+
+							<p>Chi-Poos go by several names, including Choodle, Chipoodle, Poochi, and Poohuahua. Despite their unfortunate status as a designer breed, you can find these mixed-breed dogs in shelters and breed-specific rescues, so remember to adopt!</p>
+
+							<p>These adorable pups are quite versatile. They make great apartment dogs for people with active lifestyles and do well in big or small houses with a yard or without. If you want an energetic dog who doesn’t require a ton of exercise and will also act as a guard dog, alerting you to any potential dangers and visitors, the Chi-Poo may be the right dog for you.</p>
+
+							<p><h1 class="heading">Highlights</h1><br><br>
+								<ul>								
+									<li>Chi-Poos are mixed-breed dogs. They are not purebreds like their Chihuahua or Poodle parents.</li><br>
+									<li>The main colors of Chi-Poos are; cream, brown, blue, brindle, silver, grey, fawn, white, and black. Sometimes their coats are solid, and sometimes they have a blend of of colors.</li><br>
+									<li>These dogs usually have medium length coats, and they're generally considered to be a good choice for allergy sufferers. There are longer-coated Chi-Poos, as well as shorter coated Chi-Poos.</li><br>
+									<li>Chi-Poos can adapt to any living situation. Apartment or large home, single person or big family, they will fit in anywhere.</li><br>
+									<li>Chi-Poos aren't particularly suited for extreme weather. They handle heat better than cold, but you may need to apply doggy sunscreen in summer.</li><br>
+									<li>Because the Chi-Poo is a small dog, they can be easily injured by overly excited children. Chi-Poos prefer to be mostly around adults or older kids who know how to play gently.</li><br>
+								</ul>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid" id="overlay3">
+				<div class="description" id="breed">
+					<div>
+						<i class="fa fa-close" id="back" onclick="off3()"></i>
+						<div class="row">
+							<div class="col-lg-8">
+								<h1 class="breed-name">Collie</h1>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4">
+								<img src="images/br_imgs/cle.jpg" class="desc_img">
+							</div>
+							<div class="col-sm-4">
+								<h1 class="heading">Vital Stats</h1>
+								<h4><table>
+									<tr>
+										<td class="sub-heading">Breed Group :&nbsp;</td>
+										<td>
+											Herding Dogs
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Life Span :&nbsp;</td>
+										<td>
+											10 to 14 years
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Height :&nbsp;</td>
+										<td>
+											20 to 28 inches
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Weight :&nbsp;</td>
+										<td>
+											20 to 30 kilograms
+										</td>
+									</tr>
+								</table></h4>
+							</div>
+							<div class="col-sm-4">
+								<h1 class="heading">Characteristics</h1>
+								<h4><table>
+									<tr>
+										<td class="sub-heading">Adaptability :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Friendliness :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Grooming Needs :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Trainability :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+								</table></h4>
+							</div>
+						</div>
+
+						<div class="row" id="details">
+							<h1 class="heading">About This Breed</h1><br>
+							<p>Well, according to those who know and love the Collie breed, the fictional accounts of television Lassie aren't too far off the mark. The real-life Collie is an extremely intelligent, sensitive dog who is known for her uncanny ability to know when something is wrong. True stories abound about this breed coming to the rescue of people and animals.</p>
+
+							<p>Heroics aside, the Collie is a medium-size (50 to 70 pounds) dog, easy to train, devoted to and protective of her family, and friendly with people outside the family circle as well. Known for being playful and gentle, she makes an excellent companion for children.</p>
+
+							<p>Although the Collie is good-natured and friendly, she can be suspicious of strangers, especially if they approach the children in her family. She's a good watchdog — she will bark — but she is not aggressive.</p>
+
+							<p>The beautiful Collie has two distinct looks: full coat (known as the Rough variety) and short coat (known as the Smooth variety). The television star was a Rough Collie, as was the star of the 1943 movie Lassie Come Home, which inspired the television series.</p>
+
+							<p>Today, the Collie is more likely to be a pampered pet than an all-around farm dog. She adapts well to a variety of home environments, as long as she has plenty of daily exercise. She enjoys relaxing around the house with her family, as well as running and playing outside with the kids. Her herding instincts are still strong, so it's not unusual for the Collie to gather children and pets, chase cars, and bark.</p>
+
+							<p>In addition to her herding ability, the loyal Collie excels as an assistance or therapy dog. She also does well at such canine sports as herding trials, agility, obedience, and lure coursing.</p>
+
+							<p>The movie and the television series made the Collie a popular dog in the United States. Unfortunately, her extreme popularity leaves her open to the bane of all favorite breeds: unscrupulous people who breed with no regard for temperament, health, or conformation.</p>
+
+							<p>As a result, some Collies have serious health and temperament problems. If you are considering a Collie, you must be extremely careful from whom you purchase or adopt a puppy. Buy only from a reputable breeder. Never buy a puppy from an irresponsible breeder, puppy mill, or pet store. Reputable breeders breed with temperament in mind and perform various health tests to ensure that their breeding dogs don't pass on a predisposition to genetic diseases.</p>
+
+
+							<p><h1 class="heading">Highlights</h1><br><br>
+								<ul>
+									<li>The Collie is usually quiet unless she has a reason to bark. However, if she is left alone too often or if she is bored, she will bark excessively.</li><br>
+									<li>Both varieties need grooming, but the Rough Collie especially needs regular brushing to keep her coat clean and free of tangles.</li><br>
+									<li>Many Collies are sensitive to medications including ivermectin, the drug used in heartworm preventives. Be sure to talk with your veterinarian before giving your Collie a heartworm preventive or any other drug.</li><br>
+									<li>Be careful from whom you acquire a Collie. The Collie's popularity has given rise to unethical breeders acting with no regard for temperament, health, or conformation.</li><br> 
+									<li>To get a healthy dog, never buy a puppy from an irresponsible breeder, puppy mill, or pet store. Look for a reputable breeder who tests her breeding dogs to make sure they're free of genetic diseases that they might pass onto the puppies, and that they have sound temperaments.</li><br>	
+								</ul>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid" id="overlay4">
+				<div class="description" id="breed">
+					<div>
+						<i class="fa fa-close" id="back" onclick="off4()"></i>
+						<div class="row">
+							<div class="col-lg-8">
+								<h1 class="breed-name">Doberman Pinscher</h1>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4">
+								<img src="images/br_imgs/dbr.jpg" class="desc_img">
+							</div>
+							<div class="col-sm-4">
+								<h1 class="heading">Vital Stats</h1>
+								<h4><table>
+									<tr>
+										<td class="sub-heading">Breed Group :&nbsp;</td>
+										<td>
+											Working Dogs
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Life Span :&nbsp;</td>
+										<td>
+											10 to 13 years
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Height :&nbsp;</td>
+										<td>
+											24 to 28 inches
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Weight :&nbsp;</td>
+										<td>
+											25 to 35 kilograms
+										</td>
+									</tr>
+								</table></h4>
+							</div>
+							<div class="col-sm-4">
+								<h1 class="heading">Characteristics</h1>
+								<h4><table>
+									<tr>
+										<td class="sub-heading">Adaptability :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Friendliness :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Grooming Needs :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Trainability :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+								</table></h4>
+							</div>
+						</div>
+
+						<div class="row" id="details">
+							<h1 class="heading">About This Breed</h1><br>
+							<p> Because the Doberman Pinscher (spelled Dobermann in some countries) came into existence at the end of the 19th century, they are, in the world of dogs, the new kid on the block. This hasn't stopped the Dobie, as they're affectionately called, from becoming one of the most popular and recognized breeds in the United States.</p>
+
+							<p>Their look is elegant and their style is athletic; the Dobie is also intelligent, alert, and loyal. They're a courageous guard dog as well as a beloved family companion.</p>
+
+							<p>The Dobie's fierce reputation precedes them. They're feared by those who don't know them, stereotyped as highly aggressive and vicious. True, they're a formidable guardian, but they're usually a gentle, watchful, and loving dog. They don't go looking for trouble, but they're fearless and will defend their family and turf if they perceive danger.</p>
+
+							<p>The Doberman Pinscher enjoys being part of a family. They like to be close to those they love and, when this love is present, they're a natural protector. They're trustworthy with their family's children, friends, and guests as long as the pooch is treated kindly.</p>
+
+							<p>In spite of their positive qualities, the Dobie isn't the right breed for everyone. They're large, at 60 to 80 pounds, and they're extremely active, both physically and mentally. They need a lot of exercise.</p>
+
+							<p>They also need plenty of mental challenges to keep them from becoming bored. They need a strong owner/pack leader who can take time to properly socialize and train them, and who will keep them busy every day. This may be too much to handle for people who lead a more laid-back lifestyle.</p>
+
+							<p>The current look of the Dobie is slimmer and sleeker than that of past years. Their temperament has also changed somewhat, say breed enthusiasts, softening a bit from their early days in Germany, though they're still an excellent guard dog.</p>
+
+							<p>Originally, Dobies' ears were cropped to increase their ability to locate sounds, and tail docking gave the breed a more streamlined look. North American breeders usually dock the tails and crop the ears of Doberman puppies, though it's not mandatory. Docking and ear cropping is illegal in some countries.</p>
+
+							<p>Those who know them say that a properly socialized Dobie is an excellent pet and companion, suitable for families with other dogs, gentle with young children, and overall a loyal and devoted family member.</p>
+
+							
+							<p><h1 class="heading">Highlights</h1><br><br>
+								<ul>
+									<li>The Doberman has a great deal of energy and needs a lot of exercise.</li><br>
+									<li>This breed can be protective, so don't be surprised when they assume the role of household guardian.</li><br>
+									<li>The Dobie will assume the alpha role in your household if you're not a strong leader. Early, consistent training is critical to establish your role as pack leader.</li><br>
+									<li>The Dobie is sensitive to cold weather and needs adequate shelter in winter (they like to be in the house next to the fireplace).</li><br>
+									<li>The Doberman Pinscher is a family dog and shouldn't be left alone. They thrive when they're included in family activities.</li><br>
+									<li>The Doberman has gained a reputation as being vicious. Even though your Doberman may have a sweet personality, neighbors and strangers may be afraid of them.</li><br>
+									<li>To get a healthy dog, never buy a puppy from an irresponsible breeder, puppy mill, or pet store.</li><br>
+								</ul>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid" id="overlay5">
+				<div class="description" id="breed">
+					<div>
+						<i class="fa fa-close" id="back" onclick="off5()"></i>
+						<div class="row">
+							<div class="col-lg-8">
+								<h1 class="breed-name">Fox Terrier</h1>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4">
+								<img src="images/br_imgs/fxtr.jpg" class="desc_img">
+							</div>
+							<div class="col-sm-4">
+								<h1 class="heading">Vital Stats</h1>
+								<h4><table>
+									<tr>
+										<td class="sub-heading">Breed Group :&nbsp;</td>
+										<td>
+											Terrier Dogs
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Life Span :&nbsp;</td>
+										<td>
+											10 to 15 years
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Height :&nbsp;</td>
+										<td>
+											11 to 16 inches
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Weight :&nbsp;</td>
+										<td>
+											6 to 10 kilograms
+										</td>
+									</tr>
+								</table></h4>
+							</div>
+							<div class="col-sm-4">
+								<h1 class="heading">Characteristics</h1>
+								<h4><table>
+									<tr>
+										<td class="sub-heading">Adaptability :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Friendliness :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Grooming Needs :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Trainability :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+								</table></h4>
+							</div>
+						</div>
+
+						<div class="row" id="details">
+							<h1 class="heading">About This Breed</h1><br>
+							<p>Fox Terriers are canine classics who've changed little since their emergence in the late 18th century. There are two types: Smooth Fox Terriers are sleek, elegant, and intelligent, while Wire Fox Terriers are handsome, happy, and quite stylish when groomed properly. Called Fox Terriers or Foxys for short, both are outgoing, active, and inquisitive, with a devil-may-care attitude. They live in the moment, enjoying whatever's going on.</p>
+
+							<p>Smooth Fox Terriers are not very common these days outside of hunting and show circles, but they're important because many other terrier breeds are believed to have descended from them. The Smooth Fox Terrier also holds the distinction of being the first breed in the fox terrier group to be officially recognized by England's Kennel Club in 1875.</p>
+
+							<p>Historically, Fox Terriers were used to "bolt" foxes when they ran into their hiding places and drive them toward the foxhounds and hunters. White Smooth Fox Terriers were highly prized because they were less likely to be mistaken for the fox. Wires were favored for hunting in rough country, their coats making them less vulnerable to injury than their smooth-coated counterparts. Although Fox Terriers seldom are used for hunting now, they still have a strong prey drive and will dig with reckless abandon after underground vermin.</p>
+
+							<p>Hardy and healthy, Fox Terriers generally live well into their teens. Their handy 15- to 20-pound size makes them small enough to take just about anywhere but big enough for rough and tumble play. Their fiery disposition is evident in their small, dark eyes.</p>
+
+							<p>These are bold and energetic dogs that love to play with children. They're loyal to their families but impulsively scrappy with other dogs, never hesitating to pick fights, even with much bigger dogs. Unless they've been trained and socialized to get along with other family pets, they shouldn't be trusted alone with them.</p>
+
+							<p>Fox Terriers have a lot of self-confidence and love to explore. Never turn your Fox Terrier out in an unsecured area without a leash, and periodically check your fence to make sure he hasn't been digging an escape route.</p>
+
+							<p>Because they're so intelligent, Fox Terriers are naturals for obedience, agility, and earth trials. They also can learn tricks easily. Like most terriers, they're willful and need firm (not harsh), consistent training methods. Because of their smarts and stamina, they need plenty of mental and physical stimulation to keep them from resorting to destructive behaviors such as excessive barking, chewing, digging, and chasing other animals. Exercise, exercise, and more exercise is the key. A tired Fox Terrier is a good Fox Terrier. Unfortunately, you'll probably be tired before he is.</p>
+
+							<p>Fox Terriers make excellent watchdogs. So long as their barking isn't triggered by being left alone for too long in the yard by themselves, you should take comfort in knowing that your Fox Terrier will sound an alarm if he hears or sees something amiss in his territory. Your Fox Terrier will always be on the job of guarding your home and family.</p>
+
+							<p>With their outgoing, self-assured personalities, Fox Terriers can get into lots of mischief, including raiding the kitchen table and breaking out of the yard. They love toys and balls, and many adore playing in the water. While Fox Terrier puppies are difficult to resist, be aware that when grown, they'll need a lot of attention and stimulation to keep them out of trouble. If you can stay a step or two ahead of them, though, they're lively and long-lived companions.</p>
+
+							<p><h1 class="heading">Highlights</h1><br><br>
+								<ul>
+									<li>Fox Terriers like to eat and can become overweight. Be sure to monitor their food intake and give them regular exercise to keep them in shape.</li><br>
+									<li>Fox Terriers can be hard to housetrain — crate training is recommended.</li><br>
+									<li>Fox Terriers bark a lot and their barks typically are high-pitched.</li><br>
+									<li>Fox Terriers are prone to chasing rabbits, birds, cats, and even other dogs. They're scrappy and will pick fights with other dogs, even those that are much larger than they are. Be sure to keep your Fox Terrier on leash when he's not in a secure area.</li><br>
+									<li>Fox Terriers should not be trusted alone with non-canine pets unless they have been trained to get along with them.</li><br>
+									<li>Fox Terriers are highly energetic and need about 30 to 45 minutes of vigorous exercise each day. If they don't get a chance to burn off their natural energy, they can become destructive or turn into nuisance barkers.</li><br>
+									<li>While they're loyal to their families and love to play, Fox Terriers are too rough and energetic to play with young children.</li><br>
+									<li>Fox Terriers are escape artists. They can jump higher than you might think and will dig holes or otherwise try to escape from their yards.</li><br>
+									<li>Fox Terriers are a fairly rare breed. If you're buying a puppy, you may find it hard to track down a good breeder — and even when you find one, you may have to wait several months for a litter to be born.</li><br>
+								</ul>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid" id="overlay6">
+				<div class="description" id="breed">
+					<div>
+						<i class="fa fa-close" id="back" onclick="off6()"></i>
+						<div class="row">
+							<div class="col-lg-8">
+								<h1 class="breed-name">French Spaniel</h1>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4">
+								<img src="images/br_imgs/frsp.jpg" class="desc_img">
+							</div>
+							<div class="col-sm-4">
+								<h1 class="heading">Vital Stats</h1>
+								<h4><table>
+									<tr>
+										<td class="sub-heading">Breed Group :&nbsp;</td>
+										<td>
+											Sporting Dogs
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Life Span :&nbsp;</td>
+										<td>
+											10 to 12 years
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Height :&nbsp;</td>
+										<td>
+											21 to 24 inches
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Weight :&nbsp;</td>
+										<td>
+											20 to 25 kilograms
+										</td>
+									</tr>
+								</table></h4>
+							</div>
+							<div class="col-sm-4">
+								<h1 class="heading">Characteristics</h1>
+								<h4><table>
+									<tr>
+										<td class="sub-heading">Adaptability :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Friendliness :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Grooming Needs :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Trainability :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+								</table></h4>
+							</div>
+						</div>
+
+						<div class="row" id="details">
+							<h1 class="heading">About This Breed</h1><br>
+							
+								<p>The French Spaniel is a pure breed dog from France and Canada. These dogs are sociable, intelligent, and gentle, which make up some of the best qualities in any pooch.</p>
+
+								<p>The French Spaniel goes by several names, including Epagneul Francais, French Setter, and Canadian Setter. Despite their unfortunate status as a designer breed, you can find these pure breed dogs in shelters and rescues, so remember to adopt! Don’t shop!</p>
+
+								<p>These beautiful dogs make great companions for those who are naturally active. They are not well-suited for apartment living as they need space to run and expend their energy. They are great pets for any type of household, including families with children of all ages. If you want an energetic and active dog who will keep you on your toes, then this breed might be right for you!</p>
+
+								<p><h1 class="heading">Highlights</h1><br><br>
+									<ul>
+										<li>The French Spaniel's coat is often brown and white, with brown shades ranging from cinnamon to dark liver. Markings are irregular and can be small or dominating depending on the dog. Some are solid liver colored or solid white body. Some can have a solid white head.</li><br>
+										<li>The French Spaniel's coat is somewhat water resistant, so they are resilient to cold and damp conditions. They are not known to be hypoallergenic.</li><br>
+										<li>During the Middle Ages, the French Spaniel was beloved by royalty, though they nearly became extinct during the turn of the 20th century. Father Fournier, a French priest, eventually saved this breed in the 19th century. To this day, the French Spaniel is a rare breed, even in France.</li><br>
+										<li>They are friendly toward strangers unless they sense danger, in which case, they will bark. Other than that, are relatively quiet.</li><br>
+										<li>The French Spaniel can be injured by overly excited children if not carefully handled. However, for younger children who lean early how to properly approach and play with dogs, the French Spaniel can make a great, active companion.</li><br>
+									</ul>
+								</p>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid" id="overlay7">
+				<div class="description" id="breed">
+					<div>
+						<i class="fa fa-close" id="back" onclick="off7()"></i>
+						<div class="row">
+							<div class="col-lg-8">
+								<h1 class="breed-name">German Shepherd</h1>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4">
+								<img src="images/br_imgs/gmsp.png" class="desc_img">
+							</div>
+							<div class="col-sm-4">
+								<h1 class="heading">Vital Stats</h1>
+								<h4><table>
+									<tr>
+										<td class="sub-heading">Breed Group :&nbsp;</td>
+										<td>
+											Herding Dogs
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Life Span :&nbsp;</td>
+										<td>
+											10 to 14 years
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Height :&nbsp;</td>
+										<td>
+											20 to 26 inches
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Weight :&nbsp;</td>
+										<td>
+											34 to 40 kilograms
+										</td>
+									</tr>
+								</table></h4>
+							</div>
+							<div class="col-sm-4">
+								<h1 class="heading">Characteristics</h1>
+								<h4><table>
+									<tr>
+										<td class="sub-heading">Adaptability :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Friendliness :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Grooming Needs :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Trainability :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+								</table></h4>
+							</div>
+						</div>
+
+						<div class="row" id="details">
+							<h1 class="heading">About This Breed</h1><br>
+								<p>The German Shepherd Dog, also known as the Alsatian in Great Britain and parts of Europe, is among the top 10 most popular dog breeds in the U.S., and probably one of the world's most recognized breeds.</p>
+
+								<p>They owe part of their renown to a small puppy who was plucked from a bullet- and bomb-riddled breeding kennel in France during World War I by Corporal Lee Duncan. At the end of the war, Duncan brought the puppy back to his hometown of Los Angeles, trained him, and turned him into one of the most famous dogs in show biz--Rin Tin Tin. Rin Tin Tin went on to appear in dozens of movies and, at the height of his stardom, got 10,000 fan letters a week.</p>
+
+								<p>The German Shepherd has held many jobs other than movie star--leading the blind, chasing down criminals, sniffing out illegal substances, serving in the military, visiting the sick, and herding stock are just some of the jobs held by this versatile breed.</p>
+
+								<p>The dog has even taken on the role of national hero. German Shepherds were the search and rescue dogs crawling through the ruins of the World Trade Center after the 9/11 terrorist attacks, looking for survivors and comforting rescue workers and families.</p>
+
+								<p>The German Shepherd may embody some of the best traits of dogs, but they're not for everyone. Originally bred to herd flocks all day, this is a high-energy dog who needs a lot of activity and exercise. Without it, they're likely to express their boredom and frustration in ways you don't like, such as barking and chewing.</p>
+
+								<p>The breed also has an aloof and sometimes suspicious nature—great for a watchdog, but not the sort of family dog who'll make guests feel welcome. However, if you expose a German Shepherd to many different situations and people starting in puppyhood, they can learn to take new people and circumstances in stride.</p>
+
+								<p>If you're adopting a puppy, you'll get a slightly different kind of German Shepherd depending on whether they're descended from dogs that come from American versus German breeders. In general, American breeders often aim to create dog show champions, and they breed more for that distinctive German Shepherd look than for distinctive German Shepherd talents.</p>
+
+								<p>Fans say that American-bred German Shepherds are calmer than their German counterparts, but critics say these dogs have lost some of their talents for working traditional German Shepherd jobs, and are more prone to behavior problems such as separation anxiety.</p>
+
+								<p>German breeders, on the other hand, breed for working abilities, as well as to fit the breed's traditional look. Before a German Shepherd is bred in Germany, they have to pass numerous tests to prove they measure up to the physical and mental benchmarks the breed is known for. German Shepherd Dogs from Germany tend to have a more energetic and driven personality.</p>
+
+								<p>However, the only way to guarantee what kind of dog you're going to get is to spend time with them. So get to the shelter and meet your new best friend before you even take them home!</p>
+
+								<p><h1 class="heading">Highlights</h1><br><br>
+								<ul>
+									<li>The German Shepherd isn't the breed for you if you're away from home frequently or for long periods of time. When left alone, they can become anxious or bored and are likely to express their worry in ways you don't like, such as barking, chewing, and digging.</li><br>
+									<li>German Shepherds are active and intelligent dogs. They must be kept busy learning, playing, and working. Daily exercise, both physical (such as jogging and Frisbee) and mental (such as training sessions), is a must.</li><br>
+									<li>German Shepherds can be aloof and suspicious of strangers. To raise a social and well-behaved dog, expose your German Shepherd puppy to many experiences, places, and people. Obedience training, beginning with puppy classes, is important for getting them used to other people and dogs, as well as teaching them basic canine manners.</li><br>
+									<li>These dogs shed, shed, shed. In fact, their nickname is the "German shedder." Brush them several times a week and buy a good vacuum. You'll need it.</li><br>
+									<li>Crate training is not only a wonderful way to housetrain a puppy, it helps teach them to be calm and happy when separated from their owner. This is especially important for the German Shepherd, who sometimes suffers separation anxiety, or extreme anxiety when left alone.</li><br>
+									<li>They've got a reputation for being a great watchdog—and they are—but the German Shepherd should never be chained or tethered just to stand guard. No dog should; it leads to frustration and aggression. The German Shepherd is happiest living indoors with the family, but with access to a large, fenced yard, where they can burn off some of their natural energy.</li><br>
+									<li>You can find dogs of almost any breed, including German Shepherds, from your local shelter or breed specific rescue. Consider adopting before you shop for a breeder.</li><br>
+								</ul>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid" id="overlay8">
+				<div class="description" id="breed">
+					<div>
+						<i class="fa fa-close" id="back" onclick="off8()"></i>
+						<div class="row">
+							<div class="col-lg-8">
+								<h1 class="breed-name">Golden Retriever</h1>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4">
+								<img src="images/br_imgs/gdre.jpg" class="desc_img">
+							</div>
+							<div class="col-sm-4">
+								<h1 class="heading">Vital Stats</h1>
+								<h4><table>
+									<tr>
+										<td class="sub-heading">Breed Group :&nbsp;</td>
+										<td>
+											Sporting Dogs
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Life Span :&nbsp;</td>
+										<td>
+											10 to 14 years
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Height :&nbsp;</td>
+										<td>
+											20 to 24 inches
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Weight :&nbsp;</td>
+										<td>
+											25 to 35 kilograms
+										</td>
+									</tr>
+								</table></h4>
+							</div>
+							<div class="col-sm-4">
+								<h1 class="heading">Characteristics</h1>
+								<h4><table>
+									<tr>
+										<td class="sub-heading">Adaptability :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Friendliness :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Grooming Needs :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Trainability :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+								</table></h4>
+							</div>
+						</div>
+
+						<div class="row" id="details">
+							<h1 class="heading">About This Breed</h1><br>
+							<p> It's no surprise that the Golden Retriever is one of the top ten most popular dogs. It's all good with the Golden: he's highly intelligent, sociable, beautiful, and loyal.</p>
+
+							<p>He's also lively. The Golden is slow to mature and retains the silly, playful personality of a puppy until three to four years of age, which can be both delightful and annoying. Many keep their puppyish traits into old age.</p>
+
+							<p>Originally bred for the physically demanding job of retrieving ducks and other fowl for hunters, the Golden needs daily exercise: a walk or jog, free time in the yard, a run at the beach or lake (Goldens love water), or a game of fetch. And like other intelligent breeds who were bred to work, they need to have a job to do, such as retrieving the paper, waking up family members, or competing in dog sports. A tired Golden is a well-behaved Golden.</p>
+
+							<p>As well as giving your Golden Retriever physical and mental exercise, you should also be prepared to include him in your family activities. The Golden Retriever is a family dog, and he needs to be with his "pack." Don't consider getting a Golden unless you're willing to have him in the house with you, underfoot, every day.</p>
+
+							<p>There's one other potential drawback to the breed: He's definitely not a watchdog. He might bark when strangers come around, but don't count on it. Most likely, he'll wag his tail and flash that characteristic Golden smile.</p>
+
+							<p><h1 class="heading">Highlights</h1><br><br>
+							
+								<ul>
+									<li>Golden Retrievers shed profusely, especially in the spring and fall. Daily brushing will get some of the loose hair out of the coat, keeping it from settling on your clothing and all over your house. But if you live with a Golden, you'll have to get used to dog hair.</li><br>
+									<li>Golden Retrievers are family dogs; they need to live indoors with their human "pack," and shouldn't spend hours alone in the backyard.</li><br>
+									<li>Golden Retrievers are active dogs who need 40-60 minutes of hard exercise daily. They thrive on obedience training, agility classes, and other canine activities, which are a great way to give your dog physical and mental exercise.</li><br>
+									<li>Although they're gentle and trustworthy with kids, Golden Retrievers are boisterous, large dogs that can accidentally knock over a small child.</li><br>
+									<li>Goldens love to eat, and will quickly become overweight if overfed. Limit treats, measure out your dog's daily kibble, and feed him in regular meals rather than leaving food out all the time.</li><br>
+									<li>Because the Golden Retriever is so popular, there are many people breeding Goldens who care more about making money out of the demand for puppies than in breeding happy, healthy dogs. To get a healthy dog, never buy a puppy from an irresponsible breeder, puppy mill, or pet store. Look for a reputable breeder who tests her breeding dogs to make sure they're free of genetic diseases that they might pass onto the puppies, and that they have sound temperaments.</li><br>
+								</ul>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid" id="overlay9">
+				<div class="description" id="breed">
+					<div>
+						<i class="fa fa-close" id="back" onclick="off9()"></i>
+						<div class="row">
+							<div class="col-lg-8">
+								<h1 class="breed-name">Labrador Retriever</h1>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4">
+								<img src="images/br_imgs/lbre.jpg" class="desc_img">
+							</div>
+							<div class="col-sm-4">
+								<h1 class="heading">Vital Stats</h1>
+								<h4><table>
+									<tr>
+										<td class="sub-heading">Breed Group :&nbsp;</td>
+										<td>
+											Sporting Dogs
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Life Span :&nbsp;</td>
+										<td>
+											10 to 12 years
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Height :&nbsp;</td>
+										<td>
+											20 to 24 inches
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Weight :&nbsp;</td>
+										<td>
+											25 to 35 kilograms
+										</td>
+									</tr>
+								</table></h4>
+							</div>
+							<div class="col-sm-4">
+								<h1 class="heading">Characteristics</h1>
+								<h4><table>
+									<tr>
+										<td class="sub-heading">Adaptability :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Friendliness :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Grooming Needs :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Trainability :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+										</td>
+									</tr>
+								</table></h4>
+							</div>
+						</div>
+
+						<div class="row" id="details">
+							<h1 class="heading">About This Breed</h1><br>
+							<p>The warm and intelligent Labrador Retriever is one of the breed registered with the AKC. Even non-dog people can recognize a Lab, and artists and photographers have captured their image countless times--usually as the loyal companion, waiting patiently by their owner's side.</p>
+
+							<p>Built for sport, the Lab is muscular and athletic. They have a short, easy-care coat, friendly demeanor, keen intelligence, and plenty of energy. Devotion to this breed runs deep; Labs are loving, people-oriented dogs who live to serve their families, and owners and fans sometimes liken their Labs to angels.</p>
+
+							<p>The breed originated on the island of Newfoundland, off the northeastern Atlantic coast of Canada. Originally called the St. John's dog, after the capital city of Newfoundland, they were bred to help the local fishermen--hauling nets, fetching ropes, and retrieving fish that had escaped the nets--as well as to be a family dog.</p>
+
+							<p>Today, most Labs skip the hard labor and spend their days being pampered and loved by their people. However, some Labs still serve as indispensable working dogs.</p>
+
+							<p>The Lab's sweet nature makes them an excellent therapy dog, visiting homes for the elderly and hospitals, and their intelligence makes them an ideal assistance dog for those with disabilities. They also excel as a search and rescue dog or as a retriever for hunters, thanks to their athletic build, strong nose, and courageous nature. And Labs have also become the breed to beat at dog sports such as agility and obedience competitions, especially obedience.</p>
+
+							<p>There's one dog job that Labs are hopeless at: watchdog. In fact, owners say their sweet, helpful Lab is likely to greet an intruder and happily show them where the goods are stashed.</p>
+
+							<p>Labrador Retrievers have proven their usefulness and versatility throughout the breed's history, easily shifting from fisherman's companion, to field retriever, to show dog, to modern working dog. One role has remained constant: wonderful companion and friend.</p>
+
+							<p><h1 class="heading">Highlights</h1><br><br>
+								<ul>
+									<li>Labrador Retrievers love, love, love to eat, and become obese very quickly if overfed. Limit treats, give your Lab plenty of exercise, and measure out regular meals rather than leaving food out all the time. And be warned that the Lab's large appetite extends to people food and even inedible items. Labradors will forage in garbage, counter surf, and can make a meal out of chewed-up items like children's toys.</li><br>
+									<li>Labrador Retrievers were bred for physically demanding jobs, and they have the high energy that goes along with being a working breed. They need at least 30 to 60 minutes of exercise a day. Without it, they can vent their pent-up energy in destructive ways, such as barking and chewing.</li><br>
+									<li>Labs have such a good reputation that many people think they don't need to bother with training. But Labs are large, energetic animals, and like all dogs, they need to be taught good canine manners. Sign up for puppy and obedience classes as soon as you bring your Lab home.</li><br>
+									<li>Many people think of Labs as a hyperactive breed. Lab puppies are definitely lively, but most will slow down a bit as they grow up. However, they usually remain fairly active throughout their lives.</li><br>
+									<li>Labrador Retrievers are not known to be escape artists, but with the right motivation--such as a whiff of something yummy--a Lab will take off. Make sure your Lab has current identification tags and a microchip.</li><br>
+								</ul>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid" id="overlay10">
+				<div class="description" id="breed">
+					<div>
+						<i class="fa fa-close" id="back" onclick="off10()"></i>
+						<div class="row">
+							<div class="col-lg-8">
+								<h1 class="breed-name">Pomeranian</h1>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4">
+								<img src="images/br_imgs/pom.jpg" class="desc_img">
+							</div>
+							<div class="col-sm-4">
+								<h1 class="heading">Vital Stats</h1>
+								<h4><table>
+									<tr>
+										<td class="sub-heading">Breed Group :&nbsp;</td>
+										<td>
+											Companion Dogs
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Life Span :&nbsp;</td>
+
+										<td>
+											12 to 16 years
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Height :&nbsp;</td>
+										<td>
+											8 to 12 inches
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Weight :&nbsp;</td>
+										<td>
+											5 to 7 kilograms
+										</td>
+									</tr>
+								</table></h4>
+							</div>
+							<div class="col-sm-4">
+								<h1 class="heading">Characteristics</h1>
+								<h4><table>
+									<tr>
+										<td class="sub-heading">Adaptability :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Friendliness :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star "></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Grooming Needs :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star "></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Trainability :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+								</table></h4>
+							</div>
+						</div>
+
+						<div class="row" id="details">
+							<br><br><h1 class="heading">About This Breed</h1><br>
+							<p> The Pomeranian is the smallest member of the Spitz family of dogs, which includes the Samoyed, Alaskan Malamute, and Norwegian Elkhound, among others.</p>
+
+							<p>Poms take their name from the province of Pomerania, in Germany. They became especially popular when Queen Victoria allowed some of her Pomeranians to be shown in a conformation show, the first Pomeranians ever to be shown.</p>
+
+							<p>Cute, feisty and furry, Poms are intelligent and loyal to their families. Don't let their cuteness fool you, however. These independent, bold dogs have minds of their own. They are alert and curious about the world around them. Unfortunately, in their minds, they are much larger than they really are, which can sometimes lead them to harass and even attack much larger dogs.</p>
+
+							<p>Luckily, if they are properly socialized with other dogs and animals, they generally get along quite well with them.
+							Pomeranians have a wedge-shaped head with erect ears. Some people describe their faces as fox-like, while others think that "baby-doll" or "pansy" is a better description.</p>
+
+							<p>Their dark, almond-shaped eyes sparkle with intelligence and curiosity. Their noses can be dark or the same color as their coats. Their distinctive plumed tail fans out over their back.</p>
+
+							<p>Pomeranians come in a wide variety of solid colors, with red, orange, white or cream, blue, brown, or black being the most common. Rarely, you might see a white Pom with colored markings (called parti-colored), or a black and tan one, or even an orange and sable one. The Pom's profuse double coat stands out from his body, and he has a luxurious ruff around his neck and chest. The coats looks as though it would be difficult to care for, but in reality, regular brushing is typically all it needs.</p>
+
+							<p>Despite their small size, Pomeranians have a loud bark and make excellent watchdogs. They sometimes don't know when to stop barking, however, so it's a good idea to train them to stop barking on command.</p>
+
+							<p>Pomeranians make excellent pets for older people and those who are busy, because they aren't an overly dependent breed. They are also good for apartment dwellers or homes that don't have a backyard. Because of their small size, they aren't recommended for families with small children who might injure them accidentally.</p>
+
+							<p>Poms generally are good at learning tricks, but you must be consistent and firm when training them. If you don't establish yourself as top dog in your household, your Pom will be more than glad to take over and may even become snappish.</p>
+
+							<p>Poms have a lot of energy and enjoy going for walks. They trot along, proudly holding their head up, meeting new people and exploring new sights and smells.</p>
+
+							<p>More and more Poms are being trained in obedience, agility, tracking and flyball. Some also have been trained as hearing assistance dogs. They make excellent therapy dogs and bring delight and comfort to the sick and elderly in hospitals and nursing homes. If you'd like a pint-size companion with personality plus, the Pomeranian may be the choice for you.</p><br><br>
+
+							<h1 class="heading">Highlights</h1><br>
+							<p>
+								<ul>
+									<li>Pomeranians often are suspicious of strangers and can bark a lot.</li><br>
+
+									<li>Pomeranians can be difficult to housetrain. Crate training is recommended.</li><br>
+
+									<li>High heat and humidity can cause your Pom to become overheated and possibly have heat stroke. When your Pom is outdoors, watch him carefully for signs of overheating and take him inside immediately. They definitely are housedogs and should not be kept outdoors.</li><br>
+
+
+									<li>While Poms are good with children, they are not a good choice for very young or highly active children because of their small size. Never let your small children and your Pom play without supervision.</li><br>
+
+
+									<li>Because they are so small, Poms can be perceived as prey by owls, eagles, hawks, coyotes, and other wild animals. Never leave them outside unattended, and be watchful if there are predatory birds in your location. If this is the case, stay close to your Pom to discourage birds from trying to carry them off!</li><br>
+
+
+									<li>Because they are small and attractive, Poms are targets for dognappers, another reason why you shouldn't leave them outside unattended, even in a fenced yard.</li><br>
+
+
+									<li>Although they are small, Poms don't seem to realize it and can have a "big dog" attitude. This can spell disaster if they decide to chase a bigger dog that they think is encroaching upon their territory, or if they jump from a high place. It's up to you to make sure that your little one doesn't harm himself due to not realizing his limitations.</li><br>
+
+
+									<li>When your Pom gets old, he may develop bald spots in his beautiful coat.</li><br>
+
+
+									<li>To get a healthy dog, never buy a puppy from an irresponsible breeder, puppy mill, or pet store. Look for a reputable breeder who tests her breeding dogs to make sure they're free of genetic diseases that they might pass onto the puppies, and that they have sound temperaments.</li><br>
+								</ul>
+
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid" id="overlay11">
+				<div class="description" id="breed">
+					<div>
+						<i class="fa fa-close" id="back" onclick="off11()"></i>
+						<div class="row">
+							<div class="col-lg-8">
+								<h1 class="breed-name">Pug</h1>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4">
+								<img src="images/br_imgs/pug.jpg" class="desc_img">
+							</div>
+							<div class="col-sm-4">
+								<h1 class="heading">Vital Stats</h1>
+								<h4><table>
+									<tr>
+										<td class="sub-heading">Breed Group :&nbsp;</td>
+										<td>
+											Companion Dogs
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Life Span :&nbsp;</td>
+										<td>
+											12 to 15 years
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Height :&nbsp;</td>
+										<td>
+											10 to 14 inches
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Weight :&nbsp;</td>
+										<td>
+											6 to 10 kilograms
+										</td>
+									</tr>
+								</table></h4>
+							</div>
+							<div class="col-sm-4">
+								<h1 class="heading">Characteristics</h1>
+								<h4><table>
+									<tr>
+										<td class="sub-heading">Adaptability :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Friendliness :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Grooming Needs :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Trainability :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+								</table></h4>
+							</div>
+						</div>
+
+						<div class="row" id="details">
+							<h1 class="heading">About This Breed</h1><br>
+							<p> The Pug's comical face, with deep wrinkles around big, dark eyes and a flat round face, can't help but make you smile. It is believed that the Pug's name comes from the Latin word for "fist" because his face resembles a human fist.</p>
+
+							<p>Pugs are clowns at heart, but they carry themselves with dignity. Pugs are playful dogs, ready and able for games, but they are also lovers, and must be close to their humans. Pugs love to be the center of attention, and are heartsick if ignored.</p>
+
+							<p>Pugs are square and thickset, usually weighing no more than 20 pounds. Their heads are large and round, with large, round eyes. They have deep and distinct wrinkles on their faces. Legend has it that the Chinese, who mastered the breeding of this dog, prized these wrinkles because they resembled good luck symbols in their language. Especially prized were dogs with wrinkles that seemed to form the letters for the word "prince" in Chinese.</p>
+
+							<p>The moles on a Pug's cheeks are called "beauty spots." His muzzle or mask is black, with a clearly defined "thumb mark" on the forehead and a black trace down the center of the back. His ears are smooth, black and velvety. He has a characteristic undershot jaw (the lower teeth extend slightly beyond the upper teeth) and a tightly curled tail.</p>
+
+							<p>Personality-wise, Pugs are happy and affectionate, loyal and charming, playful and mischievous. They are very intelligent, however, they can be willful, which makes training challenging.</p>
+
+							<p>While Pugs can be good watchdogs, they aren't inclined to be "yappy," something your neighbors will appreciate. If trained and well-socialized, they get along well with other animals and children. Because they are a small, quiet breed and are relatively inactive when indoors, they are a good choice for apartment dwellers. Due to the flat shape of the Pug's face, he does not do well in extremely hot or cold weather, and should be kept indoors.</p>
+
+							<p>Pugs have a short, double coat, and are known for shedding profusely. If you live with a Pug, it's a good idea to invest in a quality vacuum cleaner!</p><br><br>
+
+
+							<h1 class="heading">Highlights</h1><br>
+
+							<p>
+
+								<ul>
+									<li>Pugs can be stubborn and difficult to housebreak. Crate training is recommended.</li><br>
+
+									<li>Pugs can't tolerate high heat and humidity because of a short muzzle (air cools down when it passes through the noses of dogs with longer muzzles before entering the lungs). When your Pug is outdoors, watch him carefully for signs of overheating. Pugs are definitely housedogs and should not be kept outdoors.</li><br>
+
+									<li>Despite their short coats, Pugs shed a lot.</li><br>
+
+									<li>Pugs wheeze, snort and snore, loudly.</li><br>
+
+									<li>Because their eyes are so prominent, Pugs are prone to eye injuries.</li><br>
+
+									<li>Pugs are greedy eaters and will overeat if given the chance. Since they gain weight easily, they can quickly become obese if food intake isn't monitored carefully.</li><br>
+
+									<li>Pugs need human constant human companion. If you own a Pug, expect him to follow you around in the house, sit in your lap, and want to sleep in bed with you.</li><br>
+
+									<li>Pug enthusiasts are a fun-loving bunch. They love Pug get-togethers, Pug parades, and dressing up their Pugs.</li><br>
+
+									<li>To get a healthy dog, never buy a puppy from an irresponsible breeder, puppy mill, or pet store. Look for a reputable breeder who tests her breeding dogs to make sure they're free of genetic diseases that they might pass onto the puppies, and that they have sound temperaments.</li><br>
+								</ul>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid" id="overlay12">
+				<div class="description" id="breed">
+					<div>
+						<i class="fa fa-close" id="back" onclick="off12()"></i>
+						<div class="row">
+							<div class="col-lg-8">
+								<h1 class="breed-name">Poodle</h1>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4">
+								<img src="images/br_imgs/pdl.jpg" class="desc_img">
+							</div>
+							<div class="col-sm-4">
+								<h1 class="heading">Vital Stats</h1>
+								<h4><table>
+									<tr>
+										<td class="sub-heading">Breed Group :&nbsp;</td>
+										<td>
+											Companion Dogs
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Life Span :&nbsp;</td>
+										<td>
+											12 to 15 years
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Height :&nbsp;</td>
+										<td>
+											20 to 24 inches
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Weight :&nbsp;</td>
+										<td>
+											20 to 30 kilograms
+										</td>
+									</tr>
+								</table></h4>
+							</div>
+							<div class="col-sm-4">
+								<h1 class="heading">Characteristics</h1>
+								<h4><table>
+									<tr>
+										<td class="sub-heading">Adaptability :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Friendliness :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Grooming Needs :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Trainability :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+								</table></h4>
+							</div>
+						</div>
+
+						<div class="row" id="details">
+							<h1 class="heading">About This Breed</h1><br>
+							<p>Although today's Poodles seem to epitomize a life of leisure and luxury, make no mistake: These are real dogs bred to do real jobs. Although it hardly seems possible when you look at a primped-up Poodle in the show ring, the breed was originally a water retriever, a job that requires jumping in the water to fetch waterfowl for hunters.</p>
+
+							<p>In fact, the English name poodle is derived from the German word pudel, or pudelin, which means to splash in the water. And in France, Poodles are called Caniche, a name derived from chien canard, meaning duck dog.</p>
+
+							<p>Even the elaborate coat styling that the breed's known for once had a practical purpose: trimmed areas lightened the weight of the dog's coat and wouldn't snag on underwater debris, while long hair around the joints and vital organs protected the dog from the cold water.</p>
+
+							<p>There are three sizes of Poodle, all considered part of the same breed: going from smallest to largest, these are the Toy, the Miniature, and the Standard. The Standard is probably the oldest of the three varieties, and some still carry on the Poodle tradition of working as a water retriever.</p>
+
+							<p>No matter the size, Poodles are renowned for a playful but dignified personality and keen intelligence. When it comes to training, this is an "A" student, and the Poodle excels at performance sports such as obedience, agility, and hunt tests.</p>
+
+							<p>Despite his regal air, the Poodle is no snob. These are people-friendly dogs who want to stay close to their families — they get lonely when left by themselves for long periods — and are always up for a good game.</p>
+
+							<p><h1 class="heading">Highlights</h1><br>
+								<ul>
+									<li>If you spoil your Poodle and don't train him, he's likely to conclude that he's the alpha dog of the family. This is especially common among the smaller varieties — Miniature and Toy Poodles — who are more likely to be coddled and untrained. Teach your dog good canine manners, and then insist that he use them; it shows him that you're the leader of the pack.</li><br>
+									<li>Because of their intelligence and playful nature, obedience training is essential to keep your Poodle's mind active. A Poodle who is thinking and learning isn't bored, and therefore won't find destructive ways to occupy himself.</li><br>
+									<li>The Poodle coat needs a lot of upkeep to stay beautiful and healthy. Most Poodle owners take their dogs to a professional groomer every three to six weeks. If you want to save money on grooming expenses, you can learn to do it yourself, but it takes time and effort.</li><br>
+									<li>Poodles have weepy eyes that can stain the surrounding hair. To cut down on stains, gently wipe down the face daily with an alcohol-free pet wipe or washcloth dipped in warm water.</li><br>
+									<li>To get a healthy dog, never buy a puppy from an irresponsible breeder, puppy mill, or pet store. Look for a reputable breeder who tests her breeding dogs to make sure they're free of genetic diseases that they might pass onto the puppies, and that they have sound temperaments.</li><br>
+								</ul>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid" id="overlay13">
+				<div class="description" id="breed">
+					<div>
+						<i class="fa fa-close" id="back" onclick="off13()"></i>
+						<div class="row">
+							<div class="col-lg-8">
+								<h1 class="breed-name">Shih Tzu</h1>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4">
+								<img src="images/br_imgs/shtz.png" class="desc_img">
+							</div>
+							<div class="col-sm-4">
+								<h1 class="heading">Vital Stats</h1>
+								<h4><table>
+									<tr>
+										<td class="sub-heading">Breed Group :&nbsp;</td>
+										<td>
+											Companion Dogs
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Life Span :&nbsp;</td>
+										<td>
+											10 to 16 years
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Height :&nbsp;</td>
+										<td>
+											9 to 10 inches
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Weight :&nbsp;</td>
+										<td>
+											5 to 8 kilograms
+										</td>
+									</tr>
+								</table></h4>
+							</div>
+							<div class="col-sm-4">
+								<h1 class="heading">Characteristics</h1>
+								<h4><table>
+									<tr>
+										<td class="sub-heading">Adaptability :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Friendliness :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Grooming Needs :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Trainability :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+								</table></h4>
+							</div>
+						</div>
+
+						<div class="row" id="details">
+							<h1 class="heading">About This Breed</h1><br>
+							<p>James Mumsford, an American teacher and composer, perhaps described the Shih Tzu best: "Nobody knows how the ancient eunuchs managed to mix together: a dash of lion, several teaspoons of rabbit, a couple of ounces of domestic cat, one part court jester, a dash of ballerina, a pinch of old man, a bit of beggar, a tablespoon of monkey, one part baby seal, a dash of teddy bear, and, for the rest, dogs of Tibetan and Chinese origin."</p>
+
+							<p>The object of Mumsford's colorful description, the Shih Tzu--pronounced SHEED Zoo, SHID Zoo, or SHEET Sue--is a small, regal dog with long, abundant locks, a distinctive face that melts many a heart, and a friendly attitude. The breed can boast a classy background: they were originally kept by royal Chinese families during the Ming Dynasty.</p>
+
+							<p>With their flowing hair sweeping the ground and their topknot elegantly tied, the Shih Tzu does appear snobbish, suited only for lying about a palace on silk pillows. Nothing could be further from the truth, however. Shih Tzus are beautiful, but they are also friendly, lively, devoted companions.</p>
+
+							<p>The Shih Tzu personality is enormously appealing, and even grudging dog observers find it hard to resist this breed. The Shih Tzu simply doesn't allow anyone to ignore them. The were bred to be a friendly companion--they don't hunt, herd, or guard--and that's what they are. They love nothing more than to meet and greet friends and strangers alike. Count on a Shih Tzu to make friends wherever they go.</p>
+
+							<p>Not only is this member of the Toy Group good-natured and friendly, they're highly adaptable. They're as well suited to apartments in the city as to life on a country farm. They love children and get along with other animals. However, although the Shih Tzu is a sturdy dog, their small size puts them at a disadvantage. Adults should always supervise interactions between children and dogs, and this is especially important for the Shih Tzu, to prevent them from accidentally getting hurt during rough play.</p>
+
+							<p>Interestingly, the Shih Tzu is sometimes called the Chrysanthemum Dog, a nickname that describes the way the hair on their face grows out in all directions. They look like a flower with a nose for the center.</p>
+
+							<p>One unique characteristic of the Shih Tzu is their undershot bite. Their lower jaw is slightly wider than the upper, and the upper teeth bite inside the lower teeth, rather than outside, when their mouth is closed.</p>
+
+							<p>Legends regarding the Shih Tzu abound. One says that Buddha traveled with a little dog fitting the description of a Shih Tzu. As the story goes, one day, several robbers came upon the Buddha with the intent of robbing and murdering him. The little dog changed into a ferocious lion and ran off the robbers, saving Buddha's life. The lion then turned back into a fun-loving little dog, which the Buddha picked up and kissed. The white spot on the heads of many Shih Tzus supposedly marks the place where Buddha kissed his loyal friend.</p>
+
+							<p>Many also believe that Fu Dogs, the guardians of Buddhist temples, are representations of the Shih Tzu.</p>
+
+							<p><h1 class="heading">Highlights</h1><br>
+								<ul>
+									<li>There is no such breed as an "imperial" or "teacup" Shih Tzu. These are simply marketing terms used by unscrupulous breeders use to indicate a very small or large Shih Tzu.</li><br>
+									<li>Shih Tzus are difficult to housebreak. Be consistent, and do not allow a puppy to roam the house unsupervised until they are completely trained. Crate training is helpful.</li><br>
+									<li>The flat shape of the Shih Tzu's face makes them susceptible to heat stroke, because the air going into the lungs isn't cooled as efficiently as it is among longer-nosed breeds. They should be kept indoors in air-conditioning rooms during hot weather.</li><br>
+									<li>Be prepared to brush and comb the Shih Tzu coat every day. It mats easily.</li><br>
+									<li>While Shih Tzus are trustworthy with children, they're not the best choice for families with toddlers or very young children because their small size puts them at risk for unintentional injury.</li><br>
+									<li>The Shih Tzu tends to wheeze and snore, and can be prone to dental problems.</li><br>
+									<li>While dogs of any breed may eat their own or other animals' feces (coprophagia), the Shih Tzu seems especially prone to this behavior. The best way to handle the problem is never let it become a habit. Watch your Shih Tzu closely and clean up poop right away.</li><br>
+								</ul>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid" id="overlay14">
+				<div class="description" id="breed">
+					<div>
+						<i class="fa fa-close" id="back" onclick="off14()"></i>
+						<div class="row">
+							<div class="col-lg-8">
+								<h1 class="breed-name">Shollie</h1>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4">
+								<img src="images/br_imgs/shl.jpg" class="desc_img">
+							</div>
+							<div class="col-sm-4">
+								<h1 class="heading">Vital Stats</h1>
+								<h4><table>
+									<tr>
+										<td class="sub-heading">Breed Group :&nbsp;</td>
+										<td>
+											Mixed Breed Dogs
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Life Span :&nbsp;</td>
+										<td>
+											13 to 15 years
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Height :&nbsp;</td>
+										<td>
+											21 to 29 inches
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Weight :&nbsp;</td>
+										<td>
+											30 to 35 kilograms
+										</td>
+									</tr>
+								</table></h4>
+							</div>
+							<div class="col-sm-4">
+								<h1 class="heading">Characteristics</h1>
+								<h4><table>
+									<tr>
+										<td class="sub-heading">Adaptability :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Friendliness :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Grooming Needs :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Trainability :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+								</table></h4>
+							</div>
+						</div>
+
+						<div class="row" id="details">
+							<h1 class="heading">About This Breed</h1><br>
+							<p> The Shollie is a mixed breed dog–a cross between the German Shepherd Dog and Border Collie dog breeds. Intelligent, energetic, and loyal, these pups inherited some of the best qualities from both of their parents.</p>
+
+							<p>You can find these mixed breed dogs in shelters and breed specific rescues, so remember to always adopt! Don’t shop if you’re looking to add one of these pups your home!</p>
+
+							<p>The Shollie is a excellent family dog who forms close bonds with the humans in their life and will act as a protective guardian. The mixed breed is also energetic and playful, meaning that they’re not a dog suited to living in a small apartment situation. They need access to outdoors space and a commitment to regular exercise sessions.</p>
+
+							<p><h1 class="heading">Highlights</h1><br>
+								<ul>
+									<li>Shollies are mixed breed dogs. They are not purebreds like their German Shepherd Dog or Border Collie parents.</li><br>
+									<li>The main colors of the Shollie's coat are black, brown, golden, and white. It's often a mix of two or more colors.</li><br>
+									<li>The Shollie is considered a heavy shedder, so you'll need to commit to daily brushing sessions.</li><br>
+									<li>The Shollie is a dog who demands a lot of exercise--ideally over an hour a day split up into a couple of sessions. If you live near open fields or have access to a large dog park, these will become ideal playgrounds for the Shollie.</li><br>
+									<li>The Shollie is a great match with kids. The dog will take on a protective role, while also enjoying play sessions with the children in the household. You must still supervise playtime between kids and dogs.</li><br>
+									<li>The mixed breed is also known for being smart. Add agility and fetch-based tasks into the routine to keep the dog mentally stimulated and satisfied.</li><br>
+								</ul>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid" id="overlay15">
+				<div class="description" id="breed">
+					<div>
+						<i class="fa fa-close" id="back" onclick="off15()"></i>
+						<div class="row">
+							<div class="col-lg-8">
+								<h1 class="breed-name">WestiePoo</h1>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4">
+								<img src="images/br_imgs/wstp.jpg" class="desc_img">
+							</div>
+							<div class="col-sm-4">
+								<h1 class="heading">Vital Stats</h1>
+								<h4><table>
+									<tr>
+										<td class="sub-heading">Breed Group :&nbsp;</td>
+										<td>
+											Mixed Breed Dogs
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Life Span :&nbsp;</td>
+										<td>
+											12 to 15 years
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Height :&nbsp;</td>
+										<td>
+											11 to 17 inches
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Weight :&nbsp;</td>
+										<td>
+											10 to 15 kilograms
+										</td>
+									</tr>
+								</table></h4>
+							</div>
+							<div class="col-sm-4">
+								<h1 class="heading">Characteristics</h1>
+								<h4><table>
+									<tr>
+										<td class="sub-heading">Adaptability :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Friendliness :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Grooming Needs :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Trainability :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+								</table></h4>
+							</div>
+						</div>
+
+						<div class="row" id="details">
+							<h1 class="heading">About This Breed</h1><br>
+							<p> The Shollie is a mixed breed dog–a cross between the German Shepherd Dog and Border Collie dog breeds. Intelligent, energetic, and loyal, these pups inherited some of the best qualities from both of their parents.</p>
+
+							<p>Westiepoos are also sometimes known as Westiedoodles and Wee-Poos. You can find these mixed breed dogs in shelters and breed specific rescues, so remember to always adopt! Don’t shop if you’re looking to add a Westiepoo to your home!</p>
+
+							<p>The Westiepoo is one of the most social and loving dogs around. They adore human interaction and will make great bonds with the people in your family. The mixed breed is renowned for being smarter than the average canine too, meaning that training a Westiepoo is something even new dog owners should be able to get a handle on.</p>
+
+							<p>Westiepoos are small dogs but they do have a high energy streak–which means you’ll need to be able to commit to a proper exercise routine. While they can adapt to apartment living situations, they are not a dog to be left alone all day. The Westiepoo is a dog who wants to be around the action all the time!</p>
+
+							<p><h1 class="heading">Highlights</h1><br>
+								<ul>
+									<li>Westiepoos are mixed breed dogs. They are not purebreds like their Poodle or West Highland White Terrier parents.</li><br>
+									<li>The most common colors of coat for a Westiepoo are white or cream and sometimes black or tan.</li><br>
+									<li>The Westiepoo is a low maintenance canine and doesn't shed much; although, you'll still need to undertake brushing sessions from time to time to lower the chances of any mats taking form.</li><br>
+									<li>The mixed breed's high prey drive can be an issue with smaller animals. Introduce your Westiepoo to any other pets and set boundaries right from the start; although, the breed might not be a good fit for a cat-friendly household.</li><br>
+									<li>The Westiepoo's intelligence means that interactive toys are a must, especially to ward off any destructive behavior, which might be amplified by the dog being left alone for too long.</li><br>
+									<li>The Westiepoo is an excellent mix of a super loving and very active dog. If you're lounging around at home on a lazy afternoon or relaxed evening, the breed will want to snuggle up and hang out with you.</li><br>
+								</ul>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid" id="overlay16">
+				<div class="description" id="breed">
+					<div>
+						<i class="fa fa-close" id="back" onclick="off16()"></i>
+						<div class="row">
+							<div class="col-lg-8">
+								<h1 class="breed-name">Yorkshire Terrier</h1>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4">
+								<img src="images/br_imgs/ystr.jpg" class="desc_img">
+							</div>
+							<div class="col-sm-4">
+								<h1 class="heading">Vital Stats</h1>
+								<h4><table>
+									<tr>
+										<td class="sub-heading">Breed Group :&nbsp;</td>
+										<td>
+											Companion Dogs
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Life Span :&nbsp;</td>
+										<td>
+											12 to 15 years
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Height :&nbsp;</td>
+										<td>
+											8 to 9 inches
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Weight :&nbsp;</td>
+										<td>
+											3 to 5 kilograms
+										</td>
+									</tr>
+								</table></h4>
+							</div>
+							<div class="col-sm-4">
+								<h1 class="heading">Characteristics</h1>
+								<h4><table>
+									<tr>
+										<td class="sub-heading">Adaptability :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Friendliness :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Grooming Needs :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+									<tr>
+										<td class="sub-heading">Trainability :&nbsp;</td>
+										<td>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</td>
+									</tr>
+								</table></h4>
+							</div>
+						</div>
+
+						<div class="row" id="details">
+							<h1 class="heading">About This Breed</h1><br>
+							<p>The Yorkshire Terrier, nicknamed the Yorkie, seems quite full of himself, and why not? With his long silky coat and perky topknot, the Yorkshire Terrier is one of the most glamorous representatives of the dog world, sure to attract attention wherever he goes. Because he's so small he often travels in style — in special dog purses toted around by his adoring owner.</p>
+
+							<p>The long steel-blue and tan coat may be the Yorkie's crowning glory, but it's his personality that truly endears him to his family. Oblivious to his small size (weighing in at no more than seven pounds), the Yorkshire Terrier is a big dog in a small body, always on the lookout for adventure and maybe even a bit of trouble.</p>
+
+							<p>Yorkshire Terriers are affectionate towards their people as one would expect from a companion dog, but true to their terrier heritage, they're sometimes suspicious of strangers, and will bark at strange sounds and intruders. In consideration of your neighbors, it's important to tone down their yappiness and teach them when and when not to bark.</p>
+
+							<p>They also can be aggressive toward strange dogs, and no squirrel is safe from them.</p>
+
+							<p>Despite their bravado, Yorkshire Terriers have a soft side too. They need lots of attention and time with their family. Long hours of being left alone is not for them. It's not a good idea to over-protect your Yorkie, however; they'll pick up on your feelings very quickly, and if your actions say the world's a dangerous place for them, they can become neurotic.</p>
+
+							<p>Because of their size, Yorkshire Terriers do better with older children who've been taught to respect them than with toddlers and small children. They can become snappish if they're startled or teased.</p>
+
+							<p>As long as they get some exercise every day — perhaps a good play session in the living room or a nice walk around the block — Yorkies make fine apartment dogs.</p>
+
+							<p>No matter what home they live in, they'll get along with other resident dogs and cats — so long as they were raised with them. Yorkies may become possessive of their owners if a new pet is brought into the house. Being terriers, they may want to challenge the "intruder," and if a fight breaks out, the terrier spirit is to fight to the death. Take a lot of care when you're introducing a Yorkie to a new animal.</p>
+
+
+							<p><h1 class="heading">Highlights</h1><br>
+								<ul>
+									<li>Yorkshire Terriers are known for being difficult to housetrain. Crate-training is recommended.</li><br>
+									<li>Yorkshire Terriers don't like the cold and are prone to chills, especially if they're damp or in damp areas.</li><br>
+									<li>Because of their small size, delicate structure, and terrier personality, Yorkshire Terrier generally aren't recommended for households with toddlers or small children.</li><br>
+									<li>Some Yorkshire Terriers can be "yappy," barking at every sound they hear. Early and consistent training can help. If you don't feel qualified to provide this training, consult a professional dog trainer.</li><br>
+									<li>Yorkshire Terriers can have delicate digestive systems and may be picky eaters. Eating problems can occur if your Yorkie has teeth or gum problems as well. If your Yorkie is showing discomfort when eating or after eating, take him to the vet for a checkup.</li><br>
+									<li>Yorkshire Terriers think they are big dogs and will try to pick a fight with a big dog if allowed. Be sure to keep your Yorkie under control. Even better, try to socialize your Yorkie at an early age by taking him to obedience classes.</li><br>
+									<li>Yorkies tend to retain their puppy teeth, especially the canines. When your puppy is around five months old, check his teeth often. If you notice that an adult tooth is trying to come in but the baby tooth is still there, take him to your vet. Retained baby teeth can cause the adult teeth to come in unevenly, which may contribute to tooth decay in later years.</li><br>
+									<li>To get a healthy dog, never buy a puppy from an irresponsible breeder, puppy mill, or pet store. Look for a reputable breeder who tests her breeding dogs to make sure they're free of genetic diseases that they might pass onto the puppies, and that they have sound temperaments.</li><br>
+								</ul>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</center>
+	</div>
+	</div>
+
+	<script>
+
+		function on1() {
+  		document.getElementById("overlay1").style.display = "block";
+		}
+
+		function on2() {
+  		document.getElementById("overlay2").style.display = "block";
+		}
+
+		function on3() {
+  		document.getElementById("overlay3").style.display = "block";
+		}
+
+		function on4() {
+  		document.getElementById("overlay4").style.display = "block";
+		}
+
+		function on5() {
+  		document.getElementById("overlay5").style.display = "block";
+		}
+
+		function on6() {
+  		document.getElementById("overlay6").style.display = "block";
+		}
+
+		function on7() {
+  		document.getElementById("overlay7").style.display = "block";
+		}
+
+		function on8() {
+  		document.getElementById("overlay8").style.display = "block";
+		}
+
+		function on9() {
+  		document.getElementById("overlay9").style.display = "block";
+		}
+
+		function on10() {
+  		document.getElementById("overlay10").style.display = "block";
+		}
+
+		function on11() {
+  		document.getElementById("overlay11").style.display = "block";
+		}
+
+		function on12() {
+  		document.getElementById("overlay12").style.display = "block";
+		}
+
+		function on13() {
+  		document.getElementById("overlay13").style.display = "block";
+		}
+
+		function on14() {
+  		document.getElementById("overlay14").style.display = "block";
+		}
+
+		function on15() {
+  		document.getElementById("overlay15").style.display = "block";
+		}
+
+		function on16() {
+  		document.getElementById("overlay16").style.display = "block";
+		}
+
+
+		function off1() {
+  		document.getElementById("overlay1").style.display = "none";
+		}
+
+		function off2() {
+  		document.getElementById("overlay2").style.display = "none";
+		}
+
+		function off3() {
+  		document.getElementById("overlay3").style.display = "none";
+		}
+
+		function off4() {
+  		document.getElementById("overlay4").style.display = "none";
+		}
+
+		function off5() {
+  		document.getElementById("overlay5").style.display = "none";
+		}
+
+		function off6() {
+  		document.getElementById("overlay6").style.display = "none";
+		}
+
+		function off7() {
+  		document.getElementById("overlay7").style.display = "none";
+		}
+
+		function off8() {
+  		document.getElementById("overlay8").style.display = "none";
+		}
+
+		function off9() {
+  		document.getElementById("overlay9").style.display = "none";
+		}
+
+		function off10() {
+  		document.getElementById("overlay10").style.display = "none";
+		}
+
+		function off11() {
+  		document.getElementById("overlay11").style.display = "none";
+		}
+
+		function off12() {
+  		document.getElementById("overlay12").style.display = "none";
+		}
+
+		function off13() {
+  		document.getElementById("overlay13").style.display = "none";
+		}
+
+		function off14() {
+  		document.getElementById("overlay14").style.display = "none";
+		}
+
+		function off15() {
+  		document.getElementById("overlay15").style.display = "none";
+		}
+
+		function off16() {
+  		document.getElementById("overlay16").style.display = "none";
+		}
+
+	</script>
+
+
+	<footer>
+		
+		<div class="container-fluid">
+			<div class="blog">
+				<div class="row">
+					<div class="col-lg-4">
+						<br><br>
+						<div class="footer_note"><center>
+							<p class="copy1"><b>&copy;</b> Copyright Reserved by <b>Subhradipta Choudhury.</b></p>
+							<p class="copy2">The pictures &amp; contents used here are only for college project purpose.</p></center>
+						</div>
+						<br><br>
+					</div>
+					<div class="col-lg-4">
+						<br><br>
+						<center>
+							<h4 class="connect" style="">CONNECT WITH US</h4>
+							<div style="align-items: center;">
+
+
+								<a href="https://www.facebook.com/profile.php?id=100009449073945" style="text-decoration: none;">
+									<div class="icon" id="facebook">
+										<center>
+											<i class="fab fa-facebook-f"></i>
+										</center>
+									</div>
+								</a>
+
+								<a href="#" style="text-decoration: none;">
+									<div class="icon" id="twitter">
+										<center>
+											<i class="fab fa-twitter"></i>
+										</center>
+									</div>
+								</a>
+
+								<a href="#" style="text-decoration: none;">
+									<div class="icon" id="instagram">
+										<center>
+											<i class="fab fa-instagram"></i>
+										</center>
+									</div>
+								</a>
+
+								<a href="mailto:info@puppzilla.co.in?cc=csubhradipta@gmail.com" style="text-decoration: none;">
+									<div class="icon" id="gmail">
+										<center>
+											<i class="far fa-envelope"></i></i>
+										</center>
+									</div>
+								</a>
+
+								<a href="https://wa.me/917980397413" style="text-decoration: none;">
+									<div class="icon" id="whatsapp">
+										<center>
+											<i class="fab fa-whatsapp"></i>
+										</center>
+									</div>
+								</a>
+
+							</div>	
+						</center>
+						<br><br>
+					</div>
+					<div class="col-lg-4" style="">
+						<br><br>
+						<center><h4 class="connect" style="padding-bottom: 6px;">SUBSCRIBE TO OUR E-MAGAZINE</h4>
+						<input type="email" name="" placeholder="Your Email" class="form-control" style="width: 80%;"></center>
+						<br><br>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+</div>
+</body>
+</html>

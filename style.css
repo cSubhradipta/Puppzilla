@@ -1,0 +1,613 @@
+body{
+	  background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)),url(images/bg1.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+/* NAVIGATION - START */
+
+.navbrand{
+      height: 50px;   
+}
+
+
+.navbar{
+   overflow: hidden;
+   position: fixed;
+   top: 0;
+   width: 100%;
+}
+    
+#container-fluid{
+  outline: none;
+  min-height: 70px;
+  background-color: #98cbe1;
+}
+    
+.navbar li{
+  padding: 0px 8px 0px 8px;
+  margin-top: 10px;  
+}
+
+.navbar li a{
+  font-family: "Capriola";
+  font-size: 18px;
+}
+
+/* NAVIGATION - END */
+
+
+
+
+
+
+
+/* FOOTER - START */
+
+footer{
+  background-color: rgb(152,202,225);
+  width: 100%;
+}
+
+.footer_logo{
+  height: 50px;
+  margin: 50px;
+}
+
+.footer_note{
+  color: #0f1f3d;
+  font-family: "Capriola";
+  padding-top: 10px;
+}
+
+.copy1{
+  font-size: 14px; 
+}
+
+.copy2{
+  font-size: 12px;
+}
+
+@media screen and (max-width: 768px){
+  .copy1{
+    font-size: 12px; 
+  }
+
+  .copy2{
+    font-size: 10px;
+  }
+}
+
+.connect{
+  font-weight: bold;
+  font-style: "Helvetica";
+  color: #0f1f3d;
+}
+
+.icon{
+  display: inline-block;
+  color: #fff;
+  background-color: #595959;
+  font-size: 20px;
+  padding: 5px;
+  margin: 5px;
+  width: 35px;
+  height: 35px;
+  border-radius: 17.5px;
+  
+}
+
+.icon{
+  text-decoration: none;
+  color: #fff;
+}
+
+#facebook:hover{
+  background-color: #3b5998;
+  text-decoration: none;
+}
+
+#twitter:hover{
+  background-color: #00acee;
+  text-decoration: none;
+}
+#instagram:hover{
+  background-image: linear-gradient(135deg,#405DE6,#5851DB,#833AB4
+    ,#C13584,#E1306C,#FD1D1D,#F56040,#F77737,#FCAF45,#FFDC80);
+  text-decoration: none;
+}
+#gmail:hover{
+  background-color:#E2E2E2;
+  color: #D44638;
+  text-decoration: none;
+}
+#whatsapp:hover{
+  background-color: #25D366;
+  text-decoration: none;
+}
+
+/* FOOTER - END */
+
+
+
+
+
+
+
+
+/* HOME - START */
+
+.welcome{
+  font-family: 'Candal';
+  font-size: 55px;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  color: rgba(0, 153, 255, 0.8);
+  text-shadow: 0 0 2px #001f33;
+}
+
+.heads{
+  font-family: Candal;
+  color: #0f1f3d;
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+   
+@media screen and (max-width: 768px){
+  .welcome, .heads{
+    font-size: 30px;
+  }
+}
+.para{
+  font-family: "Capriola";
+  font-size: 20px;
+}
+
+.fac{
+  height: 200px;
+  padding-bottom: 40px;
+}
+
+.post{
+  width: 100%;
+  align-content: center;
+  min-height: 200px;
+  background-color: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+.post_img{
+  height: 150px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*  HOME - END  */
+
+
+
+
+
+
+
+/*  SIDEBAR - START*/
+
+
+.sidebar {
+  height: 90%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 70px;
+  left: 0;
+  background-color: #e6f9ff;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding-top: 20px;
+  transition: 0.1s;
+}
+
+.sidebar a {
+  padding: 6px 10px 6px 20px;
+  text-decoration: none;
+  font-family: "Capriola";
+  font-size: 15px;
+  color: #001a33;
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.sidebar a:hover {
+  color: #006bb3;
+  text-decoration: none;
+}
+
+.input-group{
+  width: 250px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  border-style: none;
+}
+
+  
+@media screen and (max-width: 768px){
+  .sidebar{
+    width: 0px;
+  }
+  
+  .sidebar .sidebar-close{
+    display: block;
+  }
+
+  .input-group{
+    margin-left: 20px;
+  }
+
+}
+
+.sidebar-close{
+  background-color: #006bb3;
+  position: absolute;
+  float: left;
+  font-size: 20px;
+  margin-left: 25px;
+  margin-top: 15px;
+  color: #fff;
+  padding: 10px;
+  border-radius: 20px;
+  display: none;
+}
+
+.sidebar-open{
+  background-color: #006bb3;
+  position: absolute;
+  float: left;
+  font-size: 20px;
+  margin-left: 25px;
+  margin-top: 10px;
+  color: #fff;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.sidebar-heading{
+  color: #001a33;
+  font-family: Aldrich ;
+  margin-left: 15px;
+}
+
+
+/*  SIDEBAR - END*/
+
+
+
+
+
+
+
+
+
+
+/*  FOOD : HEALTH : TRAINING  ---- START*/
+
+
+.blog_img{
+  margin: 30px;
+  height: 150px;
+}
+
+#blog_contents{
+  background-color: rgba(255,255,255,0.8);
+  margin: 60px 5px 0px 5px;
+  padding-top: 20px;
+}
+
+#blog_end{
+  background-color: rgba(255,255,255,0.8);
+  margin: 0px 5px 60px 5px;
+  padding-bottom: 30px;
+}
+
+.blog-desc{
+  margin: 0px 30px 0px 30px; 
+}
+
+.ques{
+  font-family: "Candal";
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(0,26,51);
+  margin-bottom: 20px;
+}
+
+.ans{
+  font-size: 15px;
+  font-family: "Capriola";
+}
+
+#more1,#more2,#more3,#more4
+,#more5,#more6,#more7,#more8{
+  display: none;
+}
+
+.myBtn{
+  background-color: transparent;
+  border: none;
+  color: #006bb3;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  outline-style: none;
+  font-weight: bold;
+  float: right;
+}
+
+.blog{
+  margin-left: 300px; 
+}
+
+@media screen and (max-width: 768px){
+  .blog{
+    margin-left: 0px; 
+  }
+}
+
+
+/*  FOOD : HEALTH : TRAINING  ---- END*/
+
+
+
+
+
+
+
+
+/* BREEDS - START*/
+
+.card{
+  background-color: #fff;
+  height: 350px;
+  width: 90%;
+  margin: 20px;
+  border-radius: 5px;
+  color: #001a33;
+  font-size: 25px;
+  font-family: "Courier";
+  padding: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.card_img{
+  height: 200px;
+  margin-top: 20px;
+  margin-bottom: 35px; 
+}
+
+.card_img:hover{
+  height: 210px;
+}
+
+
+#overlay1,#overlay2,#overlay3,#overlay4,
+#overlay5,#overlay6,#overlay7,#overlay8,
+#overlay9,#overlay10,#overlay11,#overlay12,
+#overlay13,#overlay14,#overlay15,#overlay16
+{
+  position: fixed;
+  display: none;
+  width: 98%;
+  margin: 10px;
+  padding: 5px;
+  top: 70px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 2;
+}
+
+.breed-name{
+  float: left;
+  font-size: 60px;
+  font-family: "Courier";
+  font-weight: bolder;
+  padding-bottom: 50px;
+  color: rgb(0,50,101);
+}
+
+.description{
+  padding: 25px 50px 50px 50px;
+  height: 98%;
+  overflow-y: scroll;
+  margin: 5px;
+}
+
+#back{
+  float: right;
+  font-size: 25px;
+  cursor: pointer;
+  color: grey;
+}
+
+#back:hover{
+  color: #000;
+}
+
+.desc_img{
+  height: 400px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.heading{
+  color: rgb(0,26,51);
+  font-family: "Candal";
+  font-weight: bolder;
+  padding-top: 70px;
+}
+
+.sub-heading{
+  font-family: "Sans-serif";
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.container-fluid table{
+  margin: 30px 5px 50px 5px;
+}
+
+.container-fluid td{
+  padding: 5px;
+}
+
+.checked{
+  color: orange;
+}
+
+#details{
+  text-align: left;
+  font-size: 15px;
+  font-family: "Capriola";
+}
+
+
+@media screen and (max-width: 768px){
+  .breed-name{
+    font-size: 30px;
+  }
+  .desc_img{
+    height: 300px;
+  }
+  .heading{
+    font-size: 20px; 
+  }
+  .sub-heading{
+    font-size: 15px;
+  }
+  .fa-star{
+    font-size: 15px;
+  }
+  .description{
+    padding: 25px 10px 50px 10px;
+    margin: 0px;
+  }
+}
+
+/* BREEDS - END */
+
+
+
+
+
+
+
+
+
+
+/* CONTACT - START*/
+
+
+.caption{
+  font-family: 'Candal';
+  font-size: 55px;
+  margin-bottom: 10px;
+  color: rgb(0, 153, 255);
+}
+
+.sub-cap{
+  font-family: 'Capriola';
+  font-size: 25px;
+  margin-bottom: 20px;
+  color: #0f1f3d;
+}
+.mail_bg{
+  margin: 30px 10px 30px 10px;
+  background-color: rgba(255,255,255,0.8);
+  padding: 20px 20px 20px 20px;
+  border-radius: 20px 0px 20px 0px;
+  box-shadow: 10px 10px 30px rgba(152,202,225,0.8);
+  height: 550px;
+}
+
+.drop{
+  color: #006bb3;
+  font-family: "Candal";
+  margin-bottom: 40px;
+}
+.mail_bg input[type=submit]input[type=submit]{
+
+}
+.mail_bg input[type=submit],input[type=text],input[type=number],input[type=email]{
+  border-radius: 20px;
+}
+
+.mail_bg textarea[type=text]{
+  border-radius: 15px;
+}
+
+.contact_img{
+  height: 550px;
+}
+
+@media screen and (max-width: 768px)
+{ 
+  .caption{
+    font-size: 30px;
+  }
+  .sub-cap{
+    font-size: 20px;
+  }
+  .contact_img{
+    height: 350px;
+  }
+}
+
+#bg{
+  margin: 30px 10px 80px 10px;
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 20px 0px 20px 0px;
+  box-shadow: 10px 10px 30px rgba(152,202,225,0.8);
+}
+
+.det{
+  font-family: "Capriola";
+  font-size: 25px;
+  font-weight: bold;
+  color: #0f1f3d;
+  margin-bottom: 20px; 
+}
+
+.addr{
+  font-family: "Helvetica";
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 60px; 
+}
+
+#success{
+  color: #009900;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: "Capriola";
+  text-align: center; 
+}
+
+#fail{
+  color: #ff0000;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: "Capriola";
+  text-align: center;
+}
+
+
+/* CONTACT - END */

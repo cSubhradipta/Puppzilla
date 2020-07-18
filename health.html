@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Puppzilla</title>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Capriola' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+	<nav class="navbar navbar-default" style="border-style: none;background-color: #98cbe1;  overflow: hidden; position: fixed; top: 0; width: 100%; z-index: 10;">
+  		
+  		<div class="container-fluid" id="container-fluid">
+    		
+    		<div class="navbar-header">
+
+      			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="margin-top: 15px; border-style: none; background-color: #006bb3;">
+        				<span class="fa fa-bars" style="color: #fff; font-size: 20px; " onMouseOver="this.style.color='lightblue'"
+       					onMouseOut="this.style.color='#fff'"></span>                      
+      			</button>
+
+      			<a class="navbar-brand" href="#"><img src="images/navbrand.png" class="navbrand"></a>
+
+    		</div>
+
+		    <div class="collapse navbar-collapse" id="myNavbar" style="border-style: none;">
+		    	<center>
+			      	<ul class="nav navbar-nav navbar-right">
+			        	<li class="nav-item">
+							<a href="index.html" style="color: #001a33;" onMouseOver="this.style.color='#006bb3'"
+	       					onMouseOut="this.style.color='#001a33'">HOME</a>
+						</li>
+						<li class="nav-item">
+							<a href="food.html" style="color: #001a33;" onMouseOver="this.style.color='#006bb3'"
+	       					onMouseOut="this.style.color='#001a33'">FOOD</a>
+						</li>
+						<li class="nav-item" style="background-color: #fff; border-radius: 4px;">
+							<a href="health.html" style="color: #001a33;" onMouseOver="this.style.color='#006bb3'"
+	       					onMouseOut="this.style.color='#001a33'">HEALTH</a>
+						</li>
+						<li class="nav-item">
+							<a href="training.html" style="color: #001a33;" onMouseOver="this.style.color='#006bb3'"
+	       					onMouseOut="this.style.color='#001a33'">TRAINING</a>
+						</li>
+						<li class="nav-item">
+							<a href="breeds.html" style="color: #001a33;" onMouseOver="this.style.color='#006bb3'"
+	       					onMouseOut="this.style.color='#001a33'">BREEDS</a>
+						</li>
+						<li class="nav-item">
+							<a href="contact.html" style="color: #001a33;" onMouseOver="this.style.color='#006bb3'"
+	       					onMouseOut="this.style.color='#001a33'">CONTACT</a>
+						</li>
+	      			</ul>
+      			</center>
+    		</div>
+  		</div>
+	</nav>
+
+
+
+
+
+	<div>
+		
+		<div class="sidebar" id="sidebar">
+			<center><div class="sidebar-close" onclick="close_side()"><i class="fa fa-arrow-left" style="float: left;"></i></div></center>
+			<h2 class="sidebar-heading"></"><center>CONTENTS</center></h2>
+			<form class="navbar-form navbar-left" action="" style="border-style: none;">
+      			<div class="input-group">
+        			<input type="search" class="form-control" placeholder="Search" name="search" style="">
+        			<div class="input-group-btn">
+         				<button class="btn btn-default" type="submit" style="outline-style: none;">
+            				<i class="glyphicon glyphicon-search"></i>
+          				</button>
+        			</div>
+      			</div>
+    		</form>
+
+  			<br><br>
+
+  			<a href="#feeding">Dog Feeding Schedule - How many times a day should I feed my Dog?</a><br>
+			<a href="#stomach">What to do About Dog Stomach Gurgling ?</a><br>
+			<a href="#poop">Mucus in Dog Poop: What does it mean ?</a><br>
+		  	<a href="#chew">Why do Dogs Chew their Feet ? What to do with it ?</a><br>
+		  	<a href="#cough">Why does my Dog Cough After Drinking Water ?</a><br>
+		  	<a href="#vomiting">Dog Vomiting: What to Know & What to do When your Dog Throws up ?</a><br>
+		  	<a href="#digestion">Dog Digestive System Basics - How long does it take for a dog to digest Food ?</a><br>
+		    <a href="#arthritis">Signs of Arthritis in Dogs...</a><br>
+			
+  
+		</div>
+
+
+		<script>
+			function open_side() 
+			{
+				document.getElementById("sidebar").style.width = "300px";
+			}
+
+			function close_side()
+			{
+	  			document.getElementById("sidebar").style.width = "0";
+	  		}
+
+		</script>
+
+		
+		<div class="sidebar-open" onclick="open_side()"><i class="fa fa-arrow-right" style="float: right;"></i></div>
+
+		<div class="blog" style="margin-top: 100px;">	
+
+
+
+			<div class="container-fluid" id="feeding">
+
+				<div class="row" id="blog_contents">
+
+					<div class="col-lg-3">
+						<div>
+							<center>
+								<img src="images/health/feeding.jpg" class="blog_img">
+							</center>
+						</div>
+					</div>
+
+					<div class="col-lg-9">
+						<div class="blog-desc">
+							<h3 class="ques">Dog Feeding Schedule - How many times a day should I feed my Dog?</h3>
+							<p class="ans">Have you ever thought, “How often should I feed my dog?” Dogs thrive on routine and, though they do not keep track of time like we do, their circadian rhythm, or internal clock, makes it possible for them to tell when it's close to the time for a routine task. Whether you've just adopted a dog (congrats!) or are wondering about how much to truly feed your pup, we bet you've thought, “How many times a day should a dog eat?” at some point. We've compiled a dog feeding schedule for adult dogs, puppies, senior dogs, active breeds and sedentary breeds, configured around each dog’s play, activity, sleep and water schedules.</p>
+						</div>
+					</div>
+
+				</div>
+
+				<script>function myFunction7() {
+					  var dots7 = document.getElementById("dots7");
+					  var moreText7 = document.getElementById("more7");
+					  var btnText7 = document.getElementById("myBtn7");
+
+					  if (dots7.style.display === "none") {
+					    dots7.style.display = "inline";
+					    btnText7.innerHTML = "Read more...";
+					    moreText7.style.display = "none";
+					  } 
+					  else {
+					    dots7.style.display = "none";
+					    btnText7.innerHTML = "...Read less";
+					    moreText7.style.display = "inline";
+					  }
+					}
+				</script>
+				<div class="row" id="blog_end">
+					<div class="col-lg-12">
+						<div class="blog-desc">
+							<div class="ans"><span id="dots7"></span><span id="more7">
+							<p><b>Remember:</b> Any dog feeding schedule is just a suggestion. The best way to plan a dog feeding schedule is to consult with a vet, who can configure a dog feeding schedule that’s customized to your dog’s needs.</p><br><br>
+
+							<h4><b>Dog Feeding Schedule for an Average Day with an Adult Dog</b></h4><br>
+							
+
+							<p><b>Food:</b> A dog feeding schedule for most adult dogs should include time to eat twice a day. This keeps their metabolism stable and aids in digestion. You’ll find they quickly catch on to when feeding time is. A dog feeding schedule for adult dogs would be:</p>
+							<ul>
+								<li><b>7:00 a.m.</b> – Breakfast</li>
+								<li><b>6:00 p.m.</b> – Dinner</li>
+							</ul>
+							<br>
+
+							<p><b>Water:</b> The next step after establishing a good dog feeding schedule is a having a schedule for offering fresh water to your dog. In general, it is best to leave a fresh bowl of water out for your dog every morning and every evening. Dogs should always have clean water after any activity. If you’re working on housetraining or have a dog who overdrinks, you can schedule the amount and times you provide it. But watch your dog carefully and, if he seems to be thirsty, increase the amount. A sample schedule for monitoring water would be:</p>
+
+							<ul>
+								<li><b>7:00 a.m.</b> – Clean and fill bowl half-way.</li>
+								<li><b>Noon</b> – Rinse out and refill half-way.</li>
+								<li><b>6:00 p.m.</b> – Rinse and fill half-way.</li>
+								<li><b>Bedtime</b> – Clean and fill bowl about 1/4 of the way.</li>
+							</ul>
+							<br>
+
+							<p><b>Sleep:</b> An average dog sleeps about 14 hours a day. Unlike humans, they sleep for shorter times more frequently. A dog’s REM cycle is more active than a human’s and may explain the phenomenon of “chasing in their sleep.” If your dog sleeps more than 16 hours a day, it is wise to check for any illness. By scheduling his activities throughout the day, you will naturally create a good sleeping routine.</p><br>
+
+
+							<p><b>Play:</b> Play is imperative to keep a dog’s skills honed, to provide stimulation and just to have fun. Play can mean a game of fetch with you, a board game where your dog has to do tricks to earn a turn, a doggie play date, or even interactive toys when you are away. Try to get two play sessions in a day. A sample schedule would be:</p>
+
+							<ul>
+								<li><b>8:00 a.m.</b> – Spend at least 15 minutes playing with your dog</li>
+								<li><b>4:00 p.m.</b> or Right after work – Schedule a play date or try something creative like a game of hide and seek</li>
+							</ul><br>
+							<p><b>Activity:</b> Activity is imperative for a dog’s mental and physical health. Ideally, a dog should be walked twice a day for 30 minutes. An extra walk does no harm and, in fact, will benefit you both. In our hectic society, however, this can be tough, so consider enlisting the help of a dog walker. Also keep in mind activities other than walking such as the dog park. A sample schedule would be:</p>
+
+							<ul>
+								<li><b>6:30 a.m.</b> – Walk your dog before his breakfast</li>
+								<li><b>Noon</b> – Walk your dog (this is where a dog walker could be helpful)</li>
+								<li><b>5:00 p.m.</b> – Walk your dog before his dinner</li>
+							</ul><br>
+
+
+							<p><b>Together Time:</b> A dog feeding schedule isn’t the only thing you should establish. Together time is a bonding experience for you and your dog. This is the easiest thing to schedule as it can be on the couch while watching T.V. or outside reading a book, or on the bed at the end of the night. The key is to focus on your dog and pet and massage him. Dogs love a light massage and many are happy with your foot stroking their back. Even just sitting touching your dog is a bonding activity.</p><br><br>
+
+							<h4><b>Dog Feeding Schedule for Puppies</b></h4><br>
+							<p><b>Housetraining:</b> With puppies, there is housetraining to consider in your dog feeding schedule. When beginning housetraining, you or someone you trust, such as a dog sitter, really needs to be on hand frequently, so you can catch your pup before or in the act and rush him outside. Older puppies can go between three to four hours between elimination. A sample schedule would be:</p>
+
+							<ul>
+								<li>Outside upon waking.</li>
+								<li>Outside after breakfast.</li>
+								<li>Outside around noon after second feeding.</li>
+								<li>Outside around 4:00 p.m.</li>
+								<li>Outside after dinner.</li>
+								<li>Outside before bed.</li>
+							</ul><br>
+
+							<p><b>Food:</b> A puppy will ideally eat three times a day so schedule in a feeding around noon. Get a dog sitter to help if needed.</p>
+
+							<p><b>Sleep:</b> A puppy sleeps more than an adult dog, averaging about 16 hours a day. But some will sleep for up to 20 hours!</p>
+
+							<p><b>Activity:</b> A puppy will have bursts of energy and then flop down where he is and sleep. Try to get your puppy out as much as you can, starting with short walks and building up to 20 minutes.</p><br><br>
+
+							<h4><b>Dog Feeding Schedule for Senior Dogs</b></h4><br>
+							<p><b>Food:</b> A good dog feeding schedule for senior dogs is feeding twice a day. Feed senior dogs smaller amounts since their activity is limited.</p>
+
+							<p><b>Water:</b> Older dogs may need more water than their younger counterparts.</p>
+
+							<p><b>Sleep:</b> A senior dog will sleep more than an active adult dog, on average 16 to 18 hours a day. Just like humans, the older a dog gets, the more his needs resemble that of a puppy.</p>
+
+							<p><b>Activity:</b> It’s important for a senior dog to still get walks and mild activity. Ideally, you, or a sitter, could take your dog out three or four times a day for shorter walks. Avoid excessive activity and any rough play such as at dog parks.</p><br>
+
+				
+							</div><button class="myBtn" onclick="myFunction7()" id="myBtn7">Read more...</button>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+
+
+
+
+			<div class="container-fluid" id="stomach">
+
+				<div class="row" id="blog_contents">
+					<div class="col-lg-3">
+						<div>
+							<center>
+								<img src="images/health/stomach.jpg" class="blog_img">
+							</center>
+						</div>
+					</div>
+
+					<div class="col-lg-9">
+						<div class="blog-desc">
+							<h3 class="ques">What to do About Dog Stomach Gurgling ?</h3>
+							<p class="ans">Have you ever thought your dog was growling only to realize the sound wasn’t coming from your dog’s mouth but from his stomach instead? If you have ever mistaken dog stomach gurgling for a regular pupper growl, you’re not alone.<br>
+							While dog stomach growling isn’t uncommon, you shouldn’t ignore it. Like most symptoms (or weird noises for that matter), dog stomach gurgling can be completely normal — or it can indicate a real medical issue.</p>
+						</div>
+					</div>
+						
+				</div>
+				<script>function myFunction1() {
+					  var dots1 = document.getElementById("dots1");
+					  var moreText1 = document.getElementById("more1");
+					  var btnText1 = document.getElementById("myBtn1");
+
+					  if (dots1.style.display === "none") {
+					    dots1.style.display = "inline";
+					    btnText1.innerHTML = "Read more...";
+					    moreText1.style.display = "none";
+					  } 
+					  else {
+					    dots1.style.display = "none";
+					    btnText1.innerHTML = "...Read less";
+					    moreText1.style.display = "inline";
+					  }
+					}
+				</script>
+				<div class="row" id="blog_end">
+					<div class="col-lg-12">
+						<div class="blog-desc">
+							<span id="dots1"></span><span id="more1"><div class="ans">
+
+								<br><br><h4><b>First, is dog stomach gurgling normal?</b></h4>
+
+
+								<br><p>Dog stomach gurgling is known officially as borborygmus (pronounced bor-bor-rig-mus).Borborygmus is a gurgling or rumbling noise that occurs when fluid or gas passes throughout the intestines.</p>
+
+								<p>Gas is supposed to travel through different parts of the intestines (that’s how it gets out, after all!). But when borborygmi is exceptionally loud or obvious, it might indicate discomfort.</p>
+
+								<p>It is one of those symptoms that can mean anything from trapped wind — totally harmless — to a twisted stomach (GDV) — totally deadly. But usually it is a sign that something has upset the stomach and is leading to more gas being produced or the intestines moving food along more quickly to get it out as fast as possible.</p><br>
+
+
+
+
+								<br><h4><b>What does dog stomach gurgling mean?</b></h4>
+								<br><p>Dog stomach gurgling can signify several different things. These can range from the harmless and totally normal to a severe illness or complication.</p>
+
+								<p>The presence of stomach gurgling may occur from simply feeding table scraps, dietary changes, intestinal parasites, toxicity, immune-mediated conditions such as hemorrhagic gastroenteritis, IBS or Crohn's, fluid in the abdominal cavity and potentially from ingestion of a foreign body such as a rock, stick or toy that may have potentially perforated through the intestines.</p><br>
+
+
+
+
+
+								<br><h4><b>What to do about dog stomach gurgling — if it’s normal</b></h4>
+								<br><p>Can you hear your dog’s stomach gurgling? The sound you are hearing might signify an upset stomach. Luckily, if it’s all that is, there are a few things you can do to help alleviate the discomfort.</p>
+
+								<p>If your dog is otherwise normal, then just keep a close watch and take an extra poo bag or two. But if there is any other symptom happening like sleepiness, not eating or vomiting, then get it checked by your vet.</p>
+
+								<p>If your dog isn’t exhibiting any other symptoms, diet can play a role.</p>
+
+								<p>Try hard to stop your dog from scavenging. Feed quality food and try to be consistent in your choice. Picking and mixing dog food based on cost — or what’s on special offer — is rarely a good idea and is going to cause more gurgly tummies.</p><br>
+
+
+
+								<br><h4><b>What to do about dog stomach gurgling — if it’s serious</b></h4>
+								<br><p>While the above advice is applicable to innocuous cases, there’s more to consider if you notice additional symptoms alongside that dog stomach gurgling.</p>
+
+								<p>Get a diagnosis from your veterinarian before initiating at-home care as many over-the-counter medications can be harmful if used inappropriately or frequently.</p>
+
+								<p>While waiting for your dog’s appointment, you could consider withholding food and water to allow their stomach to settle. If your dog is exhibiting other signs of intestinal upset, feeding a bland diet of unseasoned boiled poultry or fish and white rice may suffice.</p>
+
+								<p>Dog stomach gurgling can also indicate the ingestion of a foreign body. Try to rule out toxicities within your household such as chocolate, raisins, rat bait or sugar-free gum that may be the cause of your dog’s stomach gurgling.</p><br>
+
+
+
+
+								<br><h4><b>Diagnosis of dog stomach gurgling</b></h4>
+								<br><p>A physical examination will begin with feeling the dog’s abdomen and listening to his heart, lungs and intestinal sounds.</p>
+
+								<p>Depending on what specifically your dog’s symptoms are, your veterinarian may recommend further diagnostics typically starting with X-rays and blood work and may discuss further testings such as a food allergy panel, ultrasound or fluid therapy if indicated to rule out a more serious or underlying condition.</p><br>
+
+
+
+								<br><h4><b>Treating dog stomach gurgling</b></h4>
+								<br><p>Oftentimes, dog stomach gurgling does not require professional treatment. However, in some cases, treatment may include deworming meds, adjusting of diet, fluid therapy or even surgery.</p>
+
+								<p>According to Experts, dog stomach gurgling can be resolved by withholding food, a bland diet or drugs that slow the production of gas, stomach acid or diarrhea.</p>
+
+								<p>If your pet is rapidly losing water, intravenous or subcutaneous fluid therapy along with an anti-nausea, antacid, anti-diarrhea or antibiotic may be necessary. If parasites are what is plaguing your pet, a dewormer or monthly preventative for worms and other parasites may be necessary.</p><br>
+							</div></span><button class="myBtn" onclick="myFunction1()" id="myBtn1">Read more...</button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+
+
+
+
+
+
+
+			<div class="container-fluid" id="poop">
+
+				<div class="row" id="blog_contents">
+					<div class="col-lg-3">
+						<div>
+							<center>
+								<img src="images/health/poop.jpg" class="blog_img">
+							</center>
+						</div>
+					</div>
+
+					<div class="col-lg-9">
+						<div class="blog-desc">
+							<h3 class="ques">Mucus in Dog Poop:  What does it mean ?</h3>
+							<p class="ans">What might mucus in dog poop indicate and is mucus in dog poop always a reason to head to the vet? Or is some mucus in dog poop normal? The ideal dog poop is firm, slightly moist and easy to pick up. If you notice mucus in dog poop (or if your dog’s poop is encased in a shiny mucus-like casing), your dog has some type of bowel inflammation. Mucus in dog poop is commonly seen in dogs with inflammatory bowel disease (IBD) or as an early warning sign of other health conditions.</p>
+						</div>
+					</div>
+						
+				</div>
+
+				<script>function myFunction2() {
+					  var dots2 = document.getElementById("dots2");
+					  var moreText2 = document.getElementById("more2");
+					  var btnText2 = document.getElementById("myBtn2");
+
+					  if (dots2.style.display === "none") {
+					    dots2.style.display = "inline";
+					    btnText2.innerHTML = "Read more...";
+					    moreText2.style.display = "none";
+					  } 
+					  else {
+					    dots2.style.display = "none";
+					    btnText2.innerHTML = "...Read less";
+					    moreText2.style.display = "inline";
+					  }
+					}
+				</script>
+
+				<div class="row" id="blog_end">
+					<div class="col-lg-12">
+						<div class="blog-desc">
+							<div class="ans"><span id="dots2"></span><span id="more2">
+							
+								<br><h4><b>Mucus in Dog Poop and IBD</b></h4>
+								<p>IBD is a syndrome as opposed to a disease, and it is caused by a specific reaction to chronic irritation of the intestinal tract. Most dogs with IBD have a history of recurrent or chronic vomiting or diarrhea and may have a poor appetite. In addition to mucus in dog poop, other signs of IBD include:</p>
+
+								<ol>
+									<li>Diarrhea</li>
+									<li>Weight loss</li>
+									<li>Depression</li>
+									<li>Fatigue</li>
+									<li>Chronic, intermittent vomiting</li>
+									<li>Gas</li>
+									<li>Abdominal pain</li>
+									<li>Rumbling abdominal sounds</li>
+									<li>Bright red blood in stool</li>
+									<li>Distressed hair coat</li>
+								</ol>
+								<br>
+
+								<br><h4><b>Other Common Causes of Mucus in a Dog Poop</b></h4>
+								<p>Mucus in dog poop can also be caused by parvovirus, parasites, tumors and/or polyps, constipation toxin overload, autoimmune disorders or even cancer. Eating garbage can also cause bacterial infection in the digestive tract that can lead to bloody stools or mucus in dog poop.</p>
+
+								<br><h4><b>Is Mucus in Dog Poop Always a Concern?</b></h4>
+								<p>You shouldn’t worry about seeing a small amount of mucus in dog poop. Dog stool normally contains some mucus, which is produced by the intestines to keep the lining of the colon lubricated and moist.</p>
+
+								<p>But if you notice an excessive amount of mucus in the stool, or if it is accompanied by blood or an obvious change in your dog’s bowel movements, seek immediate veterinary medical attention. The veterinarian will be better able to identify the underlying cause of mucus in your dog’s poop and recommend a proper course of treatment.</p>
+
+								<br><h4><b>Treating Mucus in Dog Poop</b></h4>
+								<p>Treating mucus in dog poop really depends on what’s causing it, which is why you need a vet to weigh in.</p>
+
+								<p>One of the most obvious signs of a potential health problem in dogs is diarrhea, and diarrhea can have different characteristics depending on its cause. A soft stool containing or coated with mucus may indicate the presence of parvovirus or parasites, or other problems, so have it checked out by your dog’s veterinarian. The treatment will depend on the diagnosis.</p></span>
+							</div><button class="myBtn" onclick="myFunction2()" id="myBtn2">Read more...</button>
+						</div>
+					</div>
+				</div>
+
+
+
+			</div>
+
+
+
+
+
+
+
+			<div class="container-fluid" id="chew">
+
+				<div class="row" id="blog_contents">
+					<div class="col-lg-3">
+						<div>
+							<center>
+								<img src="images/health/chew.jpg" class="blog_img">
+							</center>
+						</div>
+					</div>
+
+					<div class="col-lg-9">
+						<div class="blog-desc">
+							<h3 class="ques">Why do Dogs Chew their Feet ? What to do with it ?</h3>
+							<p class="ans">So, there's a simple explanation for the behavior. A dog is essentially trying to scratch the itch. But finding the cause of foot chewing can be complicated. It can be multiple different things, this is not one size fits all. Chewing and licking feet are common behaviors. Just because a dog is licking his foot doesn’t necessarily mean that he needs to be rushed into the vet clinic. But if the behaviors come on suddenly and intensely for extended periods, they can be cause for concern.</p>
+						</div>
+					</div>
+						
+				</div>
+
+				<script>function myFunction3() {
+					  var dots3 = document.getElementById("dots3");
+					  var moreText3 = document.getElementById("more3");
+					  var btnText3 = document.getElementById("myBtn3");
+
+					  if (dots3.style.display === "none") {
+					    dots3.style.display = "inline";
+					    btnText3.innerHTML = "Read more...";
+					    moreText3.style.display = "none";
+					  } 
+					  else {
+					    dots3.style.display = "none";
+					    btnText3.innerHTML = "...Read less";
+					    moreText3.style.display = "inline";
+					  }
+					}
+				</script>
+
+				<div class="row" id="blog_end">
+					<div class="col-lg-12">
+						<div class="blog-desc">
+							<div class="ans"><span id="dots3"></span><span id="more3">
+								<br><h4><b>Why do dogs chew their feet? Allergies might be at play.</b></h4>
+								<p>One of the common answers to, “Why do dogs chew their feet?” Allergies. If the behavior coincides with a change of seasons, that offers a clue that an environmental allergen, such as pollen, mold or mildew, might be triggering the behavior. More long-term chewing could signal a food allergy. But determining the exact food ingredient is difficult and time-consuming. It is a process of trial and error, and it’s impossible to predict just by looking at the dog just what they are allergic to.</p>
+
+								<p>A 12-week food-elimination trial offers the best chance of finding a specific culprit. These involved trials start with feeding a simplified diet of foods the dog has never eaten.</p>
+
+								<br><h4><b>Why do dogs chew their feet? Due to these diseases and illnesses.</b></h4>
+								<p>So, what are some other common answers to, “Why do dogs chew their feet?” Numerous between-the-toes skin diseases can cause a dog to chew his feet. In addition, injury or pain (such as from arthritis or hip dysplasia), as well as autoimmune diseases, cysts, tumors and cancer can lead to foot biting. Some dogs might munch their digits due to skin infections caused by hormonal imbalances, namely too much cortisol or too little thyroid hormone.</p>
+
+								<p>Something as innocuous as dry skin from winter weather, an arid climate or a deficiency of fatty acids in the diet can cause excessive paw chomping. A cracked claw could be to blame or even a corn (Greyhounds are said to be prone to corns). Maybe a thorn, pebble or other foreign object is lodged in or between the paw pads. Fleas, ticks, mites and other parasites irritate the skin, as can some soaps and shampoos, the salt used to treat snowy streets and chemical substances such as harsh lawn and garden pesticides.</p>
+
+								<br><h4><b>Stomp out foot chomping before it begins:</b></h4>
+								<ol>
+									<li>Feed a high-quality, well-balanced diet.</li>
+									<li>Make sure your dog gets plenty of physical exercise, mental stimulation and interaction with people and other dogs.</li>
+									<li>Provide proper hygiene care, including bathing and grooming. Go for regular veterinary checkups.</li>
+									<li>Use preventive flea and tick medication.</li>
+									<li>Periodically rinse and examine your dog’s feet.</li>
+								</ol>
+								<br><h4><b>Call your veterinarian if you notice:</b></h4>
+								<ol>
+									<li>New, frequent, persistent, excessive or obsessive foot chewing or licking</li>
+									<li>Limping, bald spots or skin that is red, swollen, bleeding or warm to the touch</li>
+									<li>Discoloration of foot fur (pink or rust color caused by the compound porphyrin in a dog’s saliva)</li>
+									<li>An area of the foot that is sensitive to touch or has a cut or other wound</li></span>
+								</ol>
+							</div><button class="myBtn" onclick="myFunction3()" id="myBtn3">Read more...</button>
+						</div>
+					</div>
+				</div>
+
+
+
+			</div>
+
+
+
+
+
+
+
+
+			<div class="container-fluid" id="cough">
+
+				<div class="row" id="blog_contents">
+					<div class="col-lg-3">
+						<div>
+							<center>
+								<img src="images/health/coughing.jpg" class="blog_img">
+							</center>
+						</div>
+					</div>
+
+					<div class="col-lg-9">
+						<div class="blog-desc">
+							<h3 class="ques">Why does my Dog Cough After Drinking Water ?</h3>
+							<p class="ans">Naturally, like any of us, sometimes our dogs drink too fast or they are temporarily distracted, and a few drops go down the wrong way. You’ve started noticing a disturbing trend, though. It seems that every time your dog pauses for a bit of liquid refreshment, the action is followed immediately by the sounds of coughing and gagging. If a dog coughs after drinking water consistently, there may be more to it than rapid or reckless swallowing can explain away.</p>
+						</div>
+					</div>
+						
+				</div>
+
+				<script>function myFunction4() {
+					  var dots4 = document.getElementById("dots4");
+					  var moreText4 = document.getElementById("more4");
+					  var btnText4 = document.getElementById("myBtn4");
+
+					  if (dots4.style.display === "none") {
+					    dots4.style.display = "inline";
+					    btnText4.innerHTML = "Read more...";
+					    moreText4.style.display = "none";
+					  } 
+					  else {
+					    dots4.style.display = "none";
+					    btnText4.innerHTML = "...Read less";
+					    moreText4.style.display = "inline";
+					  }
+					}
+				</script>
+
+				<div class="row" id="blog_end">
+					<div class="col-lg-12">
+						<div class="blog-desc">
+							<p class="ans"><span id="dots4"></span><span id="more4">
+							
+							</p><button class="myBtn" onclick="myFunction4()" id="myBtn4">Read more...</button>
+						</div>
+					</div>
+				</div>
+
+
+
+			</div>
+
+
+
+
+
+
+
+
+			<div class="container-fluid" id="vomiting">
+
+				<div class="row" id="blog_contents">
+					<div class="col-lg-3">
+						<div>
+							<center>
+								<img src="images/health/vomiting.jpg" class="blog_img">
+							</center>
+						</div>
+					</div>
+
+					<div class="col-lg-9">
+						<div class="blog-desc">
+							<h3 class="ques">Dog Vomiting: What to Know & What to do When your Dog Throws up ?</h3>
+							<p class="ans">There are very few dog owners who haven’t had to scrub dog vomit from the carpet at least once. But, from devouring a chunk of their favorite chew toy to serious gastrointestinal conditions, vomiting is a symptom with a long list of potential causes — so how do pet owners know when throwing up is no big deal and when it could be something serious?</p>
+						</div>
+					</div>
+						
+				</div>
+				<script>function myFunction5() {
+					  var dots5 = document.getElementById("dots5");
+					  var moreText5 = document.getElementById("more5");
+					  var btnText5 = document.getElementById("myBtn5");
+
+					  if (dots5.style.display === "none") {
+					    dots5.style.display = "inline";
+					    btnText5.innerHTML = "Read more...";
+					    moreText5.style.display = "none";
+					  } 
+					  else {
+					    dots5.style.display = "none";
+					    btnText5.innerHTML = "...Read less";
+					    moreText5.style.display = "inline";
+					  }
+					}
+				</script>
+
+
+
+				<div class="row" id="blog_end">
+					<div class="col-lg-12">
+						<div class="blog-desc">
+							<p class="ans"><span id="dots5"></span><span id="more5">
+							
+							</p><button class="myBtn" onclick="myFunction5()" id="myBtn5">Read more...</button>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+
+
+
+
+
+
+			<div class="container-fluid" id="digestion">
+
+				<div class="row" id="blog_contents">
+
+
+					<div class="col-lg-3">
+						<div>
+							<center>
+								<img src="images/health/digestion.jpg" class="blog_img">
+							</center>
+						</div>
+					</div>
+
+					<div class="col-lg-9">
+						<div class="blog-desc">
+							<h3 class="ques">Dog Digestive System Basics - How long does it take for a dog to digest Food ?</h3>
+							<p class="ans">Most dog owners don’t spend a lot of time thinking about their own digestive processes, much less the basics of the dog digestive system. The only times we really engage with the dog digestive system are when we feed our dogs and when we trot them out to eliminate their waste. But what happens to a dog’s kibble or canned food from the time it enters their gaping maws to when it passes out the other end? How long does it take for a dog to digest food? If you were to hazard a guess, you could probably name the major stops along the route in the dog digestive system.</p>
+						</div>
+					</div>
+						
+				</div>
+
+				<script>function myFunction6() {
+					  var dots6 = document.getElementById("dots6");
+					  var moreText6 = document.getElementById("more6");
+					  var btnText6 = document.getElementById("myBtn6");
+
+					  if (dots6.style.display === "none") {
+					    dots6.style.display = "inline";
+					    btnText6.innerHTML = "Read more...";
+					    moreText6.style.display = "none";
+					  } 
+					  else {
+					    dots6.style.display = "none";
+					    btnText6.innerHTML = "...Read less";
+					    moreText6.style.display = "inline";
+					  }
+					}
+				</script>
+
+
+				<div class="row" id="blog_end">
+
+					<div class="col-lg-12">
+						<div class="blog-desc">
+							<div class="ans"><span id="dots6"></span><span id="more6">
+							<p>Food enters through the mouth and slides down the esophagus on its way to the stomach. From there, it takes in the sights of the small and large intestines before departing the body. If that seems too simple, it is! The dog digestive system involves a staggering number of organs, fluids and enzymes, all playing their roles to convert food into usable energy. Whatever is left over, as surplus to requirements, is expelled through the anus in the form of faeces.</p><br>
+
+							<h3><b>Basics of the dog digestive system</b></h3><br>
+
+							<h4><b>Part 1: From mouth to stomach</b></h4>
+							<p>The front end of the dog digestive system encompasses the mouth, esophagus, stomach and small intestine. Dog digestion begins almost immediately with saliva in the mouth. You may have wondered why dog tongues are so slobbery. Since they spend less time chewing food than humans tend to, all of that saliva kickstarts the process of breaking down and coating food particles for smoother passage through the esophagus. The esophagus is heavily muscled, actively pushing food into the stomach.</p><br>
+
+							<h4><b>Part 2: A fantastic journey through the small intestine</b></h4>
+							<p>A dog’s stomach is a super-acidic environment, which is useful for opportunistic omnivores, helping them more easily digest things like bone and raw meat. Yes! Dogs can digest bones! At this stop in the dog digestive system, solid food is rendered into a substance called chyme, which is made up of food, water and acid. All food — from your Michelin 3-star-rated fine cuisine, to your dog’s canned chunks or dry kibble — ends up as this highly acidic gloop. As this chyme proceeds into the small intestine, the real work of digestion — the isolation of nutrients that can be used by the body— is done.</p>
+
+							<p>There are three parts of food’s journey through the small intestine. In the first part, the duodenum, chyme is treated with enzymes and hormones from the liver and pancreas, which reduce the acid level of the chyme. The gloop is now prepared to have the rest of its nutrients extracted and absorbed. This happens in the second part of the small intestine, which is called the jejunum. This part of a dog’s small intestine is basically covered in little probes, which, like fly paper, pick up and absorb useful nutrients into the bloodstream.</p><br>
+
+							<h4><b>Part 3: The large intestine and waste removal</b></h4>
+							<p>The final part of the small intestine is the ileum, which absorbs whatever nutrients remain. By this point, the once-acidic chyme gloop is now a sort of thicker pasty substance. You’d be surprised how little of the food you or your dog eats is actually used by your body. Did you ever wonder why the dog digestive system produces so much poop? It’s because the actual nutrients — proteins, vitamins, fats and so on — that your dog’s body can utilize are miniscule in proportion to the physical volume of most dog food.</p>
+
+							<p>How long is this part of the dog digestive system? It varies by size. If you stretched out a dog’s small intestine, it would be nearly three times as long as the dog. The back end of a dog’s GI tract is fairly short by comparison, just over a foot long, give or take, depending on the dog. Its primary components are the large intestine and the anus. The large intestine is basically a water remover and garbage compactor. Having spent the first half of its journey being mashed up, dissolved and sifted, any parts of a dog’s meal that cannot be used is treated by bacteria, and reconstituted into a solid package we call dog poop.</p><br><br>
+
+
+
+							<h3><b>Assorted questions about the dog digestive system!</b></h3><br>
+
+
+							<h4><b>How long does food stay in a dog’s stomach?</b></h4><br>
+							<p>Though dogs are omnivores, they are opportunistic ones. That means that while they can eat almost anything, the dog digestive system can’t break down and utilize everything. Animals like humans or cows, to name two, have GI tracts made to process plant matter. As a result, their intestines are much longer and more drawn out than those of dogs. Since cows depend on vegetable matter, they even get extra compartments in their stomach, and can regurgitate food to chew and digest it fully.</p>
+
+							<p>A dog digestive system, depending more on meat proteins, is much more efficient. Depending on its digestibility, food can stay in a dog’s stomach much longer than either a human or a cow. If the meal is not strictly meat, comprising a variety of vegetable, grains and proteins, it will have vacated the stomach completely in 12 hours after eating. Compare that to four to five hours in a normal adult human.</p><br><br>
+
+							<h4><b>Where does digestion actually take place in the dog digestive system?</b></h4><br>
+							<p>As you may have gleaned from tracing food’s intricate journey from the food bowl in your kitchen to the poop bag in the dog park, the multiple processes of the dog digestive system means that it does not happen in one spot. From the moment comestibles come in contact with teeth and saliva in the mouth, digestion is happening.</p>
+
+							<p>A dog digestive system is just that: a system, and digestion takes place at every point along the course. Food is disassembled in a variety of ways, physically and nutritionally, from the mouth to the stomach. The majority of its conversion into absorbable nutrients happens in the small intestine, and digestion is only complete when your dog assumes the familiar position for excreting waste.</p><br><br>
+
+							<h4><b>How long does it take for a dog to digest food?</b></h4><br>
+							<p>Finally, the question about the dog digestive system that got us started. Unfortunately, there’s no set answer! So many variables are involved, that even in a perfectly healthy dog, the time to digest a single meal can be dramatically different. Does your dog drink enough water? That has an effect on digestion time as well. Large dog breeds take significantly longer to digest food than small ones.</p>
+
+							<p>Is your dog sedentary, spending most of the day on the couch? Does the dog get a couple of walks a day? Dog exercise has a definite impact on motility, or the way that the muscles of the dog digestive system propel food through the process. Total time from entry to exit depends on a wide range of factors, from the size of the dog to the quality of the food. Wet food takes less time to digest than dry kibble. Speaking very broadly, operating at optimum efficiency, a dog can process a can of wet food in as few as four hours, while the same amount of dry food can take eight hours to make the same journey!</p><br>
+							</div><button class="myBtn" onclick="myFunction6()" id="myBtn6">Read more...</button>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+
+
+
+			<div class="container-fluid" id="arthritis">
+
+				<div class="row" id="blog_contents">
+
+					<div class="col-lg-3">
+						<div>
+							<center>
+								<img src="images/health/arthritis.jpg" class="blog_img">
+							</center>
+						</div>
+					</div>
+
+					<div class="col-lg-9">
+						<div class="blog-desc">
+							<h3 class="ques">Signs of Arthritis in Dogs...</h3>
+							<p class="ans">If you’ve got an older dog, maybe some of this sounds sadly familiar. You used to go outside and play for hours. At the dog park, those other hounds could never hope to keep up with your quick-footed canine. Your furry friend could easily jump over most obstacles, so putting up pet gates at home was practically futile. But now, things are different. Playtime has dwindled down to a half-hearted romp with a pull toy. Your pup struggles to get in and out of cars. Everything seems to elicit groans of discomfort — from climbing stairs to curling up on the couch. Are these the telltale signs of arthritis in dogs?</p>
+						</div>
+					</div>
+
+				</div>
+				<script>function myFunction8() {
+					  var dots8 = document.getElementById("dots8");
+					  var moreText8 = document.getElementById("more8");
+					  var btnText8 = document.getElementById("myBtn8");
+
+					  if (dots8.style.display === "none") {
+					    dots8.style.display = "inline";
+					    btnText8.innerHTML = "Read more...";
+					    moreText8.style.display = "none";
+					  } 
+					  else {
+					    dots8.style.display = "none";
+					    btnText8.innerHTML = "...Read less";
+					    moreText8.style.display = "inline";
+					  }
+					}
+				</script>
+
+				<div class="row" id="blog_end">
+					<div class="col-lg-12">
+						<div class="blog-desc">
+							<p class="ans"><span id="dots8"></span><span id="more8">
+						
+							</p><button class="myBtn" onclick="myFunction8()" id="myBtn8">Read more...</button>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+
+
+
+
+
+
+		</div>
+
+
+	
+		
+
+
+
+
+
+
+	<footer>
+		
+		<div class="container-fluid">
+			<div class="blog">
+				<div class="row">
+					<div class="col-lg-4">
+						<br><br>
+						<div class="footer_note"><center>
+							<p class="copy1"><b>&copy;</b> Copyright Reserved by <b>Subhradipta Choudhury.</b></p>
+							<p class="copy2">The pictures &amp; contents used here are only for college project purpose.</p></center>
+						</div>
+						<br><br>
+					</div>
+					<div class="col-lg-4">
+						<br><br>
+						<center>
+							<h4 class="connect" style="">CONNECT WITH US</h4>
+							<div style="align-items: center;">
+
+
+								<a href="https://www.facebook.com/profile.php?id=100009449073945" style="text-decoration: none;">
+									<div class="icon" id="facebook">
+										<center>
+											<i class="fab fa-facebook-f"></i>
+										</center>
+									</div>
+								</a>
+
+								<a href="#" style="text-decoration: none;">
+									<div class="icon" id="twitter">
+										<center>
+											<i class="fab fa-twitter"></i>
+										</center>
+									</div>
+								</a>
+
+								<a href="#" style="text-decoration: none;">
+									<div class="icon" id="instagram">
+										<center>
+											<i class="fab fa-instagram"></i>
+										</center>
+									</div>
+								</a>
+
+								<a href="mailto:info@puppzilla.co.in?cc=csubhradipta@gmail.com" style="text-decoration: none;">
+									<div class="icon" id="gmail">
+										<center>
+											<i class="far fa-envelope"></i></i>
+										</center>
+									</div>
+								</a>
+
+								<a href="https://wa.me/917980397413" style="text-decoration: none;">
+									<div class="icon" id="whatsapp">
+										<center>
+											<i class="fab fa-whatsapp"></i>
+										</center>
+									</div>
+								</a>
+
+							</div>	
+						</center>
+						<br><br>
+					</div>
+					<div class="col-lg-4" style="">
+						<br><br>
+						<center><h4 class="connect" style="padding-bottom: 6px;">SUBSCRIBE TO OUR E-MAGAZINE</h4>
+						<input type="email" name="" placeholder="Your Email" class="form-control" style="width: 80%;"></center>
+						<br><br>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+</div>
+</body>
+</html>

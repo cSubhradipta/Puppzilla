@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Puppzilla</title>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Capriola' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+	
+	<nav class="navbar navbar-default" style="border-style: none;background-color: #98cbe1;  overflow: hidden; position: fixed; top: 0; width: 100%; z-index: 10;">
+  		
+  		<div class="container-fluid" id="container-fluid">
+    		
+    		<div class="navbar-header">
+
+      			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="margin-top: 15px; border-style: none; background-color: #006bb3;">
+        				<span class="fa fa-bars" style="color: #fff; font-size: 20px; " onMouseOver="this.style.color='lightblue'"
+       					onMouseOut="this.style.color='#fff'"></span>                      
+      			</button>
+
+      			<a class="navbar-brand" href="#"><img src="images/navbrand.png" class="navbrand"></a>
+
+    		</div>
+
+		    <div class="collapse navbar-collapse" id="myNavbar" style="border-style: none;">
+		    	<center>
+			      	<ul class="nav navbar-nav navbar-right">
+			        	<li class="nav-item">
+							<a href="index.html" style="color: #001a33;" onMouseOver="this.style.color='#006bb3'"
+	       					onMouseOut="this.style.color='#001a33'">HOME</a>
+						</li>
+						<li class="nav-item">
+							<a href="food.html" style="color: #001a33;" onMouseOver="this.style.color='#006bb3'"
+	       					onMouseOut="this.style.color='#001a33'">FOOD</a>
+						</li>
+						<li class="nav-item">
+							<a href="health.html" style="color: #001a33;" onMouseOver="this.style.color='#006bb3'"
+	       					onMouseOut="this.style.color='#001a33'">HEALTH</a>
+						</li>
+						<li class="nav-item" style="background-color: #fff; border-radius: 4px;">
+							<a href="training.html" style="color: #001a33;" onMouseOver="this.style.color='#006bb3'"
+	       					onMouseOut="this.style.color='#001a33'">TRAINING</a>
+						</li>
+						<li class="nav-item">
+							<a href="breeds.html" style="color: #001a33;" onMouseOver="this.style.color='#006bb3'"
+	       					onMouseOut="this.style.color='#001a33'">BREEDS</a>
+						</li>
+						<li class="nav-item">
+							<a href="contact.html" style="color: #001a33;" onMouseOver="this.style.color='#006bb3'"
+	       					onMouseOut="this.style.color='#001a33'">CONTACT</a>
+						</li>
+	      			</ul>
+      			</center>
+    		</div>
+  		</div>
+	</nav>
+
+
+
+
+
+	<div>
+		
+		<div class="sidebar" id="sidebar">
+			<center><div class="sidebar-close" onclick="close_side()"><i class="fa fa-arrow-left" style="float: left;"></i></div></center>
+			<h2 class="sidebar-heading"></"><center>CONTENTS</center></h2>
+			<form class="navbar-form navbar-left" action="" style="border-style: none;">
+      			<div class="input-group">
+        			<input type="search" class="form-control" placeholder="Search" name="search" style="">
+        			<div class="input-group-btn">
+         				<button class="btn btn-default" type="submit" style="outline-style: none;">
+            				<i class="glyphicon glyphicon-search"></i>
+          				</button>
+        			</div>
+      			</div>
+    		</form>
+
+  			<br><br>
+
+  			<a href="#method">Most Popular Dog Training Methods...</a><br>
+			<a href="#wakesup">Does your Dog wakes you up in the middle of the night ?</a><br>
+			<a href="#scared">How to Help a Scared Dog ?</a><br>
+		  	<a href="#fireworks">Dogs & Fireworks - Stop your Dog from getting scared...</a><br>
+		  	<a href="#peeing">Dog Peeing in the House ? What to Know & What to do ?</a><br>
+		  	<a href="#hiding">Is your Dog Hiding ? What to Do with it ?</a><br>
+		    <a href="#whistles">Do Dog whistles work ? What are they for ?</a><br>
+			<a href="#anxiety">Reduce your Dog's Anxiety when meeting people ...</a><br>
+  
+		</div>
+
+
+		<script>
+			function open_side() 
+			{
+				document.getElementById("sidebar").style.width = "300px";
+			}
+
+			function close_side()
+			{
+	  			document.getElementById("sidebar").style.width = "0";
+	  		}
+
+		</script>
+
+		
+		<div class="sidebar-open" onclick="open_side()"><i class="fa fa-arrow-right" style="float: right;"></i></div>
+
+		<div class="blog" style="margin-top: 100px;">
+
+
+
+
+			<div class="container-fluid " id="method">
+
+				<div class="row" id="blog_contents">
+
+					<div class="col-lg-3">
+						<div>
+							<center>
+								<img src="images/training/method.jpg" class="blog_img">
+							</center>
+						</div>
+					</div>
+
+					<div class="col-lg-9">
+						<div class="blog-desc">
+							<h3 class="ques">Most Popular Dog Training Methods...</h3>
+							<p class="ans">There are so many popular dog training methods out there that it can be frustrating to find out which is which and what method is going to be best for both your dog and you as an owner.If you find it overwhelming and confusing, you’re not alone. There is even a great deal of disagreement within the professional dog training community about which methods are effective and ethical, and several methods overlap or are used in tandem for the best results.</p>
+						</div>
+					</div>
+
+				</div>
+
+				<script>function myFunction7() {
+					  var dots7 = document.getElementById("dots7");
+					  var moreText7 = document.getElementById("more7");
+					  var btnText7 = document.getElementById("myBtn7");
+
+					  if (dots7.style.display === "none") {
+					    dots7.style.display = "inline";
+					    btnText7.innerHTML = "Read more...";
+					    moreText7.style.display = "none";
+					  } 
+					  else {
+					    dots7.style.display = "none";
+					    btnText7.innerHTML = "...Read less";
+					    moreText7.style.display = "inline";
+					  }
+					}
+				</script>
+
+				<div class="row" id="blog_end">
+					<div class="col-lg-12">
+						<div class="blog-desc">
+							<div class="ans"><span id="dots7"></span><span id="more7">
+							<br><h4>Here are five of the most popular dog training methods used today and who might benefit most from using them.</h4><br><br>
+
+							<ol>
+							<li><h4><b>Positive Reinforcement</b></h4><br>
+
+
+							<p>The theory behind it is fairly straightforward. Dogs will repeat good behavior when it’s followed by a reward. Bad behavior does not get a reward or acknowledgement. If correction needs to happen, it comes in the form of removal of rewards, like a toy or treat being taken away. Harsh reprimands or physical punishments aren’t necessary.</p>
+
+							<p>This training method begins with rewarding a desired behavior immediately, within seconds after it happens. That way the dog comes to associate the behavior with the reward.</p>
+
+							<p>Some trainers combine this method with clicker training . This gives the dog a distinct sign of the exact moment the behavior was completed. Commands also need to be short and to the point. Sit. Stay. Come.</p>
+
+							<p>Positive reinforcement requires consistency. Therefore, everyone in your household needs to use the same commands and reward system.</p>
+
+							<p>Start with continuous rewards every time your dog does the right thing. Then, gradually move to intermittent rewards as the behavior becomes consistent. Sometimes beginner trainers accidentally reward bad behavior. For example they might let the dog outside when they start barking at a squirrel or another dog.</p>
+
+							<p>Only wanted behaviors get rewards, which can include treats, toys, praise, and pets. It can also be easy to overfeed when your dog is learning, so use small treats when you are rewarding with food.</p>
+
+							<p>This method is great for learning commands, but you need patience for correcting unwanted behaviors.</p></li><br><br>
+
+
+							<li><h4><b>Scientific Training</b></h4><br>
+
+							<p>Science-based dog training can be difficult to define as it relies on information that is continually building and changing. It aims to understand dogs’ nature, their ability to be conditioned, and the effectiveness of rewards and punishments.</p>
+
+							<p>Animal behaviorists are constantly creating new studies and experiments to shape our understanding of dog psychology. Trainers rely on these studies to work with dogs. Before a behavior is corrected, everything about that behavior must be understood.</p>
+
+							<p>Because science-based dog training is so broad, it’s hard to pinpoint an overarching methodology behind it. In fact, a lot of the methods used in scientific dog training are used by other forms of training.</p>
+
+							<p>For the most part, there is a reliance on operant conditioning, which mostly includes positive reinforcement and, less often, some forms of punishment.</p>
+
+							<p>Some scientific trainers believe that it’s also important to learn how to strengthen good behavior without the need for rewards and to rely on dog psychology to find ways to improve off-leash relationships between owners and their pups.</p>
+
+							<p>Scientific training relies on doing a good deal of research and staying updated on the latest studies. For that reason, it may be best for professional trainers, since the methods they use are often effective whether you know the science behind them or not, and other forms of training already employ many of those methods.</p>
+
+							<p>Also, developing new methods based on research may not be appropriate for everyone. Still, it’s a good idea for dog owners to stay informed and pay attention to new research when it becomes available.</p></li><br><br>
+
+
+
+							<li><h4><b>Clicker Training</b></h4><br>
+
+
+							<p>Clicker training is also based on operant conditioning and relies heavily on the same principles as positive reinforcement. In fact, clicker training may be grouped in as a method of positive reinforcement, rather than as its own form of training.</p>
+
+							<p>It relies on the use of a device to make a quick, sharp noise, such as a whistle or, as the name suggests, a clicker to signal to a dog when a wanted behavior is accomplished.</p>
+
+							<p>The advantage of using clicker training is that it signals the exact moment the desired behavior is finished and exactly what is being rewarded. Trainers can then use the clicker to shape new behaviors and add verbal commands.</p>
+
+							<p>First, the dog needs to be conditioned to know that a click means a reward is coming. Then the dog can associate a behavior with a click and a reward. Finally, the verbal command can be introduced to form a new association.</p>
+
+							<p>This is a great method for learning new tricks, and it can help shape the basics into more complicated tasks. Many professional trainers use this method.</p>
+
+							<p>While it is great for learning new behaviors, clicker training isn’t necessarily well-suited for curbing unwanted behaviors. When used alongside other training methods, it can be very effective in making sure you have a well-trained, well-behaved pooch.</p></li><br><br>
+
+							<li><h4><b>Electronic Training</b></h4><br>
+
+							<p>Electronic training relies on the use of an electric collar that delivers a shock or a spray of citronella when a dog is not performing a desired task. It’s mostly used for training at a distance when a leash can’t be used.</p>
+
+							<p>For example, shock collars can train a dog to stay within boundaries of an un-fenced yard. Remote collars can teach dogs to work in fields or do hunting work. People who use these devices claim that there’s less risk of a dog getting hurt than with choke collars or other mechanical devices.</p>
+
+							<p>There are many problems with this training method. One is that it relies on punishment for bad behavior instead of rewards, meaning a dog learns what they shouldn’t do, rather than what they should do.</p>
+
+							<p>Another problem is that it can create a great deal of stress and lead to permanent anxiety issues for dogs. The devices are often used by inexperienced owners, and therefore are overused. This can cause a lot of unnecessary pain, both physically and psychologically, for dogs.</p>
+
+							<p>Professional dog trainers may see desired results from electronic training, but it’s definitely not for use by average owners. There are many alternatives that put dogs under far less stress and pain.</p>
+
+							<p>If you’re going to use an electronic device, consult a professional about proper use and consider an alternative form of behavior correction.</p></li><br><br>
+
+
+
+							<li><h4><b>Model-Rival Or Mirror Training</b></h4><br>
+
+
+							<p>The model-rival method of training relies on the fact that dogs learn by observation. By providing a model of good behavior or a rival to compete for resources, dogs learn to mimic behaviors.</p>
+
+							<p>So a trainer might have another human act as the model, praising them for completing tasks on command or scolding them for unwanted behavior. The dog, as an observer, learns what to do correctly from the model.</p>
+
+							<p>The model can also act as a rival, competing to do the right task for a desired toy or treat as a reward, encouraging the dog to pick up on the task and accomplish it more quickly.</p>
+
+							<p>Mirror training relies on the same principle, using the dog owner as a model, then offering rewards for mimicking good behavior. It uses the dogs natural instincts to operate socially instead of working against them. To put it simply, the dog learns by example.</p>
+
+							<p>This training method operates with a similar level of success as positive reinforcement and operant conditioning. However, some trainers may find it more natural and preferable.</p>
+
+							<p>If your dog has a strong bond with you and can spend a lot of time observing you and following you around, this may be a technique that you find more comfortable than sticking to regular training sessions.</p></li>
+
+							</ol>
+							</span><button class="myBtn" onclick="myFunction7()" id="myBtn7">Read more...</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+
+
+
+		
+			<div class="container-fluid" id="wakesup">
+
+				<div class="row" id="blog_contents">
+					<div class="col-lg-3">
+						<div>
+							<center>
+								<img src="images/training/wakeup.jpg" class="blog_img">
+							</center>
+						</div>
+					</div>
+
+					<div class="col-lg-9">
+						<div class="blog-desc">
+							<h3 class="ques">Does your Dog wakes you up in the middle of the night ?</h3>
+							<p class="ans">We all need sleep, dogs included. But sometimes your dog wakes up in the middle of the night, then comes to you and “shares” her awake state.Who wants to play fetch or the I-have-to-go-inside/outside game at 2 a.m.? Most people naturally find a wide-awake dog in the early morning hours very frustrating. So what can you do?</p>
+						</div>
+					</div>
+						
+				</div>
+				<script>function myFunction1() {
+					  var dots1 = document.getElementById("dots1");
+					  var moreText1 = document.getElementById("more1");
+					  var btnText1 = document.getElementById("myBtn1");
+
+					  if (dots1.style.display === "none") {
+					    dots1.style.display = "inline";
+					    btnText1.innerHTML = "Read more...";
+					    moreText1.style.display = "none";
+					  } 
+					  else {
+					    dots1.style.display = "none";
+					    btnText1.innerHTML = "...Read less";
+					    moreText1.style.display = "inline";
+					  }
+					}
+				</script>
+				<div class="row" id="blog_end">
+					<div class="col-lg-12">
+						<div class="blog-desc">
+							<div class="ans"><span id="dots1"></span><span id="more1">
+								<br><h4><b>1. Rule out any possible medical factors</b></h4>
+								<p>Any time a new behavior appears that seems out of the ordinary, take your dog to the veterinarian first. If the unwanted behavior is caused by a medical issue — like a urinary tract infection or nighttime dementia — that needs to be addressed.</p>
+
+								<br><h4><b>2. Look at your dog’s routine during normal waking hours</b></h4>
+								<p>Is her mind truly getting a workout every day? Tire your dog’s mind with things like fun nose work or mind puzzles, and everyone might then peacefully sleep through the night. Of course, physical exercise is crucial as well. Dogs need both mental and physical stimulation every day.</p>
+
+								<br><h4><b>3. Once your dog is awake, give her something to do — besides panting right by your trying-to-sleep face</b></h4>
+								<p>Be prepared! I love having things like a frozen Kong stuffed with really tasty food on the ready. I ask the dog for behaviors I want before giving the Kong. For example, ask for six sits in a row, and on the sixth sit, make a big deal of it and walk over to your dog’s bed, and deliver the Kong. I prefer frozen because it takes the dog longer to eat. In other words, you don’t want to reinforce your dog for waking you up by immediately delivering a yummy thing to chew on. Ask for some obedience work, and that’s what you’ll be reinforcing.</p>
+
+								<br><h4><b>4. Rethink where your dog sleeps</b></h4>
+								<p>Do you shut your dog out of the bedroom, only to be woken up by her scratching at the door, barking, or whining? She could have separation anxiety, and something as simple as letting her sleep on her own bed in your bedroom (or on the bed, should you want her there) could be the solution. Dogs are our companions and want to be where we are. On the other hand, you could have a dog like my Border Collie who decides she’s done sleep – ing on the bed at 3 a.m. and wakes me up asking to be let out to go sleep elsewhere. My solution was to leave the bedroom door open, so she can let herself out when she chooses to.</p>
+
+								<br><h4><b>5. Don’t believe the myth that your dog does certain behaviors in a canine attempt to dominate you</b></h4>
+								<p>This is untrue and has been scientifically squashed for many years. Instead, give the situation some real thought, and see if you can figure out what it is your dog tries to communicate. If she’s hungry at 3 a.m., maybe her evening feeding time needs to be adjusted. Maybe she really does need to pee, and she’s doing you a favor by nudging you up to let her out. Or maybe she heard a strange noise in the front yard.</p>
+
+								<p>There are many possibilities for a 3 a.m. dog slurp on your sleeping face. Do your best to understand what your dog is trying to communicate, even when you’re groggy and half asleep. The quicker you figure out her needs and can solve the problem, the faster you both can get back to getting a full night’s sleep.</p></span><button class="myBtn" onclick="myFunction1()" id="myBtn1">Read more...</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+
+
+
+
+
+
+
+			<div class="container-fluid" id="scared">
+
+				<div class="row" id="blog_contents">
+					<div class="col-lg-3">
+						<div>
+							<center>
+								<img src="images/training/scared.jpg" class="blog_img">
+							</center>
+						</div>
+					</div>
+
+					<div class="col-lg-9">
+						<div class="blog-desc">
+							<h3 class="ques">How to Help a Scared Dog ?</h3>
+							<p class="ans">Living with a fearful dog can be challenging for us, but imagine what it’s like for our dogs. Fearful dogs are often misunderstood because they may present with undesirable behaviors, often dubbed “bad behaviors,” such as being stubborn, running and hiding, barking, snarling, growling, lunging and even outright aggression. These misunderstood behavioral displays do not make a dog bad. These behaviors are most often a manifestation of fear or anxiety.</p>
+						</div>
+					</div>
+						
+				</div>
+
+				<script>function myFunction2() {
+					  var dots2 = document.getElementById("dots2");
+					  var moreText2 = document.getElementById("more2");
+					  var btnText2 = document.getElementById("myBtn2");
+
+					  if (dots2.style.display === "none") {
+					    dots2.style.display = "inline";
+					    btnText2.innerHTML = "Read more...";
+					    moreText2.style.display = "none";
+					  } 
+					  else {
+					    dots2.style.display = "none";
+					    btnText2.innerHTML = "...Read less";
+					    moreText2.style.display = "inline";
+					  }
+					}
+				</script>
+
+				<div class="row" id="blog_end">
+					<div class="col-lg-12">
+						<div class="blog-desc">
+							<p class="ans"><span id="dots2"></span><span id="more2">
+							</span><button class="myBtn" onclick="myFunction2()" id="myBtn2">Read more...</button>
+							</p>
+						</div>
+					</div>
+				</div>
+
+
+
+			</div>
+
+
+
+
+
+
+
+			<div class="container-fluid" id="fireworks">
+
+				<div class="row" id="blog_contents">
+					<div class="col-lg-3">
+						<div>
+							<center>
+								<img src="images/training/firework.jpg" class="blog_img">
+							</center>
+						</div>
+					</div>
+
+					<div class="col-lg-9">
+						<div class="blog-desc">
+							<h3 class="ques">Dogs & Fireworks - Stop your Dog from getting scared...</h3>
+							<p class="ans">Fireworks are a fun and exciting way to celebrate holidays like Independence Day. For dogs, though, those loud booms and flashing lights aren’t so fun. Most of the pets run away on the festive days of the year. So it’s critical to ensure people can identify your dog and contact you if he runs off out of fear. Getting him microchipped well in advance of such holidays is a smart decision. It’s also a good idea to attach identification tags to his collar.Below are some reasons dogs are scared of fireworks, followed by ways you can help ease your dog’s fears and keep him calm.</p>
+						</div>
+					</div>
+						
+				</div>
+
+				<script>function myFunction3() {
+					  var dots3 = document.getElementById("dots3");
+					  var moreText3 = document.getElementById("more3");
+					  var btnText3 = document.getElementById("myBtn3");
+
+					  if (dots3.style.display === "none") {
+					    dots3.style.display = "inline";
+					    btnText3.innerHTML = "Read more...";
+					    moreText3.style.display = "none";
+					  } 
+					  else {
+					    dots3.style.display = "none";
+					    btnText3.innerHTML = "...Read less";
+					    moreText3.style.display = "inline";
+					  }
+					}
+				</script>
+
+				<div class="row" id="blog_end">
+					<div class="col-lg-12">
+						<div class="blog-desc">
+							<div class="ans"><span id="dots3"></span><span id="more3">
+								
+								<br><h4><b>Why Dogs are Scared of Fireworks?</b></h4>
+
+								<p><b>1. <u>They’re Loud</u></b><br>
+								Most fireworks make some kind of loud sound. Dogs have a more acute sense of hearing than humans, so those loud booms, crackles and whistles are alarming.</p><br>
+
+								<p><b>2. <u>They’re Unpredictable</u></b><br>
+								You expect fireworks on holidays like the Fourth of July, but for your dog, it’s just another day. Those firecrackers come without warning. The loud noises and flashing lights sound and look different each time. Plus, they come at different intervals, so dogs can’t get used to them.</p><br>
+
+								<p><b>3. <u>They Pose a Threat</u></b><br>
+								The noise and unpredictability of fireworks leads many dogs to perceive them as a threat. This triggers their fight-or-flight response. Your dog may bark at the noises or try to run away and hide. He may show other signs of anxiety, too, like restlessness, panting, pacing and whining.</p><br>
+
+								<p><b>4. <u>Fireworks Make Dogs Feel Trapped</u></b><br>
+								Fireworks are inescapable on holidays like Independence Day. So if the noises trigger your dog’s flight response, he will try to run from the threat. Unfortunately, there’s often nowhere to go, as you can still hear those loud booms indoors.</p><br>
+
+								<br><h4><b>How to Keep Your Dog Safe & Calm During Fireworks</b></h4>
+								<p>As you can see, dogs have good reasons to fear fireworks. Fortunately, there are several things you can do to help your dog feel safe and secure.</p>
+
+								<ul>
+									<li><p><b>Keep Him Inside:</b> Even if your dog spends most of his time outdoors, bring him inside during firework displays. This will prevent him from running away when he feels scared, which can put him in danger.</p></li>
+									<li><p><b>Create a Safe Space:</b> If your dog is crate-trained, make his crate available, as that’s probably already a safe space for him. If not, put him in a bathroom or other small room with music or white noise to help drown out the boom of fireworks. Bringing his bed, blankets and toys into the room can make him feel more comfortable.</p></li>
+									<li><p><b>Try a Calming Wrap:</b> Calming wraps, vests and shirts apply light, constant pressure. Many dogs find this soothing and calming. You may find such products help in other anxiety-inducing situations, like thunderstorms.</p></li>
+									<li><p><b>Desensitize:</b> Start working with your dog far enough in advance to desensitize him to fireworks and other loud noises. You can start this process by playing fireworks sounds on a low level while playing with your dog and giving him treats. Over time, slowly increase the sound of the fireworks during these play sessions. Eventually, your dog will associate the sound of fireworks with happy and fun moments.</p></li>
+								</ul>
+								<br><p>Not all dogs are afraid of fireworks, but it’s important to remember your dog will take cues from you. If you make a big deal out of them when he’s not scared, he may eventually develop anxiety about fireworks. So make an effort to keep your dog calm, but remember to remain calm yourself.</p></span><button class="myBtn" onclick="myFunction3()" id="myBtn3">Read more...</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+			</div>
+
+
+
+
+
+
+
+
+			<div class="container-fluid" id="peeing">
+
+				<div class="row" id="blog_contents">
+					<div class="col-lg-3">
+						<div>
+							<center>
+								<img src="images/training/peeing.jpg" class="blog_img">
+							</center>
+						</div>
+					</div>
+
+					<div class="col-lg-9">
+						<div class="blog-desc">
+							<h3 class="ques">Dog Peeing in the House ? What to Know & What to do ?</h3>
+							<p class="ans">Is your dog peeing in the house? You’re not alone. Many dog have accidents even when they’re housetrained, and it can be incredibly frustrating.But, however annoyed you might feel, a dog peeing in the house isn’t necessarily the thing to blame for this unwanted behavior. Current research shows that dogs aren’t being stubborn if they have an accident but rather responding to some kind of stress or change in their environment. It’s up to you to help alleviate that stress and teach your dog what you want him to do.</p>
+						</div>
+					</div>	
+				</div>
+
+				<script>function myFunction4() {
+					  var dots4 = document.getElementById("dots4");
+					  var moreText4 = document.getElementById("more4");
+					  var btnText4 = document.getElementById("myBtn4");
+
+					  if (dots4.style.display === "none") {
+					    dots4.style.display = "inline";
+					    btnText4.innerHTML = "Read more...";
+					    moreText4.style.display = "none";
+					  } 
+					  else {
+					    dots4.style.display = "none";
+					    btnText4.innerHTML = "...Read less";
+					    moreText4.style.display = "inline";
+					  }
+					}
+				</script>
+
+				<div class="row" id="blog_end">
+					<div class="col-lg-12">
+						<div class="blog-desc">
+							<p class="ans"><span id="dots4"></span><span id="more4">
+							</span><button class="myBtn" onclick="myFunction4()" id="myBtn4">Read more...</button>
+							</p>
+						</div>
+					</div>
+				</div>
+
+
+
+			</div>
+
+
+
+
+
+
+
+
+			<div class="container-fluid" id="hiding">
+
+				<div class="row" id="blog_contents">
+					<div class="col-lg-3">
+						<div>
+							<center>
+								<img src="images/training/hiding.jpg" class="blog_img">
+							</center>
+						</div>
+					</div>
+
+					<div class="col-lg-9">
+						<div class="blog-desc">
+							<h3 class="ques">Is your Dog Hiding ?  What to Do with it ?</h3>
+							<p class="ans">Believe it or not, hiding isn’t just a behavior reserved for felines. Dogs hide, too — and dog hiding is actually pretty common. According to Dr. David Dilmore, DVM, of Banfield Pet Hospital, dog hiding often occurs when dogs feel stressed, confused or are in an unfamiliar situation. So, is your dog hiding? Find out how to help your dog, if the behavior deserves the attention of a vet and get to the bottom of why your dog is hiding.</p>
+						</div>
+					</div>
+						
+				</div>
+
+				<script>function myFunction5() {
+					  var dots5 = document.getElementById("dots5");
+					  var moreText5 = document.getElementById("more5");
+					  var btnText5 = document.getElementById("myBtn5");
+
+					  if (dots5.style.display === "none") {
+					    dots5.style.display = "inline";
+					    btnText5.innerHTML = "Read more...";
+					    moreText5.style.display = "none";
+					  } 
+					  else {
+					    dots5.style.display = "none";
+					    btnText5.innerHTML = "...Read less";
+					    moreText5.style.display = "inline";
+					  }
+					}
+				</script>
+
+
+				<div class="row" id="blog_end">
+					<div class="col-lg-12">
+						<div class="blog-desc">
+							<p class="ans"><span id="dots5"></span><span id="more5">
+							</span><button class="myBtn" onclick="myFunction5()" id="myBtn5">Read more...</button>
+							</p>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+
+
+
+
+
+
+			<div class="container-fluid" id="whistles">
+
+				<div class="row" id="blog_contents">
+
+
+					<div class="col-lg-3">
+						<div>
+							<center>
+								<img src="images/training/whistle.jpg" class="blog_img">
+							</center>
+						</div>
+					</div>
+
+					<div class="col-lg-9">
+						<div class="blog-desc">
+							<h3 class="ques">Do Dog whistles work ? What are they for ? </h3>
+							<p class="ans">Even though many of us pet parents have loved dogs for our whole lives, few of us have actually used a dog whistle before. What are dog whistles, exactly? What do people use them for? Do they whip dogs into a frenzy like in cartoons? - A dog whistle, known also as a silent or Galton’s whistle–after inventor Francis Galton–is a high-pitched whistle generally used for dog training. The sound it emits comes from what is known as the ultrasonic range, a pitch that is so high humans can’t hear it.</p>
+						</div>
+					</div>
+						
+				</div>
+
+				<script>function myFunction6() {
+					  var dots6 = document.getElementById("dots6");
+					  var moreText6 = document.getElementById("more6");
+					  var btnText6 = document.getElementById("myBtn6");
+
+					  if (dots6.style.display === "none") {
+					    dots6.style.display = "inline";
+					    btnText6.innerHTML = "Read more...";
+					    moreText6.style.display = "none";
+					  } 
+					  else {
+					    dots6.style.display = "none";
+					    btnText6.innerHTML = "...Read less";
+					    moreText6.style.display = "inline";
+					  }
+					}
+				</script>
+
+
+				<div class="row" id="blog_end">
+
+					<div class="col-lg-12">
+						<div class="blog-desc">
+							<p class="ans"><span id="dots6"></span><span id="more6">
+							</span><button class="myBtn" onclick="myFunction6()" id="myBtn6">Read more...</button>
+							</p>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+
+
+			<div class="container-fluid" id="anxiety">
+
+				<div class="row" id="blog_contents">
+
+					<div class="col-lg-3">
+						<div>
+							<center>
+								<img src="images/training/anxiety.jpg" class="blog_img">
+							</center>
+						</div>
+					</div>
+
+					<div class="col-lg-9">
+						<div class="blog-desc">
+							<h3 class="ques">Reduce your Dog's Anxiety when meeting people ...</h3>
+							<p class="ans">Some dogs can experience anxiety or fear in social situations. It may happen when you take the dog to the park, walk through crowds, go to the veterinarian, or even visit your friends' homes.Proper socialization is essential for all dogs. Failure to socialize can result in a dog with crippling social anxiety, fear, and sometimes even aggression. Many people don't realize how a lack of socialization can impact their pets' behavior, though there are steps you can take to help your pup feel more at ease.</p>
+						</div>
+					</div>
+
+				</div>
+				<script>function myFunction8() {
+					  var dots8 = document.getElementById("dots8");
+					  var moreText8 = document.getElementById("more8");
+					  var btnText8= document.getElementById("myBtn8");
+
+					  if (dots8.style.display === "none") {
+					    dots8.style.display = "inline";
+					    btnText8.innerHTML = "Read more...";
+					    moreText8.style.display = "none";
+					  } 
+					  else {
+					    dots8.style.display = "none";
+					    btnText8.innerHTML = "...Read less";
+					    moreText8.style.display = "inline";
+					  }
+					}
+				</script>
+
+				<div class="row" id="blog_end">
+					<div class="col-lg-12">
+						<div class="blog-desc">
+							<div class="ans"><span id="dots8"></span><span id="more8">
+								<br><h4><b>What Is Social Anxiety?</b></h4>
+
+								<p>Social anxiety in dogs is a fear of people, other animals, or unknown places, sights, sounds, and other stimuli in the environment. A dog may be perfectly fine around its human family members then become anxious around strangers, for example. Likewise, some are fine indoors or in their territory, but panic when leaving home. </p>
+
+								<p>Depending on the dog, the level of anxiety in a social setting can be mild or extreme. It can cause a dog to act out or behave in ways that are not normally observed when it's in a familiar environment.</p>
+
+								<br><h4><b>Signs of Social Anxiety in Dogs</b></h4>
+
+								<p>While some dogs may become very timid, others may feel trapped and cornered, which often results in fear aggression. When a cornered dog experiences the biological fight-or-flight response, the only available action is to fight.</p>
+
+								<ul>
+									<br><li>Aggressive behavior, such as barking, growling or jumping toward a person or animal.</li>
+									<br><li>Timid and fearful behavior, including cowering behind the owner, whining, or even screeching.</li>
+									<br><li>Some dogs show signs of extreme nervousness like panting or drooling. They may even suddenly urinate or defecate without seeming to know it.</li>
+								</ul>
+
+
+								<br><h4><b>Causes of Social Anxiety</b></h4>
+
+								<ul>
+									<br><li>Puppies who are not introduced to new experiences can be overwhelmed when they meet new people or dogs. They may also become nervous on a car ride or at the park because it's simply too much to take in all at once. Proper socialization at a young age can help them learn to adapt to new situations throughout their lives.</li>
+									<br><li>Adult dogs can also experience social anxiety. It is most common in dogs rescued from puppy mills or abusive and neglectful situations. They may have had little or no human contact or only negative experiences with humans.</li>
+									<br><li>Stray dogs may be anxious because they have a general distrust of people and busy places. This may be something they learned that was necessary for survival on the street.</li>
+									<br><li>Dogs who grow up in rural areas or who are sheltered in their own homes and rarely leave may become very fearful when taken out of their home territory.</li>
+								</ul>
+
+
+								<br><h4><b>Treatment</b></h4>
+
+								<p>If your dog is the anxious type, you need to take careful steps to help it overcome the fear. It's best to start small and desensitizing a fearful dog is hard work. This can be a long, drawn-out process that can take weeks to months, but it's well worth it. You will need to carefully judge how much your dog can handle at one time. Be patient and keep it positive.</p>
+
+								<p>Begin by letting your dog meet one person at a time. Allow your dog to initiate contact and ensure it has a safe retreat where it can go if it begins to feel overwhelmed. Remember to go slowly, rewarding good behavior and moments when your dog is calm. Be sure not to comfort the dog when it's fearful, as this can reinforce the fearful behavior rather than help the dog overcome it.</p>
+
+								<p>Through steady exposure to new experiences, you should notice that your dog is relaxing more as things become more familiar. Make every outing fun. If you take the dog down a busy street and it acts afraid, finish the outing at a place your pup enjoys—a quiet park to play or a walk down a quiet street, for example. This way, your dog is less likely to fear outings in general. While your dog may never learn to love being in busy areas, it can learn to tolerate them if it can associate outings with the "good part" at the end.</p>
+
+								<p>If your dog is anxious around other dogs, be sure to keep it away from dogs when you do not have control over the situation. Avoid dog parks and cross the street during walks if another dog is coming toward you.</p>
+
+								<p>When you decide to introduce your dog to another dog, do so very slowly and carefully. Choose a calm, aloof dog that will not seem threatening to your dog, stay at a comfortable distance, and limit it to just a short time. Reward your dog for calm behavior. If your dog remains calm, you may gradually decrease the distance between the dogs and increase the time of exposure. At the first subtle sign of fear or anxiety, increase the distance between the two dogs or remove your dog entirely if necessary.</p>
+
+								<p>The goal here is to avoid letting the anxiety build up to a high level. Your dog may never learn to enjoy the company of other dogs. However, it can learn to tolerate the presence of another dog at a distance.</p>
+
+								<br><h4><b>How to Prevent Social Anxiety</b></h4>
+
+								<p>Socialization is most successful when started early. Begin the puppy socialization process as soon as possible. This essentially trains your dog to handle itself in busy situations. A well-socialized dog is not fearful of crowds and plays well with other dogs.</p>
+
+								<p>Start by taking your puppy out to different places. It is best to do this after it has been fully immunized against Parvo and Distemper. By exposing the dog while still young to different sights, sounds, and people, you teach it to accept these as normal. You will have a happy, friendly dog who handles others well.</p>
+
+								<p>If you adopt an adult dog, you cannot be sure what it has been exposed to. Don't worry, you can still socialize an adult dog. You should start this process as soon as you bring your new dog home.</p></span><button class="myBtn" onclick="myFunction8()" id="myBtn8">Read more...</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+
+
+		</div>
+
+
+	<footer>
+		
+		<div class="container-fluid">
+			<div class="blog">
+				<div class="row">
+					<div class="col-lg-4">
+						<br><br>
+						<div class="footer_note"><center>
+							<p class="copy1"><b>&copy;</b> Copyright Reserved by <b>Subhradipta Choudhury.</b></p>
+							<p class="copy2">The pictures &amp; contents used here are only for college project purpose.</p></center>
+						</div>
+						<br><br>
+					</div>
+					<div class="col-lg-4">
+						<br><br>
+						<center>
+							<h4 class="connect" style="">CONNECT WITH US</h4>
+							<div style="align-items: center;">
+
+
+								<a href="https://www.facebook.com/profile.php?id=100009449073945" style="text-decoration: none;">
+									<div class="icon" id="facebook">
+										<center>
+											<i class="fab fa-facebook-f"></i>
+										</center>
+									</div>
+								</a>
+
+								<a href="#" style="text-decoration: none;">
+									<div class="icon" id="twitter">
+										<center>
+											<i class="fab fa-twitter"></i>
+										</center>
+									</div>
+								</a>
+
+								<a href="#" style="text-decoration: none;">
+									<div class="icon" id="instagram">
+										<center>
+											<i class="fab fa-instagram"></i>
+										</center>
+									</div>
+								</a>
+
+								<a href="mailto:info@puppzilla.co.in?cc=csubhradipta@gmail.com" style="text-decoration: none;">
+									<div class="icon" id="gmail">
+										<center>
+											<i class="far fa-envelope"></i></i>
+										</center>
+									</div>
+								</a>
+
+								<a href="https://wa.me/917980397413" style="text-decoration: none;">
+									<div class="icon" id="whatsapp">
+										<center>
+											<i class="fab fa-whatsapp"></i>
+										</center>
+									</div>
+								</a>
+
+							</div>	
+						</center>
+						<br><br>
+					</div>
+					<div class="col-lg-4" style="">
+						<br><br>
+						<center><h4 class="connect" style="padding-bottom: 6px;">SUBSCRIBE TO OUR E-MAGAZINE</h4>
+						<input type="email" name="" placeholder="Your Email" class="form-control" style="width: 80%;"></center>
+						<br><br>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+</div>
+</body>
+</html>

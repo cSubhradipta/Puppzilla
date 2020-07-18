@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Puppzilla</title>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Capriola' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+	<nav class="navbar navbar-default" style="border-style: none;background-color: #98cbe1;  overflow: hidden; position: fixed; top: 0; width: 100%; z-index: 10;">
+  		
+  		<div class="container-fluid" id="container-fluid">
+    		
+    		<div class="navbar-header">
+
+      			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="margin-top: 15px; border-style: none; background-color:  #006bb3;">
+        				<span class="fa fa-bars" style="color: #fff; font-size: 20px; " onMouseOver="this.style.color='lightblue'"
+       					onMouseOut="this.style.color='#fff'"></span>                      
+      			</button>
+
+      			<a class="navbar-brand" href="#"><img src="images/navbrand.png" class="navbrand"></a>
+
+    		</div>
+
+		    <div class="collapse navbar-collapse" id="myNavbar" style="border-style: none;">
+		    	<center>
+			      	<ul class="nav navbar-nav navbar-right">
+			        	<li class="nav-item">
+							<a href="index.html" style="color: #001a33;" onMouseOver="this.style.color='#006bb3'"
+	       					onMouseOut="this.style.color='#001a33'">HOME</a>
+						</li>
+						<li class="nav-item" style="background-color: #fff; border-radius: 4px;">
+							<a href="food.html" style="color: #001a33;" onMouseOver="this.style.color='#006bb3'"
+	       					onMouseOut="this.style.color='#001a33'">FOOD</a>
+						</li>
+						<li class="nav-item">
+							<a href="health.html" style="color: #001a33;" onMouseOver="this.style.color='#006bb3'"
+	       					onMouseOut="this.style.color='#001a33'">HEALTH</a>
+						</li>
+						<li class="nav-item">
+							<a href="training.html" style="color: #001a33;" onMouseOver="this.style.color='#006bb3'"
+	       					onMouseOut="this.style.color='#001a33'">TRAINING</a>
+						</li>
+						<li class="nav-item">
+							<a href="breeds.html" style="color: #001a33;" onMouseOver="this.style.color='#006bb3'"
+	       					onMouseOut="this.style.color='#001a33'">BREEDS</a>
+						</li>
+						<li class="nav-item">
+							<a href="contact.html" style="color: #001a33;" onMouseOver="this.style.color='#006bb3'"
+	       					onMouseOut="this.style.color='#001a33'">CONTACT</a>
+						</li>
+	      			</ul>
+      			</center>
+    		</div>
+  		</div>
+	</nav>
+
+
+
+
+
+	<div>
+		
+		<div class="sidebar" id="sidebar">
+			<center><div class="sidebar-close" onclick="close_side()"><i class="fa fa-arrow-left" style="float: left;"></i></div></center>
+			<h2 class="sidebar-heading"></"><center>CONTENTS</center></h2>
+			<form class="navbar-form navbar-left" action="" style="border-style: none;">
+      			<div class="input-group">
+        			<input type="search" class="form-control" placeholder="Search" name="search" style="">
+        			<div class="input-group-btn">
+         				<button class="btn btn-default" type="submit" style="outline-style: none;">
+            				<i class="glyphicon glyphicon-search"></i>
+          				</button>
+        			</div>
+      			</div>
+    		</form>
+
+  			<br><br>
+
+  			<a href="#nutrients">Essential Nutrients That Dogs Need</a><br>
+			<a href="#carrots">Can Dogs Eat Carrots? Are Carrots Good for them?</a><br>
+			<a href="#spices">Spices that are Safe for Dogs...</a><br>
+		  	<a href="#vegetables">Vegetables Dogs can Eat...</a><br>
+		  	<a href="#avocado">Avocado/Soybean Unsaponifiables for Dogs: Huge Benefits for Osteo-arthritis ...</a><br>
+		  	<a href="#sick">What to Feed a Sick Dog?</a><br>
+		    <a href="#nuts">Which Nuts are Safe for Dogs to Eat ?</a><br>
+			<a href="#digestion">Dog Digestive System Basics - How long does it take for a dog to digest Food?</a><br>
+  
+		</div>
+
+
+		<script>
+			function open_side() 
+			{
+				document.getElementById("sidebar").style.width = "300px";
+			}
+
+			function close_side()
+			{
+	  			document.getElementById("sidebar").style.width = "0";
+	  		}
+
+		</script>
+
+		
+		<div class="sidebar-open" onclick="open_side()"><i class="fa fa-arrow-right" style="float: right;"></i>
+
+
+
+		</div>
+
+		<div class="blog" style="margin-top: 100px;">
+
+
+
+			<div class="container-fluid" id="nutrients">
+
+				<div class="row" id="blog_contents">
+
+
+					<div class="col-lg-3">
+						<div>
+							<center>
+								<img src="images/food/nutrition.jpg" class="blog_img">
+							</center>
+						</div>
+					</div>
+
+
+					<div class="col-lg-9">
+						<div class="blog-desc">
+							<h3 class="ques">Essential Nutrients That Dogs Need</h3>
+							<p class="ans">All living organisms need a wide variety of nutrients — substances from food that provide energy and enable our bodies to function — to survive. There are six major classes of nutrients for dogs and people: water, protein, fat, carbohydrates, vitamins and minerals. Both dry and canned dog food will give your dog good nutrition. Some experts prefer dry food because it may help keep teeth and gums healthy. If you make your own dog food, use recipes created by nutritionists to be "complete and balanced."
+							</p>
+						</div>
+					</div>
+						
+				</div>
+
+				<script>function myFunction1() {
+					  var dots1 = document.getElementById("dots1");
+					  var moreText1 = document.getElementById("more1");
+					  var btnText1 = document.getElementById("myBtn1");
+
+					  if (dots1.style.display === "none") {
+					    dots1.style.display = "inline";
+					    btnText1.innerHTML = "Read more...";
+					    moreText1.style.display = "none";
+					  } 
+					  else {
+					    dots1.style.display = "none";
+					    btnText1.innerHTML = "...Read less";
+					    moreText1.style.display = "inline";
+					  }
+					}
+				</script>
+
+				<div class="row" id="blog_end">
+					<div class="col-lg-12">
+						<div class="blog-desc">
+							<div class="ans"><span id="dots1"></span><span id="more1">
+							<br><br><h4><b>Let’s take a closer look at dog nutrition and six essential nutrients your dog needs to eat:</b></h4><br><br>
+							<ol>
+						
+
+								<li><h4><b>Water</b></h4><br>
+
+								<p><b>What it is:</b> A tasteless, colorless, odorless chemical made up of two hydrogen molecules and one oxygen molecule — hence the name H2O.</p>
+								<p><b>Why it’s important:</b> Without water, life cannot exist. Water makes up 70 to 80 percent of a mature dog’s lean body mass. Water’s many important functions include: dissolving and transporting nutrients to the cells; helping regulate body temperature; hydrolyzing protein, fat and carbohydrates for digestion; cushioning the organs and nervous system; flushing waste from the body.</p>
+								<p><b>Special considerations:</b> A dog’s water requirements vary based on health, activity level and environmental temperature. Most dogs self-regulate their water intake to meet their needs. Dogs fed high-moisture foods typically drink less than kibble-fed dogs. All dogs should always have access to clean, fresh H2O.</p>
+								<p><b>Get it from:</b> Straight from the tap fitted with a good quality filter.</p></li><br><br>
+
+
+								<li><h4><b>Protein</b></h4><br>
+
+								<p><b>What it is:</b> Along with fats and carbohydrates, protein is a macronutrient, meaning that it supplies energy. Protein is made up of amino acids, the building blocks of life.</p>
+								<p><b>Why it’s important:</b> Protein supplies essential and non-essential amino acids that are critical to life. Proteins give the body structure (think strong hair, skin, nails, muscles and bones) and are necessary to make hormones, neurotransmitters, enzymes and antibodies that keep the body functioning optimally. Dogs must receive the essential amino acids from diet, as their bodies cannot produce them at the required levels. Protein can also supply energy in the absence of sufficient carbohydrates and fats. Because the body can’t store protein, it needs a constant dietary supply.</p>
+								<p><b>Special considerations:</b> Growing puppies and pregnant and lactating females require about twice as much protein as an adult dog at maintenance.</p>
+								<p><b>Get it from:</b> Animal sources such as lean-muscle meats, fish and eggs; plant-based sources such as beans and lentils.</p></li><br><br>
+
+
+								<li><h4><b>Fat</b></h4><br>
+
+								<p><b>What it is:</b> A macronutrient made up of fatty acids. Dietary fats are either saturated (e.g., butter, cheese meat), polyunsaturated (e.g., fish oil, flaxseed oil, sunflower oil) or monounsaturated (e.g., olive oil).</p>
+								<p><b>Why it’s important:</b> Fat supplies the most concentrated source of energy, with more than twice as many calories as protein and carbohydrates. It also provides essential omega-3 and omega-6 fatty acids; enables absorption of fat-soluble vitamins; protects the internal organs; regulates body temperature; and promotes a healthy nervous system.</p>
+								<p><b>Special considerations:</b> Too much fat can trigger pancreatitis or gastrointestinal issues. Avoid fatty table scraps. Be aware that coconut oil does not supply essential fatty acids.</p>
+								<p><b>Get it from:</b> Low-mercury fish and fish oil; plant-based oils, such as flaxseed and hempseed.</p></li><br><br>
+
+
+								<li><h4><b>Vitamins</b></h4><br>
+
+								<p><b>What they are:</b> Vitamins are organic compounds (meaning that they contain carbon) that are required in small quantities for proper metabolic function. Vitamins can be soluble in fat (A, D, E and K) or in water (B and C). Fat-soluble vitamins are stored in fatty tissues and the liver; water-soluble vitamins are not stored. Because the body can’t synthesize vitamins in sufficient quantities, they must come from the diet.</p>
+								<p><b>Why they’re important:</b> Vitamins play a variety of critical roles, including: regulating calcium and phosphorus levels (D); boosting the immune system (A); serving as antioxidants (C and E); enabling the blood to clot (K); and maintaining nervous system function (B12).</p>
+								<p><b>Special considerations:</b> All home-prepared diets require vitamin supplementation. If you feed a commercial “complete and balanced” food, do not add additional fat-soluble vitamins, as toxicity can occur. Toxicity of water-soluble vitamins is unlikely, as excess is excreted in the urine.</p>
+								<p><b>Get THEM from:</b> A varied diet containing organ and muscle meats and dog-friendly plant-based foods.</p></li><br><br>
+
+
+								<li><h4><b>Minerals</b></h4><br>
+
+								<p><b>What they are:</b> Minerals are inorganic compounds that the body needs to maintain proper metabolic functions. The body cannot manufacture minerals and so must get them from food. There are two classes of minerals: macrominerals (calcium, magnesium, phosphorus, sodium, potassium, chloride) and microminerals (iron, copper, zinc, manganese, selenium, iodine). Macrominerals are required by the body in higher levels than microminerals, but both types are equally important.</p>
+								<p><b>Why they’re important:</b> Like vitamins, minerals perform a variety of functions in the body that are essential for supporting life, including: constituting a major part of bones (calcium, phosphorus); carrying oxygen throughout the body (iron); assisting in wound healing (zinc); providing antioxidant support (selenium); aiding in nerve transmission (sodium, potassium, calcium, magnesium); and regulating fluid balance (sodium, chloride, potassium).</p>
+								<p><b>Special considerations:</b> Growing puppies require more than double the calcium of adult dogs at maintenance. Calcium and phosphorus levels and ratios must be monitored closely in large-breed puppies to avoid risk of developmental orthopedic disease.</p>
+								<p><b>Get THEM from:</b> Different foods are rich in different minerals. Meat is high in phosphorus, while bone is high in calcium. Organ meats provide copper and iron, while shellfish is rich in zinc.</p></li><br><br>
+
+
+								<li><h4><b>Carbohydrates</b></h4><br>
+
+								<p><b>What they are:</b> A macronutrient made up of units of sugars, starches or indigestible fiber. Since dogs can synthesize glucose from sufficient dietary protein and fat, carbohydrates are the only nutrient class that is not essential for dogs.</p>
+								<p><b>Why they’re important:</b> Carbohydrates are the main source of glucose, the “fuel” the body runs on. Although carbohydrates are not an essential nutrient for dogs, healthy carbohydrates supply important vitamins, minerals, antioxidants and plant-based nutrients that help promote optimum health.</p>
+								<p><b>Special considerations:</b> Consuming a portion of energy from healthy carbohydrates spares protein for other important functions. Steer clear of high-glycemic “junk” carbohydrates that provide little to no nutrition and rapidly raise blood sugar levels.</p>
+								<p><b>Get THEM from:</b> Dog-friendly vegetables, fruits, legumes and gluten-free grains.
+								The importance of each nutrient class could — and does — take up entire books, so I’ve only skimmed the surface. The bottom line in dog nutrition is that all dogs need an ample supply of nutrients to survive and thrive. The fewer of these nutrients that come from food, the more supplementation is needed to fill the gaps.</p></li><br><br>
+
+								</ol>
+
+								<br><h4><b>Power Sources for Dog Nutrition</b></h4><br><br>
+
+								<b>Not sure which foods hold the most nutrient “bang for their buck”? Check out this list to get you started:</b><br><br><br>
+
+								<ul>
+									<li><b>Water :&emsp;</b><i><u>Filtered tap water:</u> &emsp;Clean; pure; cost-efficient; readily available</i></li><br>
+									<li><b>Protein :&emsp;</b><i><u>Whole egg:</u>&emsp; Considered the most bioavailable source of protein (1 large egg provides about 6 grams of protein)</i></li><br>
+									<li><b>Fat :&emsp;</b> <i><u>Sardines:</u>&emsp; Low mercury; nutrient-rich; high in the essential omega-3 acids EPA and DHA</i></li><br>
+									<li><b>Carbohydrates :&emsp;</b><i><u> Butternut squash:</u>&emsp; High in vitamins A and C; loaded with antioxidant-rich carotenes; excellent source of many vitamins and minerals, such as vitamins E and B6, magnesium, manganese and potassium.</i></li><br>
+									<li><b>Vitamins :&emsp;</b><i><u> Dark leafy greens:</u>&emsp; Rich in vitamins A, C, E, K and folate; also high in carotenoids and many minerals; protect against cancer</i></li><br>
+									<li><b>Minerals :&emsp;</b><i><u> Oysters:</u>&emsp; Excellent source of copper, iron, magnesium, manganese, phosphorus, selenium, zinc; also rich in vitamin D and omega-3 fatty acids</i></li>
+								</ul>
+							</div></span><button class="myBtn" onclick="myFunction1()" id="myBtn1">Read more...</button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+
+
+
+
+
+
+
+			<div class="container-fluid" id="carrots">
+
+				<div class="row" id="blog_contents">
+					<div class="col-lg-3">
+						<div>
+							<center>
+								<img src="images/food/carrot.jpg" class="blog_img">
+							</center>
+						</div>
+					</div>
+
+					<div class="col-lg-9">
+						<div class="blog-desc">
+							<h3 class="ques">Can Dogs Eat Carrots? Are Carrots Good for them?</h3>
+							<p class="ans">The short answer to “Can dogs eat carrots?” is good news. The better news is that not only can dogs eat carrots, but carrots are actually very healthy for dogs. Experts everywhere say carrots are amazing, healthy snacks for our canine friends.Carrots are great, they offer a low-calorie source of extra food for hungry dogs, are high in fiber and also help to slow down the progression of dental disease.</p>
+						</div>
+					</div>
+						
+				</div>
+				<script>function myFunction2() {
+					  var dots2 = document.getElementById("dots2");
+					  var moreText2 = document.getElementById("more2");
+					  var btnText2 = document.getElementById("myBtn2");
+
+					  if (dots2.style.display === "none") {
+					    dots2.style.display = "inline";
+					    btnText2.innerHTML = "Read more...";
+					    moreText2.style.display = "none";
+					  } 
+					  else {
+					    dots2.style.display = "none";
+					    btnText2.innerHTML = "...Read less";
+					    moreText2.style.display = "inline";
+					  }
+					}
+				</script>
+
+
+				<div class="row" id="blog_end">
+					<div class="col-lg-12">
+						<div class="blog-desc">
+							<div class="ans"><span id="dots2"></span><span id="more2">
+							<br><h4>Can Dogs Eat Carrots for Health Benefits?</h4>
+							<p>Now that we’ve answered, “Can dogs eat carrots?” let’s look at some of the benefits for dogs eating carrots. Carrots for dogs are a great source of fiber, antioxidants and vitamin A. While everything in carrots is great, vitamin A is crucial in maintaining overall health, for both dogs and humans. For dogs, vitamin A is essential for bone growth, reproduction, cellular differentiation and a good immune response.<p>
+
+							<p>Carrots are also great for keeping a dog's eyes healthy and his vision sharp. When your dog eat carrots, he's getting a serious boost of beta-carotene, potassium, niacin, calcium, phosphorus, magnesium, and vitamins A, B, C, D, E and K. Better yet, carrots are loaded with lycopene and lutein — essential phytonutrients that may help protect eyes from free-radical damage and UVB radiation.<p>
+
+							<br><h4>Can Dogs Eat Carrots for Better Dental Health?</h4>
+							<p>Veterinarians recommend you brush your dog's teeth daily, but that isn't always easy for pet parents to do. Some dogs just don't want their teeth touched, so experts recommend you try to brush your dog's teeth at least once or week, or a minimum of once a month.<p>
+
+							<p>However, when you can't brush your dog's teeth, carrots will help polish your dog's pearly whites and combat plaque build-up. If your dog will eat veggies, by all means hand out treats of raw or lightly steamed carrots.<p>
+
+							<p>On the plus side, while your dog is chewing on carrots and cleaning his teeth, he's also eating a food that helps his teeth stay healthy from the inside too.<p>
+
+							<br><h4>Can Dogs Eat Carrots As Treats?</h4>
+							<p>It's so easy to overdo it on giving out treats to your dog. In fact, you only have to look at the stats. The Association of Pet Obesity Prevention 2016 clinical survey found that 53.9 percent of dogs are overweight or obese. With that extra weight comes a greater risk that your dog will develop certain diseases, such as diabetes or respiratory problems.<p>
+
+							<p>That's why it's refreshing that your dog can eat carrots as a low-fat alternative to regular dog treats.<p>
+
+							<br><h4>How to Feed Carrots to Your Dog?</h4>
+
+							<p>Now that we’ve established some guidelines and answers for “Can dogs eat carrots?” let’s look at how to feed your dog carrots. How you feed carrots to your dog largely depends on your dog’s breed and your own personal preferences. For smaller dogs, you’ll want to give them sliced or baby carrots, so they can break the carrots apart easily without choking on them.<p>
+
+							<p>Can dogs eat carrots that are cooked or raw? That depends. It is recommended to feed raw, peeled carrots to dogs, or you can feed cooked carrots so your dog is able to get properly digest the nutrition from them. Studies have shown that humans who eat cooked, pureed carrots better absorb beta-carotene, the precursor of vitamin A.<p>
+							</div></span><button class="myBtn" onclick="myFunction2()" id="myBtn2">Read more...</button>
+						</div>
+					</div>
+				</div>
+
+
+
+			</div>
+
+
+
+
+
+
+
+			<div class="container-fluid" id="spices">
+
+				<div class="row" id="blog_contents">
+					<div class="col-lg-3">
+						<div>
+							<center>
+								<img src="images/food/spices.jpg" class="blog_img">
+							</center>
+						</div>
+					</div>
+
+					<div class="col-lg-9">
+						<div class="blog-desc">
+							<h3 class="ques">Spices that are Safe for Dogs...</h3>
+							<p class="ans">The definition of herbs and spices differs whether we are talking about them from a TCM perspective or a cooking perspective. However, in cooking, herbs come from the leaves of plants, while spices come from the other parts, such as roots, flowers, stems, fruit, bark or seeds. Some plants produce both cooking herbs and spices. For example, cilantro is an herb, and coriander is a spice, but both come from the same plant. To complicate matters, some herbs, such as basil, parsley, oregano and thyme, are dried and sold as “spices.” And other ingredients we think of as spices are neither spices nor herbs. Garlic, for example, is a bulb also found in the form of garlic powder.</p>
+						</div>
+					</div>
+						
+				</div>
+
+				<script>function myFunction3() {
+					  var dots3 = document.getElementById("dots3");
+					  var moreText3 = document.getElementById("more3");
+					  var btnText3 = document.getElementById("myBtn3");
+
+					  if (dots3.style.display === "none") {
+					    dots3.style.display = "inline";
+					    btnText3.innerHTML = "Read more...";
+					    moreText3.style.display = "none";
+					  } 
+					  else {
+					    dots3.style.display = "none";
+					    btnText3.innerHTML = "...Read less";
+					    moreText3.style.display = "inline";
+					  }
+					}
+				</script>
+
+				<div class="row" id="blog_end">
+					<div class="col-lg-12">
+						<div class="blog-desc">
+							<div class="ans"><span id="dots3"></span>
+							<span id="more3">
+								<h3>Safe and beneficial spices for dogs</h3>
+
+
+								<h4>Basil for Dogs</h4>
+								<ol>
+									<li>Antibacterial</li>
+									<li>Anti-cancer</li>
+									<li>Fights free radicals</li>
+									<li>Helps prevent diabetes</li>
+									<li>Protects the liver</li>
+									<li>Reduces pain and inflammation</li>
+								</ol>
+									Tip: Add basil to help reduce pain and inflammation in dogs with arthritis.
+								
+
+								<h4>Coriander for dogs</h4>
+								<ol>
+									<li>Alleviates nausea</li>
+									<li>Anti-diarrheal</li>
+									<li>Eases intestinal gas</li>
+									<li>Anti-parasitic</li>
+									<li>Helps detoxify the body</li>
+									<li>Increases milk flow</li>
+								</ol>
+								Caution: Avoid giving coriander to pregnant animals, as it may stimulate uterine contractions.
+
+								<h4>Cinnamon for dogs</h4>
+								<ol>
+									<li>Anti-inflammatory</li>
+									<li>Displays anti-cancer properties</li>
+									<li>Regulates blood sugar</li>
+									<li>Combats free radicals</li>
+									<li>Protects against heart disease</li>
+									<li>May lower the risk of Alzheimer’s and Parkinson’s disease in humans and similar conditions in dogs</li>
+								</ol>
+								Tip: Opt for Ceylon cinnamon over the more common Cassia variety, as it is much lower in the blood-thinning compound coumarin.
+
+								<h4>Dill for dogs</h4>
+								<ol>
+									<li>Anti-inflammatory</li>
+									<li>Antimicrobial, antifungal, antibacterial</li>
+									<li>Improves digestion</li>
+									<li>Lowers blood sugar</li>
+									<li>Regulates menstruation</li>
+									<li>Relieves diarrhea</li>
+								</ol>
+								Caution: Avoid giving dill to pregnant dogs, as it may induce menstruation and cause miscarriage.
+
+								<h4>Fennel for dogs</h4>
+								<ol>
+									<li>Acts as a diuretic to remove toxins</li>
+									<li>Aids digestion</li>
+									<li>Alleviates constipation, diarrhea and intestinal gas</li>
+									<li>Benefits brain function Y Contains anti-cancer properties</li>
+									<li>Increases milk production during lactation</li>
+								</ol>
+								Caution: Excessive fennel intake can cause health issues, including difficulty breathing and heart palpitation.
+
+								<h4>Ginger for dogs</h4>
+								<ol>
+									<li>Anti-inflammatory</li>
+									<li>Eases nausea and upset stomach</li>
+									<li>Helps boost cognitive function</li>
+									<li>Helps regulate blood-sugar levels</li>
+									<li>May block growth of cancerous tumors</li>
+									<li>Reduces pain associated with osteoarthritis</li>
+								</ol>
+								Tip: Giving ginger to senior dogs may help boost cognitive function and decrease age-related joint pain.
+
+								<h4>Peppermint for dogs</h4>
+								<ol>
+									<li>Alleviates spasms in the colon</li>
+									<li>Improves signs of irritable bowel syndrome</li>
+									<li>Reduces intestinal gas</li>
+									<li>Relieves indigestion</li>
+									<li>Soothes upset stomach</li>
+									<li>Treats diarrhea</li>
+								</ol>
+								Caution: Avoid giving to dogs with gastroesophageal reflux disease (GERD). May cause hypoglycemia in diabetics.
+
+								<h4>Oregano for dogs</h4>
+								<ol>
+									<li>Antibacterial</li>
+									<li>Antifungal</li>
+									<li>Anti-inflammatory</li>
+									<li>Contains cancer-fighting polyphenols</li>
+									<li>Relieves indigestion and diarrhea</li>
+									<li>Rich in antioxidants to combat free radicals</li>
+								</ol>
+								Caution: Oregano may increase the risk of bleeding in dogs with bleeding disorders. Use cautiously with diabetic dogs, as oregano can lower blood sugar.
+
+								<h4>Parsley for dogs</h4>
+								<ol>
+									<li>Antibacterial</li>
+									<li>Anti-inflammatory</li>
+									<li>May help protect against urinary tract infections, kidney stones and gallbladder stones</li>
+									<li>Natural diuretic</li>
+									<li>Rich in antioxidants</li>
+								</ol>
+								Caution: Avoid giving to dogs prone to calcium oxalate stones, as parsley is high in oxalates.
+
+								<h4>Turmeric for dogs</h4>
+								<ol>
+									<li>Anti-cancer</li>
+									<li>Anti-inflammatory</li>
+									<li>Fights free radicals</li>
+									<li>Helps heal the gut</li>
+									<li>Improves brain function</li>
+									<li>Reduces symptoms of arthritis</li>
+								</ol>
+								Caution: Turmeric acts as a blood thinner and may increase risk of bleeding in association with some medications and botanicals, like NSAIDs, garlic and Gingko biloba. As a rule of thumb,it is recommended only ¼ teaspoon for small dogs, ½ teaspoon for medium dogs and 1 teaspoon for large dogs per day, mixed into food.
+							</span></div><button class="myBtn" onclick="myFunction3()" id="myBtn3">Read more...</button>
+						</div>
+					</div>
+				</div>
+
+
+
+			</div>
+
+
+
+
+
+
+
+
+			<div class="container-fluid" id="vegetables">
+
+				<div class="row" id="blog_contents">
+					<div class="col-lg-3">
+						<div>
+							<center>
+								<img src="images/food/veg.jpg" class="blog_img">
+							</center>
+						</div>
+					</div>
+
+					<div class="col-lg-9">
+						<div class="blog-desc">
+							<h3 class="ques">Vegetables Dogs can Eat...</h3>
+							<p class="ans">Regular dog food is optimized for most dog's needs, but adding vegetables can provide great health benefits too. Vegetables for dogs can act as a supplement to a healthy diet. The active components of a plant can provide powerful micronutrients. Colorful vegetables have a high concentration of phytonutrients rich in disease-fighting antioxidants and help eye and brain function.</p>
+						</div>
+					</div>
+						
+				</div>
+
+				<script>function myFunction4() {
+					  var dots4 = document.getElementById("dots4");
+					  var moreText4 = document.getElementById("more4");
+					  var btnText4 = document.getElementById("myBtn4");
+
+					  if (dots4.style.display === "none") {
+					    dots4.style.display = "inline";
+					    btnText4.innerHTML = "Read more...";
+					    moreText4.style.display = "none";
+					  } 
+					  else {
+					    dots4.style.display = "none";
+					    btnText4.innerHTML = "...Read less";
+					    moreText4.style.display = "inline";
+					  }
+					}
+				</script>
+
+				<div class="row" id="blog_end">
+					<div class="col-lg-12">
+						<div class="blog-desc">
+							<div class="ans"><span id="dots4"></span><span id="more4">
+							<h3>These are the 10 best vegetables for dogs to add to your pet's diet:</h3>
+
+							<ol>
+							<li><h4>Asparagus</h4>
+							<p>Add one to two ounces of lightly steamed asparagus tips (cut into small pieces to prevent choking) to add variety, flavor, vitamins, and minerals to a dog's meal. Sometimes a new flavor or texture is all it takes to renew interest in his usual food.</p></li>
+							 
+							<li><h4>Broccoli</h4>
+							<p>
+							Broccoli stalks boost immunity, help ward off cancer and fight arthritic inflammation. Also, chewing on stalks creates a natural, plaque-fighting toothbrush! Beware: too much broccoli, especially the heads, can upset the digestive system and cause major gas. Broccoli should make up less than 5 percent of your dog's food intake.</p></li>
+							 
+							<li><h4>Carrots</h4>
+							<p>
+							Chewing raw, crunchy carrots eases anxiety and cleans teeth! Eating carrots is great for eyesight and boosts the immune system with antioxidants. Some dogs find raw carrots hard to chew and can choke. If you see undigested carrot pieces in stool, chop into smaller pieces and serve cooked, which can also help avoid choking. The Nest recommends giving a dog one carrot, pureed, only every two days or so.</p></li>
+							 
+							<li><h4>Green Beans</h4>
+							<p>
+							If your puppy is carrying extra weight, replace up to 5 percent of her food with low-calorie green beans. They're high in fiber to help aid digestion and bowel regulation, and have heart-healthy omega-3s.</p></li>
+							 
+							<li><h4>Kale</h4>
+							<p>
+							Kale isn't just a superfood for people! It boasts tons of benefits like fighting heart disease, arthritis, allergies and urinary tract problems. While too much can cause gas and bloating, adding one ounce of steamed, chopped or dried kale to your dog's meal can boost its health value.</p></li>
+							 
+							<li><h4>Mushrooms</h4>
+							<p>
+							Button mushrooms can stimulate the immune system and help with allergies. While some mushrooms are great, others are toxic. Talk with your vet before adding mushrooms to your dog's diet to determine what kind and how much you can feed your dog.</p></li>
+							 
+							<li><h4>Parsley</h4>
+							<p>
+							Dog breath begone! Parsley is an ideal breath-freshener. It also adds potassium for muscle and joint health and beta carotene for eyes. Add just a sprinkle of chopped parsley to your dog's meal.</p></li>
+							 
+							<li><h4>Pumpkin</h4>
+							<p>
+							The high fiber content in pumpkin helps regulate bowels whether your dog is suffering from constipation or diarrhea. Most dogs love the taste of canned, pureed pumpkin! Replace a quarter of your dog's meal with the same amount of canned pumpkin until his system has regulated itself.</p></li>
+							 
+							<li><h4>Sweet potato</h4>
+							<p>
+							Cooked mashed or pureed, sweet potato is a healthy and tasty treat that fills a dog's tummy and boosts his system with vitamins, minerals and fiber. A dog could choke on a whole potato, but you can cut it into wedges to prevent that. Replace up to a quarter of your dog's regular food with mashed sweet potatoes to change up her routine while boosting her health at the same time!</p></li>
+							 
+							<li><h4>Zucchini</h4>
+							<p>
+							A few ounces of raw or frozen zucchini shredded over a meal adds water and fiber to a dog's diet and fills up his tummy too, keeping him lean.</p></li>
+
+							</ol>
+							<h4>Feeding your dog vegetables isn't a replacement for taking him to a licensed expert who can diagnose and treat illnesses or serious conditions. However, supplementing your dog's diet with safe amounts of healthy vegetables may improve his health and prolong his life for many happy years!</h4>
+							</div></span><button class="myBtn" onclick="myFunction4()" id="myBtn4">Read more...</button>
+						</div>
+					</div>
+				</div>
+
+
+
+			</div>
+
+
+
+
+
+
+
+
+			<div class="container-fluid" id="avocado">
+
+				<div class="row" id="blog_contents">
+					<div class="col-lg-3">
+						<div>
+							<center>
+								<img src="images/food/avocado.jpg" class="blog_img">
+							</center>
+						</div>
+					</div>
+
+					<div class="col-lg-9">
+						<div class="blog-desc">
+							<h3 class="ques">Avocado/Soybean Unsaponifiables for Dogs: Huge Benefits for Osteo-arthritis ...</h3>
+							<p class="ans">Avocado/soybean unsaponifiables consist of a mixture of one-third avocado oil and two-thirds soybean oil. They are rich in a variety of compounds, including fat-soluble vitamins and phytosterols, cholesterol-like molecules found in the cell walls of plants. ASUs are shown to delay the progression of OA by interfering with multiple pathways involved in creating pain and inflammation and destroying cartilage, including impeding the expression of the inflammatory COX-2 enzyme.</p>
+						</div>
+					</div>
+						
+				</div>
+
+				<script>function myFunction5() {
+					  var dots5 = document.getElementById("dots5");
+					  var moreText5 = document.getElementById("more5");
+					  var btnText5 = document.getElementById("myBtn5");
+
+					  if (dots5.style.display === "none") {
+					    dots5.style.display = "inline";
+					    btnText5.innerHTML = "Read more...";
+					    moreText5.style.display = "none";
+					  } 
+					  else {
+					    dots5.style.display = "none";
+					    btnText5.innerHTML = "...Read less";
+					    moreText5.style.display = "inline";
+					  }
+					}
+				</script>
+
+				
+					<div class="row" id="blog_end">
+						<div class="col-lg-12">
+							<div class="blog-desc">
+								<div>
+									<span id="dots5"></span><span id="more5"><p class="ans">When a beloved dog suffers from pain, stiffness and lack of mobility associated with OA, we just want him to feel better. While we can’t turn back the clock, there are tools we can use to help our dogs age more comfortably and maintain an active lifestyle longer. Avocado/soybean unsaponifiables, in my opinion, are one of those tools. They are shown safe for long-term use and may help reduce or even eliminate reliance on NSAIDs, which are linked with serious health complications, including increased risk of heart attack, stroke, bleeding and kidney damage.</p>
+									</span><button class="myBtn" onclick="myFunction5()" id="myBtn5">Read more...</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+
+			</div>
+
+
+
+
+
+
+
+			<div class="container-fluid" id="sick">
+
+				<div class="row" id="blog_contents">
+
+
+					<div class="col-lg-3">
+						<div>
+							<center>
+								<img src="images/food/sick.jpg" class="blog_img">
+							</center>
+						</div>
+					</div>
+
+					<div class="col-lg-9">
+						<div class="blog-desc">
+							<h3 class="ques">What to Feed a Sick Dog?</h3>
+							<p class="ans">Feeding a sick dog is challenging. Decreased appetite, upset stomach, diarrhea, and vomiting make caring for a sick dog stressful for both you and your pet. A bland diet can help relieve some of these symptoms while also giving your dog the nutrition he needs to recover. There are several foods that are beneficial to dogs with upset stomachs. Feeding a proper diet can alleviate some of your dog's intestinal discomfort. Occasionally, an upset stomach is a sign of a more serious problem.</p>
+						</div>
+					</div>
+						
+				</div>
+
+
+				<script>function myFunction6() {
+					  var dots6 = document.getElementById("dots6");
+					  var moreText6 = document.getElementById("more6");
+					  var btnText6 = document.getElementById("myBtn6");
+
+					  if (dots6.style.display === "none") {
+					    dots6.style.display = "inline";
+					    btnText6.innerHTML = "Read more...";
+					    moreText6.style.display = "none";
+					  } 
+					  else {
+					    dots6.style.display = "none";
+					    btnText6.innerHTML = "...Read less";
+					    moreText6.style.display = "inline";
+					  }
+					}
+				</script>
+
+
+				<div class="row" id="blog_end">
+
+					<div class="col-lg-12">
+						<div class="blog-desc">
+							<div class="ans"><span id="dots6"></span><span id="more6">
+							<br><p>The following five recipes are intended for use for dogs with mild stomach upset, including gas, nausea, constipation, and diarrhea. As these symptoms are occasionally signs of a more serious problem, always check with your vet before taking treatment into your own hands. Only use these recipes once you have ruled out other health risks and discussed your plan with your veterinarian; and remember that dogs with existing health conditions like diabetes, cancer, allergies, and senior dogs might need additional nutrition to stay healthy.<p><br><br>
+
+							<br><h4><b>Chicken and Rice</b></h4><br>
+
+							<p>Chicken and rice are prime ingredients in many dog foods, and these mild foods sit well on upset canine stomachs. Plus, this bland meal is easy to prepare. All you need are boneless, skinless chicken breasts and rice. White rice is lower in nutritional value than brown rice, but its blandness makes it more suitable for upset stomachs. Oils, butter, and added seasonings can irritate your dog’s stomach and make the problem worse, so stick with plain boiled chicken and rice and save the extra stuff for your own meal. Make sure the chicken is cooked thoroughly and cut or shred it into small, bite-sized pieces for your dog, since enthusiastic canines might choke on this unexpected treat.</p><br><br>
+
+							<br><h4><b>Shredded Chicken</b></h4><br>
+
+							<p>Shredded chicken is easy on upset stomachs and acts as a huge eating incentive for dogs with decreased appetites. Plain, unseasoned, boiled, shredded chicken is easy to digest and is packed with essential vitamins, minerals, fats, and amino acids, making it a great snack for dogs feeling under the weather. Chicken keeps in the fridge for three-to-four days, or you can freeze it for two-to-six months.</p><br><br>
+
+							<br><h4><b>Pumpkin</b></h4><br>
+
+							<p>Pumpkin and sweet potato have similar digestive health benefits. Like sweet potatoes, pumpkin is also high in fiber, which helps regulate canine digestive systems. Cooked, peeled, unsalted, and unseasoned pumpkin contains vitamin E, thiamin, niacin, vitamin B6, folate, iron, magnesium, phosphorous, dietary fiber, vitamin A, vitamin C, riboflavin, potassium, copper, and manganese, giving your dog a nutritional boost along with a little digestive help.</p>
+
+							<p>Adding pumpkin to your dog’s meal usually helps regulate mild constipation. Veterinarians recommend one to four tablespoons of pumpkin, depending on your dog’s size. Canned pumpkin is a convenient alternative to preparing pumpkin yourself, as long as it is unseasoned. Feeding your dog a can of pumpkin pie filling might end up sending you back to the vet, as the spices and sugars could irritate your dog’s stomach and cause further complications.</p><br><br>
+
+							<br><h4><b>Bone Broth</b></h4><br>
+
+							<p>Bone broth is a very mild, liquid meal that sits easily in upset canine stomachs. It is also a nutritious and delicious way to add moisture and flavor to dry food and encourage dogs with reduced appetites to eat. To make a bone broth for dogs, fill a crock-pot with beef marrow bones or bones with plenty of joints, like turkey and chicken legs. Cover the bones with 2-3 inches of water, cover, and cook on low for 20-24 hours.</p>
+
+							<p>Let the broth cool for 2-to-3 hours in the fridge to let the fat form a hardened layer at the top. Scoop it off and store the jelly-like broth in the refrigerator. If you want to use the broth to add moisture to dry food, microwave the broth just long enough for it to go from a semi-solid jelly to a liquid, but not long enough to get hot, as hot broths can burn your dog’s mouth. Freeze the broth in small containers like an ice cube tray for later use.</p>
+
+							<p>While bone broth is full of healthy bone marrow, cooked bones themselves are incredibly dangerous for dogs. Make sure you remove all of the bones from your broth before serving. Save yourself a trip to the emergency room and strain the broth just to make sure no small bones escaped your notice.</p><br><br>
+
+							<br><h4><b>Baby Food</b></h4><br>
+
+							<p>Veterinary emergency hospitals often use certain types of baby food to feed the dogs in their care. Baby food is very easy to swallow and digest and is a great way to give oral medications. Veterinarians recommend feeding Stage II meat-based baby foods like chicken, lamb, and turkey, as long as the baby food does not contain any garlic or onion powder.</p>
+
+							<p>While none of these recipes should be used as a replacement for proper medical care, feeding a bland diet can alleviate some of your dog’s intestinal discomfort while also providing him with foods he’ll love. These five recipes for dog digestive health also make delicious treats for when your dog starts feeling better, so consider saving some for later to reward your canine patient.</p><br>
+							</div></span><button class="myBtn" onclick="myFunction6()" id="myBtn6">Read more...</button>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+
+
+
+
+			<div class="container-fluid" id="nuts">
+
+				<div class="row" id="blog_contents">
+
+					<div class="col-lg-3">
+						<div>
+							<center>
+								<img src="images/food/nut.jpg" class="blog_img">
+							</center>
+						</div>
+					</div>
+
+					<div class="col-lg-9">
+						<div class="blog-desc">
+							<h3 class="ques">Which Nuts are Safe for Dogs to Eat ?</h3>
+							<p class="ans">Although nuts have a lot of health benefits when included in a human diet, the long-term effect of eating nuts on canine health is still an unexplored area. The prevailing theory is that nuts are too calorie dense and fatty for canines and that they shouldn’t be a regular part of their diet.However, most animal experts agree that occasionally giving a few nuts to your dog will not harm them. The only thing you need to know is which nuts your dog can eat.</p>
+						</div>
+					</div>
+
+				</div>
+				<script>function myFunction7() {
+					  var dots7 = document.getElementById("dots7");
+					  var moreText7 = document.getElementById("more7");
+					  var btnText7 = document.getElementById("myBtn7");
+
+					  if (dots7.style.display === "none") {
+					    dots7.style.display = "inline";
+					    btnText7.innerHTML = "Read more...";
+					    moreText7.style.display = "none";
+					  } 
+					  else {
+					    dots7.style.display = "none";
+					    btnText7.innerHTML = "...Read less";
+					    moreText7.style.display = "inline";
+					  }
+					}
+				</script>
+
+				<div class="row" id="blog_end">
+					<div class="col-lg-12">
+						<div class="blog-desc">
+							<div class="ans"><span id="dots7"></span><span id="more7">
+							<br><br><h3><b>Nuts That Dogs Can Eat</b></h3><br><br>
+							<ul>
+							<li><h4><b>Peanuts</b></h4>
+							<p>Although peanuts are safe for dogs to eat, they can’t be salted, coated, candied, or caramelized. Dogs can’t eat peanuts in shells, but a few bare peanuts, whether roasted or raw, make a healthy reward. However, peanuts are high in fat, so make sure to keep peanut treats to a minimum.</p><br><br></li>
+
+							<li><h4><b>Roasted Chestnuts</b></h4>
+							<p>A welcome guest at Thanksgiving feasts, roasted chestnuts will not harm your pooch. But, like all other nuts, these round, delicious bites are full of fat and can be hard on your pooch’s tummy if they overindulge. Even in the form of a puree, roasted chestnuts should be given to dogs only in small quantities.</p><br><br></li>
+							</ul>
+							<br><h3><b>Nuts to Avoid</b></h3><br><br>
+							<p>These nuts can be eaten by dogs, but tend to cause more trouble than they’re worth. So, if your pooch got a hold of a few nuts from this group while you weren’t looking, you shouldn’t panic. Just make sure it doesn’t happen again!</p><br>
+							<ul>
+							<li><h4><b>Almonds</b></h4>
+							<p>Dogs can eat almond nuts as they are not toxic to them, but canines tend to digest almonds poorly. Even a small amount of unsalted almonds can upset your dog’s stomach or, if the pooch in question is more sensitive, gastric intestinal distress. Of course, it’s important to note that you should never give sugar coated or chocolate-covered almonds to your dog.</p><br></li>
+
+							<li><h4><b>Hazelnuts</b></h4>
+							<p>First of all, let me make something clear: dogs can eat hazelnuts, in theory. They are not toxic to canines, and your pooch won’t have any problems if they ate a couple unsalted, uncoated hazelnuts, but there is another problem that can cause issues. Hazelnuts are just about the right size to be a choking hazard or to cause intestinal obstruction. Small dogs can choke on hazelnuts, and larger dogs tend to gobble them up without chewing, which leads to hazelnuts getting stuck in their intestines and causing significant problems.</p><br></li>
+
+							<li><h4><b>Cashews</b></h4>
+							<p>For healthy dogs, a shelled, unsalted cashew or two won’t be harmful. The cashews must be roasted or baked, because when raw, they can contain a dangerous toxin, similar to the one found in poison ivy. But, even though they are technically safe for dogs to eat (in the right form), cashews have a high level of potassium and can cause health issues with dogs that are prone to urinary problems.</p><br><br></li>
+							</ul>
+							<br><h3><b>Nuts Dog Can’t Eat</b></h3><br><br>
+							<p>In general, all nuts can be dangerous for dogs if they consume too much of them. But nuts from this list can be poisonous to dogs and cause various health problems, even if given as treats.</p><br>
+							<ul>
+							<li><h4><b>Walnuts</b></h4>
+							<p>English walnuts, Japanese walnuts, and black walnuts - should not be fed to pets. Apart from the risk of intestinal obstruction and stomach irritation, walnuts can be toxic to dogs. Moldy walnuts (any variety) can contain fungi called tremorgenic mycotoxins, and if your dog is exposed to it, they can have seizures and other dangerous neurological complications.</p><br></li>
+
+							<li><h4><b>Pistachios</b></h4>
+							<p>These green nuts are a human favorite, but when it comes to canines, pistachios can be dangerous. They can carry Aspergillus mold that produces aflatoxin and can wreak havoc on your dog’s liver. Apart from risky fungi lurking about, pistachios are also a choking hazard and can block your pooch’s intestine - particularly when not shelled.</p><br></li>
+
+							<li><h4><b>Pecans</b></h4>
+							<p>A slice of pecan pie might be just what you need on a rainy day, but your pooch should stay away from these tasty nuts! Same as pistachios, pecans can have aflatoxin, a substance that can cause liver damage to dogs. Pecans can also contain juglone, a toxin that’s harmful to dogs and horses.</p><br></li>
+							</ul>
+							<br><h3><b>The Takeaway</b></h3><br><br>
+							<p>All things considered, nuts are not the best choice for your four-legged best friend. Even though not all nuts are dangerous for dogs, prolonged consumption of nuts can lead to canine obesity and serious health issues such as pancreatitis.</p><br>
+
+							<p>High in fat content and often sodium and phosphorus as well, nuts should not be a regular part of your dog’s diet.</p>
+							</div></span><button class="myBtn" onclick="myFunction7()" id="myBtn7">Read more...</button>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+
+			<div class="container-fluid" id="digestion">
+
+				<div class="row" id="blog_contents">
+
+					<div class="col-lg-3">
+						<div>
+							<center>
+								<img src="images/food/digestion.jpg" class="blog_img">
+							</center>
+						</div>
+					</div>
+
+					<div class="col-lg-9">
+						<div class="blog-desc">
+							<h3 class="ques">Dog Digestive System Basics - How long does it take for a dog to digest Food?</h3>
+							<p class="ans">Most dog owners don’t spend a lot of time thinking about their own digestive processes, much less the basics of the dog digestive system. The only times we really engage with the dog digestive system are when we feed our dogs and when we trot them out to eliminate their waste. But what happens to a dog’s kibble or canned food from the time it enters their gaping maws to when it passes out the other end? How long does it take for a dog to digest food? If you were to hazard a guess, you could probably name the major stops along the route in the dog digestive system.</p>
+						</div>
+					</div>
+
+				</div>
+				<script>function myFunction8() {
+					  var dots8 = document.getElementById("dots8");
+					  var moreText8 = document.getElementById("more8");
+					  var btnText8 = document.getElementById("myBtn8");
+
+					  if (dots8.style.display === "none") {
+					    dots8.style.display = "inline";
+					    btnText8.innerHTML = "Read more...";
+					    moreText8.style.display = "none";
+					  } 
+					  else {
+					    dots8.style.display = "none";
+					    btnText8.innerHTML = "...Read less";
+					    moreText8.style.display = "inline";
+					  }
+					}
+				</script>
+
+				<div class="row" id="blog_end">
+					<div class="col-lg-12">
+						<div class="blog-desc">
+							<div class="ans"><span id="dots8"></span><span id="more8">
+							<p>Food enters through the mouth and slides down the esophagus on its way to the stomach. From there, it takes in the sights of the small and large intestines before departing the body. If that seems too simple, it is! The dog digestive system involves a staggering number of organs, fluids and enzymes, all playing their roles to convert food into usable energy. Whatever is left over, as surplus to requirements, is expelled through the anus in the form of faeces.</p><br>
+
+							<h3><b>Basics of the dog digestive system</b></h3><br>
+
+							<h4><b>Part 1: From mouth to stomach</b></h4>
+							<p>The front end of the dog digestive system encompasses the mouth, esophagus, stomach and small intestine. Dog digestion begins almost immediately with saliva in the mouth. You may have wondered why dog tongues are so slobbery. Since they spend less time chewing food than humans tend to, all of that saliva kickstarts the process of breaking down and coating food particles for smoother passage through the esophagus. The esophagus is heavily muscled, actively pushing food into the stomach.</p><br>
+
+							<h4><b>Part 2: A fantastic journey through the small intestine</b></h4>
+							<p>A dog’s stomach is a super-acidic environment, which is useful for opportunistic omnivores, helping them more easily digest things like bone and raw meat. Yes! Dogs can digest bones! At this stop in the dog digestive system, solid food is rendered into a substance called chyme, which is made up of food, water and acid. All food — from your Michelin 3-star-rated fine cuisine, to your dog’s canned chunks or dry kibble — ends up as this highly acidic gloop. As this chyme proceeds into the small intestine, the real work of digestion — the isolation of nutrients that can be used by the body— is done.</p>
+
+							<p>There are three parts of food’s journey through the small intestine. In the first part, the duodenum, chyme is treated with enzymes and hormones from the liver and pancreas, which reduce the acid level of the chyme. The gloop is now prepared to have the rest of its nutrients extracted and absorbed. This happens in the second part of the small intestine, which is called the jejunum. This part of a dog’s small intestine is basically covered in little probes, which, like fly paper, pick up and absorb useful nutrients into the bloodstream.</p><br>
+
+							<h4><b>Part 3: The large intestine and waste removal</b></h4>
+							<p>The final part of the small intestine is the ileum, which absorbs whatever nutrients remain. By this point, the once-acidic chyme gloop is now a sort of thicker pasty substance. You’d be surprised how little of the food you or your dog eats is actually used by your body. Did you ever wonder why the dog digestive system produces so much poop? It’s because the actual nutrients — proteins, vitamins, fats and so on — that your dog’s body can utilize are miniscule in proportion to the physical volume of most dog food.</p>
+
+							<p>How long is this part of the dog digestive system? It varies by size. If you stretched out a dog’s small intestine, it would be nearly three times as long as the dog. The back end of a dog’s GI tract is fairly short by comparison, just over a foot long, give or take, depending on the dog. Its primary components are the large intestine and the anus. The large intestine is basically a water remover and garbage compactor. Having spent the first half of its journey being mashed up, dissolved and sifted, any parts of a dog’s meal that cannot be used is treated by bacteria, and reconstituted into a solid package we call dog poop.</p><br><br>
+
+
+
+							<h3><b>Assorted questions about the dog digestive system!</b></h3><br>
+
+
+							<h4><b>How long does food stay in a dog’s stomach?</b></h4><br>
+							<p>Though dogs are omnivores, they are opportunistic ones. That means that while they can eat almost anything, the dog digestive system can’t break down and utilize everything. Animals like humans or cows, to name two, have GI tracts made to process plant matter. As a result, their intestines are much longer and more drawn out than those of dogs. Since cows depend on vegetable matter, they even get extra compartments in their stomach, and can regurgitate food to chew and digest it fully.</p>
+
+							<p>A dog digestive system, depending more on meat proteins, is much more efficient. Depending on its digestibility, food can stay in a dog’s stomach much longer than either a human or a cow. If the meal is not strictly meat, comprising a variety of vegetable, grains and proteins, it will have vacated the stomach completely in 12 hours after eating. Compare that to four to five hours in a normal adult human.</p><br><br>
+
+							<h4><b>Where does digestion actually take place in the dog digestive system?</b></h4><br>
+							<p>As you may have gleaned from tracing food’s intricate journey from the food bowl in your kitchen to the poop bag in the dog park, the multiple processes of the dog digestive system means that it does not happen in one spot. From the moment comestibles come in contact with teeth and saliva in the mouth, digestion is happening.</p>
+
+							<p>A dog digestive system is just that: a system, and digestion takes place at every point along the course. Food is disassembled in a variety of ways, physically and nutritionally, from the mouth to the stomach. The majority of its conversion into absorbable nutrients happens in the small intestine, and digestion is only complete when your dog assumes the familiar position for excreting waste.</p><br><br>
+
+							<h4><b>How long does it take for a dog to digest food?</b></h4><br>
+							<p>Finally, the question about the dog digestive system that got us started. Unfortunately, there’s no set answer! So many variables are involved, that even in a perfectly healthy dog, the time to digest a single meal can be dramatically different. Does your dog drink enough water? That has an effect on digestion time as well. Large dog breeds take significantly longer to digest food than small ones.</p>
+
+							<p>Is your dog sedentary, spending most of the day on the couch? Does the dog get a couple of walks a day? Dog exercise has a definite impact on motility, or the way that the muscles of the dog digestive system propel food through the process. Total time from entry to exit depends on a wide range of factors, from the size of the dog to the quality of the food. Wet food takes less time to digest than dry kibble. Speaking very broadly, operating at optimum efficiency, a dog can process a can of wet food in as few as four hours, while the same amount of dry food can take eight hours to make the same journey!</p><br>
+
+
+							</div></span><button class="myBtn" onclick="myFunction8()" id="myBtn8">Read more...</button>
+						</div>
+					</div>
+				</div>
+
+
+			</div>	
+
+
+
+
+
+		</div>
+
+	</div>
+
+
+
+
+
+	<footer>
+		
+		<div class="container-fluid">
+			<div class="blog">
+				<div class="row">
+					<div class="col-lg-4">
+						<br><br>
+						<div class="footer_note"><center>
+							<p class="copy1"><b>&copy;</b> Copyright Reserved by <b>Subhradipta Choudhury.</b></p>
+							<p class="copy2">The pictures &amp; contents used here are only for college project purpose.</p></center>
+						</div>
+						<br><br>
+					</div>
+					<div class="col-lg-4">
+						<br><br>
+						<center>
+							<h4 class="connect" style="">CONNECT WITH US</h4>
+							<div style="align-items: center;">
+
+
+								<a href="https://www.facebook.com/profile.php?id=100009449073945" style="text-decoration: none;">
+									<div class="icon" id="facebook">
+										<center>
+											<i class="fab fa-facebook-f"></i>
+										</center>
+									</div>
+								</a>
+
+								<a href="#" style="text-decoration: none;">
+									<div class="icon" id="twitter">
+										<center>
+											<i class="fab fa-twitter"></i>
+										</center>
+									</div>
+								</a>
+
+								<a href="#" style="text-decoration: none;">
+									<div class="icon" id="instagram">
+										<center>
+											<i class="fab fa-instagram"></i>
+										</center>
+									</div>
+								</a>
+
+								<a href="mailto:info@puppzilla.co.in?cc=csubhradipta@gmail.com" style="text-decoration: none;">
+									<div class="icon" id="gmail">
+										<center>
+											<i class="far fa-envelope"></i></i>
+										</center>
+									</div>
+								</a>
+
+								<a href="https://wa.me/917980397413" style="text-decoration: none;">
+									<div class="icon" id="whatsapp">
+										<center>
+											<i class="fab fa-whatsapp"></i>
+										</center>
+									</div>
+								</a>
+
+							</div>	
+						</center>
+						<br><br>
+					</div>
+					<div class="col-lg-4" style="">
+						<br><br>
+						<center><h4 class="connect" style="padding-bottom: 6px;">SUBSCRIBE TO OUR E-MAGAZINE</h4>
+						<input type="email" name="" placeholder="Your Email" class="form-control" style="width: 80%;"></center>
+						<br><br>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+</div>
+</body>
+</html>
